@@ -43,7 +43,7 @@ public class ProjectConfigController {
         @Value("${logging.level.org.springframework.security}")
         private String loggingSecurity;
 
-        
+
 
         @GetMapping()
         public Map<String, String> getConfig() {
