@@ -9,13 +9,15 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintWriter;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -28,31 +30,37 @@ public class WarehouseServiceImpl implements WarehouseService {
     private EntityManager entityManager;
 
     @Override
+    @Cacheable(value = "warehousesSummary")
     public Page<WarehouseBasicView> getSummaryRaw(Pageable pageable) {
         return repository.findWarehouseBasicFields(pageable);
     }
 
     @Override
+    @Cacheable(value = "warehouses")
     public List<Warehouse> getAll() {
         return repository.findAll();
     }
 
     @Override
+    @Cacheable(value = "warehousesSummary", key = "#name + '-' + #pageable.pageNumber + '-' + #pageable.pageSize")
     public Page<WarehouseBasicView> searchByName(String name, Pageable pageable) {
         return repository.searchByName(name, pageable);
     }
 
     @Override
+    @Cacheable(value = "warehouses", key = "#id")
     public Warehouse getById(Long id) {
         return repository.findById(id).orElse(null);
     }
 
     @Override
+    @CachePut(value = "warehouses", key = "#warehouse.id")
     public Warehouse save(Warehouse warehouse) {
         return repository.save(warehouse);
     }
 
     @Override
+    @CacheEvict(value = "warehouses", key = "#id")
     public void delete(Long id) {
         repository.deleteById(id);
     }
@@ -110,6 +118,7 @@ public class WarehouseServiceImpl implements WarehouseService {
     }
 
     @Override
+    @Cacheable(value = "warehouseAnalytics", key = "'warehouseAnalytics-' + #warehouseId")
     public WarehouseAnalyticsView getWarehouseAnalytics(Long warehouseId) {
         Long total = repository.count();
         Long recent = repository.countByCreatedDateAfter(LocalDate.now().minusMonths(1).atStartOfDay());

@@ -4,6 +4,9 @@ import com.erb.demo.model.Customer;
 import com.erb.demo.repository.CustomerRepository;
 import com.erb.demo.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,21 +18,25 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerRepository repository;
 
     @Override
+    @Cacheable(value = "customers")
     public List<Customer> getAll() {
         return repository.findAll();
     }
 
     @Override
+    @Cacheable(value = "customers", key = "#id")
     public Customer getById(Long id) {
         return repository.findById(id).orElse(null);
     }
 
     @Override
+    @CachePut(value = "customers", key = "#customer.id")
     public Customer save(Customer customer) {
         return repository.save(customer);
     }
 
     @Override
+    @CacheEvict(value = "customers", key = "#id")
     public void delete(Long id) {
         repository.deleteById(id);
     }

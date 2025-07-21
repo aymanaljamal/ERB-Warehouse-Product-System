@@ -4,6 +4,9 @@ import com.erb.demo.model.StockReceipt;
 import com.erb.demo.repository.StockReceiptRepository;
 import com.erb.demo.service.StockReceiptService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,21 +18,25 @@ public class StockReceiptServiceImpl implements StockReceiptService {
     private StockReceiptRepository repository;
 
     @Override
+    @Cacheable(value = "stockReceipts")
     public List<StockReceipt> getAll() {
         return repository.findAll();
     }
 
     @Override
+    @Cacheable(value = "stockReceipts", key = "#id")
     public StockReceipt getById(Long id) {
         return repository.findById(id).orElse(null);
     }
 
     @Override
+    @CachePut(value = "stockReceipts", key = "#receipt.id")
     public StockReceipt save(StockReceipt receipt) {
         return repository.save(receipt);
     }
 
     @Override
+    @CacheEvict(value = "stockReceipts", key = "#id")
     public void delete(Long id) {
         repository.deleteById(id);
     }
