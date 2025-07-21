@@ -1,4 +1,3 @@
-// Employee.java
 package com.erb.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -26,6 +25,9 @@ public class Employee {
     @Email(message = "Email should be valid")
     @NotBlank(message = "Email is mandatory")
     private String email;
+
+    @NotBlank(message = "Password is mandatory")
+    private String password;
 
     @Min(value = 0, message = "Salary must be positive")
     private double salary;

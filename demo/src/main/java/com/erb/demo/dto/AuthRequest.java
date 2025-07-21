@@ -13,4 +13,7 @@ public class AuthRequest {
 
     @NotBlank(message = "Password is required")
     private String password;
+
+    @NotBlank(message = "User type is required")
+    private String userType;
 }

@@ -45,3 +45,225 @@
 2025-07-21T10:57:57.035+03:00 DEBUG 27708 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/customers
 2025-07-21T10:57:57.248+03:00 DEBUG 27708 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/customers
 2025-07-21T10:57:57.256+03:00  INFO 27708 --- [demo] [http-nio-8080-exec-5] c.e.demo.controller.CustomerController   : Fetching all customers...
+2025-07-21T11:03:57.033+03:00  INFO 27708 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-21T11:03:57.048+03:00  INFO 27708 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-21T11:03:57.048+03:00  INFO 27708 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21T11:03:57.048+03:00  INFO 27708 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-21T11:03:57.064+03:00  INFO 27708 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-21T11:04:05.111+03:00  INFO 20632 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 20632 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-21T11:04:05.114+03:00 DEBUG 20632 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-21T11:04:05.116+03:00  INFO 20632 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-21T11:04:07.088+03:00  INFO 20632 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-21T11:04:07.309+03:00  INFO 20632 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 204 ms. Found 9 JPA repository interfaces.
+2025-07-21T11:04:08.872+03:00  INFO 20632 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-21T11:04:08.900+03:00  INFO 20632 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-21T11:04:08.901+03:00  INFO 20632 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-21T11:04:09.004+03:00  INFO 20632 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-21T11:04:09.005+03:00  INFO 20632 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3782 ms
+2025-07-21T11:04:09.338+03:00  INFO 20632 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-21T11:04:09.427+03:00  INFO 20632 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-21T11:04:09.480+03:00  INFO 20632 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-21T11:04:09.908+03:00  INFO 20632 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-21T11:04:09.969+03:00  INFO 20632 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-21T11:04:10.484+03:00  INFO 20632 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35524549
+2025-07-21T11:04:10.487+03:00  INFO 20632 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-21T11:04:10.577+03:00  WARN 20632 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-21T11:04:10.579+03:00  WARN 20632 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-21T11:04:10.608+03:00  INFO 20632 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-21T11:04:12.566+03:00  INFO 20632 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-21T11:04:12.898+03:00  INFO 20632 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21T11:04:13.536+03:00 DEBUG 20632 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-21T11:04:13.668+03:00  INFO 20632 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-21T11:04:13.670+03:00  WARN 20632 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-21T11:04:13.838+03:00  INFO 20632 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-21T11:04:14.211+03:00  WARN 20632 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-21T11:04:14.839+03:00 DEBUG 20632 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-21T11:04:15.414+03:00  INFO 20632 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-21T11:04:15.424+03:00  INFO 20632 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 11.351 seconds (process running for 12.355)
+2025-07-21T11:06:56.484+03:00  INFO 20632 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-21T11:06:56.484+03:00  INFO 20632 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-21T11:06:56.484+03:00  INFO 20632 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-07-21T11:06:56.508+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:06:56.516+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:06:56.516+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:06:57.077+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:06:57.077+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-1] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:07:45.749+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:07:45.749+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:07:45.759+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:07:46.044+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:07:46.044+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:07:51.264+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:07:51.264+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:07:51.264+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:07:51.508+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:07:51.508+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:09:19.343+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:09:19.345+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:09:19.345+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:09:19.531+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-7] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:09:19.531+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-7] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:10:32.497+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:10:32.497+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:10:32.497+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:10:32.638+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-9] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:10:32.638+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-9] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:13:06.824+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:13:06.824+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:13:06.824+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:13:06.983+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:13:06.983+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-3] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:13:16.412+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:13:16.412+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:13:16.412+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:13:16.568+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:13:16.568+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-4] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:13:25.695+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:13:25.695+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:13:25.695+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:13:25.823+03:00 DEBUG 20632 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-21T11:17:45.529+03:00  INFO 20632 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-21T11:17:45.529+03:00  INFO 20632 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-21T11:17:45.544+03:00  INFO 20632 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21T11:17:45.544+03:00  INFO 20632 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-21T11:17:45.544+03:00  INFO 20632 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-21T11:17:51.749+03:00  INFO 24036 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 24036 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-21T11:17:51.751+03:00 DEBUG 24036 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-21T11:17:51.752+03:00  INFO 24036 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-21T11:17:52.842+03:00  INFO 24036 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-21T11:17:52.939+03:00  INFO 24036 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 9 JPA repository interfaces.
+2025-07-21T11:17:53.756+03:00  INFO 24036 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-21T11:17:53.774+03:00  INFO 24036 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-21T11:17:53.776+03:00  INFO 24036 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-21T11:17:53.831+03:00  INFO 24036 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-21T11:17:53.833+03:00  INFO 24036 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2016 ms
+2025-07-21T11:17:54.061+03:00  INFO 24036 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-21T11:17:54.124+03:00  INFO 24036 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-21T11:17:54.169+03:00  INFO 24036 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-21T11:17:54.510+03:00  INFO 24036 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-21T11:17:54.545+03:00  INFO 24036 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-21T11:17:54.918+03:00  INFO 24036 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@126254ec
+2025-07-21T11:17:54.920+03:00  INFO 24036 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-21T11:17:54.982+03:00  WARN 24036 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-21T11:17:54.984+03:00  WARN 24036 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-21T11:17:55.006+03:00  INFO 24036 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-21T11:17:56.466+03:00  INFO 24036 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-21T11:17:56.676+03:00  INFO 24036 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21T11:17:57.165+03:00 DEBUG 24036 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-21T11:17:57.276+03:00  INFO 24036 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-21T11:17:57.277+03:00  WARN 24036 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-21T11:17:57.381+03:00  INFO 24036 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-21T11:17:57.726+03:00  WARN 24036 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-21T11:17:58.273+03:00 DEBUG 24036 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-21T11:17:58.848+03:00  INFO 24036 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-21T11:17:58.858+03:00  INFO 24036 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 7.754 seconds (process running for 8.487)
+2025-07-21T11:18:06.662+03:00  INFO 24036 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-21T11:18:06.662+03:00  INFO 24036 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-21T11:18:06.664+03:00  INFO 24036 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-21T11:18:06.684+03:00 DEBUG 24036 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:18:06.691+03:00 DEBUG 24036 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:18:06.694+03:00 DEBUG 24036 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:18:07.367+03:00 DEBUG 24036 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:18:07.375+03:00 DEBUG 24036 --- [demo] [http-nio-8080-exec-1] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:23:53.742+03:00  INFO 24036 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-21T11:23:53.748+03:00  INFO 24036 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-21T11:23:53.757+03:00  INFO 24036 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21T11:23:53.759+03:00  INFO 24036 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-21T11:23:53.770+03:00  INFO 24036 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-21T11:23:59.030+03:00  INFO 28300 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 28300 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-21T11:23:59.032+03:00 DEBUG 28300 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-21T11:23:59.033+03:00  INFO 28300 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-21T11:23:59.970+03:00  INFO 28300 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-21T11:24:00.074+03:00  INFO 28300 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 9 JPA repository interfaces.
+2025-07-21T11:24:00.945+03:00  INFO 28300 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-21T11:24:00.961+03:00  INFO 28300 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-21T11:24:00.961+03:00  INFO 28300 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-21T11:24:01.023+03:00  INFO 28300 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-21T11:24:01.024+03:00  INFO 28300 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1933 ms
+2025-07-21T11:24:01.259+03:00  INFO 28300 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-21T11:24:01.325+03:00  INFO 28300 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-21T11:24:01.365+03:00  INFO 28300 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-21T11:24:01.686+03:00  INFO 28300 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-21T11:24:01.720+03:00  INFO 28300 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-21T11:24:02.116+03:00  INFO 28300 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e3c36d
+2025-07-21T11:24:02.119+03:00  INFO 28300 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-21T11:24:02.173+03:00  WARN 28300 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-21T11:24:02.174+03:00  WARN 28300 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-21T11:24:02.193+03:00  INFO 28300 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-21T11:24:03.645+03:00  INFO 28300 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-21T11:24:03.823+03:00  INFO 28300 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21T11:24:04.286+03:00 DEBUG 28300 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-21T11:24:04.439+03:00  INFO 28300 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-21T11:24:04.439+03:00  WARN 28300 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-21T11:24:04.549+03:00  INFO 28300 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-21T11:24:04.803+03:00  WARN 28300 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-21T11:24:05.273+03:00 DEBUG 28300 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-21T11:24:05.963+03:00  INFO 28300 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-21T11:24:05.971+03:00  INFO 28300 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 7.595 seconds (process running for 8.459)
+2025-07-21T11:24:14.523+03:00  INFO 28300 --- [demo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-21T11:24:14.523+03:00  INFO 28300 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-21T11:24:14.524+03:00  INFO 28300 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-21T11:24:14.545+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:24:14.553+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:24:14.555+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:24:16.664+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:24:16.665+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:24:16.665+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:24:41.037+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:24:41.037+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:24:41.037+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:25:02.734+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:25:02.734+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:25:02.734+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:25:03.016+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:25:03.016+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-8] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:25:07.455+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:25:07.455+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:25:07.455+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:25:07.586+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-9] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:25:07.586+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-9] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:25:24.966+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:25:24.966+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:25:24.966+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:25:25.136+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-10] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-21T11:25:33.791+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:25:33.791+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:25:33.791+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:25:33.954+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:25:33.962+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-1] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:25:50.962+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:25:50.962+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:25:50.962+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:25:51.121+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:25:51.121+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-2] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:29:23.816+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-21T11:29:23.817+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-21T11:29:23.818+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-21T11:29:23.947+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-5] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'mona.khalil@erp.com'
+2025-07-21T11:29:23.947+03:00 DEBUG 28300 --- [demo] [http-nio-8080-exec-5] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-21T11:29:26.634+03:00  INFO 28300 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-21T11:29:26.641+03:00  INFO 28300 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-21T11:29:26.647+03:00  INFO 28300 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21T11:29:26.649+03:00  INFO 28300 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-21T11:29:26.661+03:00  INFO 28300 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
