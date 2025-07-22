@@ -2,10 +2,15 @@ package com.erb.demo.repository;
 
 import com.erb.demo.Projection.EmployeeSummaryProjection;
 import com.erb.demo.model.Delivery;
+import com.erb.demo.model.Employee;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.time.LocalDateTime;
+import java.util.Date;
 
 public interface DeliveryRepository extends JpaRepository<Delivery, Long> {
 
@@ -38,4 +43,13 @@ public interface DeliveryRepository extends JpaRepository<Delivery, Long> {
                 countQuery = "SELECT COUNT(*) FROM employee",
                 nativeQuery = true)
         Page<EmployeeSummaryProjection> getEmployeeSummary(Pageable pageable);
+
+
+    @Query(value = "SELECT COUNT(*) FROM delivery d WHERE d.employee_id = :employeeId AND d.delivered_at BETWEEN :fromDate AND :toDate", nativeQuery = true)
+    int countByDeliveredByAndDeliveredAtBetween(@Param("employeeId") Long employeeId,
+                                                @Param("fromDate") Date fromDate,
+                                                @Param("toDate") Date toDate);
+
+
+
 }

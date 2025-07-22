@@ -112,3 +112,473 @@
 2025-07-22T11:42:59.527+03:00  INFO 25848 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-07-22T11:42:59.527+03:00  INFO 25848 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-07-22T11:42:59.527+03:00  INFO 25848 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:15:17.206+03:00  INFO 21900 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 21900 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:15:17.215+03:00 DEBUG 21900 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:15:17.215+03:00  INFO 21900 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:15:18.312+03:00  INFO 21900 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:15:18.418+03:00  INFO 21900 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:15:19.487+03:00  INFO 21900 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:15:19.509+03:00  INFO 21900 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:15:19.509+03:00  INFO 21900 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:15:19.581+03:00  INFO 21900 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:15:19.581+03:00  INFO 21900 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2261 ms
+2025-07-22T15:15:19.882+03:00  INFO 21900 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:15:19.938+03:00  INFO 21900 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:15:19.974+03:00  INFO 21900 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:15:20.303+03:00  INFO 21900 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:15:20.340+03:00  INFO 21900 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:15:20.728+03:00  INFO 21900 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e20f4e3
+2025-07-22T15:15:20.730+03:00  INFO 21900 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:15:20.789+03:00  WARN 21900 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:15:20.791+03:00  WARN 21900 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:15:20.816+03:00  INFO 21900 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:15:22.323+03:00  INFO 21900 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:15:22.469+03:00  INFO 21900 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:15:23.151+03:00 DEBUG 21900 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:15:23.291+03:00  INFO 21900 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:15:23.292+03:00  WARN 21900 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:15:23.419+03:00  INFO 21900 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:15:23.783+03:00  WARN 21900 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:15:24.487+03:00 DEBUG 21900 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:15:25.186+03:00  INFO 21900 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:15:25.194+03:00  INFO 21900 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 8.873 seconds (process running for 10.006)
+2025-07-22T15:26:48.274+03:00  INFO 21900 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:26:48.274+03:00  INFO 21900 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:26:48.276+03:00  INFO 21900 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-22T15:26:48.289+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:26:48.295+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:26:48.296+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:26:48.657+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:29:03.030+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:29:03.077+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:29:03.082+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-6] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:29:03.106+03:00 DEBUG 21900 --- [demo] [http-nio-8080-exec-6] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:31:25.348+03:00  INFO 21900 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:31:25.352+03:00  INFO 21900 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:31:25.356+03:00  INFO 21900 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:31:25.358+03:00  INFO 21900 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:31:25.363+03:00  INFO 21900 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:31:27.639+03:00  INFO 11940 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 11940 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:31:27.640+03:00 DEBUG 11940 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:31:27.641+03:00  INFO 11940 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:31:28.187+03:00  INFO 11940 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:31:28.241+03:00  INFO 11940 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:31:28.765+03:00  INFO 11940 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:31:28.775+03:00  INFO 11940 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:31:28.775+03:00  INFO 11940 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:31:28.807+03:00  INFO 11940 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:31:28.807+03:00  INFO 11940 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1130 ms
+2025-07-22T15:31:28.958+03:00  INFO 11940 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:31:28.993+03:00  INFO 11940 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:31:29.015+03:00  INFO 11940 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:31:29.235+03:00  INFO 11940 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:31:29.254+03:00  INFO 11940 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:31:29.555+03:00  INFO 11940 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c5f12e
+2025-07-22T15:31:29.557+03:00  INFO 11940 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:31:29.609+03:00  WARN 11940 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:31:29.611+03:00  WARN 11940 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:31:29.625+03:00  INFO 11940 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:31:30.512+03:00  INFO 11940 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:31:30.600+03:00  INFO 11940 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:31:30.937+03:00 DEBUG 11940 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:31:30.999+03:00  INFO 11940 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:31:30.999+03:00  WARN 11940 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:31:31.051+03:00  INFO 11940 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:31:31.273+03:00  WARN 11940 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:31:31.652+03:00 DEBUG 11940 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:31:32.089+03:00  INFO 11940 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:31:32.094+03:00  INFO 11940 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.792 seconds (process running for 5.194)
+2025-07-22T15:31:45.206+03:00  INFO 11940 --- [demo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:31:45.206+03:00  INFO 11940 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:31:45.207+03:00  INFO 11940 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-22T15:31:45.218+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:31:45.222+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:31:45.223+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:31:45.566+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:31:59.962+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:32:00.001+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:32:00.008+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:32:00.029+03:00 DEBUG 11940 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:32:52.844+03:00  INFO 11940 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:32:52.848+03:00  INFO 11940 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:32:52.852+03:00  INFO 11940 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:32:52.853+03:00  INFO 11940 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:32:52.858+03:00  INFO 11940 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:32:54.901+03:00  INFO 21432 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 21432 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:32:54.903+03:00 DEBUG 21432 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:32:54.903+03:00  INFO 21432 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:32:55.458+03:00  INFO 21432 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:32:55.516+03:00  INFO 21432 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:32:56.094+03:00  INFO 21432 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:32:56.104+03:00  INFO 21432 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:32:56.104+03:00  INFO 21432 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:32:56.140+03:00  INFO 21432 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:32:56.140+03:00  INFO 21432 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
+2025-07-22T15:32:56.296+03:00  INFO 21432 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:32:56.334+03:00  INFO 21432 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:32:56.358+03:00  INFO 21432 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:32:56.556+03:00  INFO 21432 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:32:56.577+03:00  INFO 21432 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:32:56.802+03:00  INFO 21432 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3af39e7b
+2025-07-22T15:32:56.804+03:00  INFO 21432 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:32:56.847+03:00  WARN 21432 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:32:56.848+03:00  WARN 21432 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:32:56.861+03:00  INFO 21432 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:32:57.665+03:00  INFO 21432 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:32:57.753+03:00  INFO 21432 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:32:58.064+03:00 DEBUG 21432 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:32:58.138+03:00  INFO 21432 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:32:58.138+03:00  WARN 21432 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:32:58.198+03:00  INFO 21432 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:32:58.437+03:00  WARN 21432 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:32:58.747+03:00 DEBUG 21432 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:32:59.076+03:00  INFO 21432 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:32:59.081+03:00  INFO 21432 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.523 seconds (process running for 4.928)
+2025-07-22T15:33:09.588+03:00  INFO 21432 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:33:09.589+03:00  INFO 21432 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:33:09.591+03:00  INFO 21432 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-22T15:33:09.615+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:33:09.623+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:33:09.625+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:33:10.355+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:33:19.940+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:33:20.010+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:33:20.018+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:33:20.051+03:00 DEBUG 21432 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:34:18.273+03:00  INFO 21432 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:34:18.277+03:00  INFO 21432 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:34:18.281+03:00  INFO 21432 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:34:18.283+03:00  INFO 21432 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:34:18.286+03:00  INFO 21432 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:34:22.247+03:00  INFO 21244 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 21244 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:34:22.249+03:00 DEBUG 21244 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:34:22.249+03:00  INFO 21244 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:34:22.840+03:00  INFO 21244 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:34:22.901+03:00  INFO 21244 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:34:23.477+03:00  INFO 21244 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:34:23.487+03:00  INFO 21244 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:34:23.488+03:00  INFO 21244 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:34:23.519+03:00  INFO 21244 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:34:23.519+03:00  INFO 21244 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1231 ms
+2025-07-22T15:34:23.685+03:00  INFO 21244 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:34:23.720+03:00  INFO 21244 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:34:23.744+03:00  INFO 21244 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:34:23.935+03:00  INFO 21244 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:34:23.956+03:00  INFO 21244 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:34:24.175+03:00  INFO 21244 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e20f4e3
+2025-07-22T15:34:24.176+03:00  INFO 21244 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:34:24.209+03:00  WARN 21244 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:34:24.211+03:00  WARN 21244 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:34:24.224+03:00  INFO 21244 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:34:25.155+03:00  INFO 21244 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:34:25.247+03:00  INFO 21244 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:34:25.594+03:00 DEBUG 21244 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:34:25.670+03:00  INFO 21244 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:34:25.671+03:00  WARN 21244 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:34:25.732+03:00  INFO 21244 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:34:25.987+03:00  WARN 21244 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:34:26.349+03:00 DEBUG 21244 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:34:26.754+03:00  INFO 21244 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:34:26.760+03:00  INFO 21244 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.888 seconds (process running for 5.298)
+2025-07-22T15:34:32.213+03:00  INFO 21244 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:34:32.213+03:00  INFO 21244 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:34:32.214+03:00  INFO 21244 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-22T15:34:32.224+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:34:32.228+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:34:32.232+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:34:32.557+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:34:44.262+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:34:44.310+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:34:44.315+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:34:44.334+03:00 DEBUG 21244 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:34:44.698+03:00  WARN 21244 --- [demo] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2025-07-22T15:34:44.698+03:00 ERROR 21244 --- [demo] [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'd.delivered_by_id' in 'where clause'
+2025-07-22T15:35:43.980+03:00  INFO 21244 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:35:43.997+03:00  INFO 21244 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:35:43.997+03:00  INFO 21244 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:35:43.997+03:00  INFO 21244 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:35:43.997+03:00  INFO 21244 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:35:46.892+03:00  INFO 11364 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 11364 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:35:46.892+03:00 DEBUG 11364 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:35:46.892+03:00  INFO 11364 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:35:47.498+03:00  INFO 11364 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:35:47.562+03:00  INFO 11364 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:35:48.120+03:00  INFO 11364 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:35:48.130+03:00  INFO 11364 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:35:48.131+03:00  INFO 11364 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:35:48.163+03:00  INFO 11364 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:35:48.163+03:00  INFO 11364 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2025-07-22T15:35:48.320+03:00  INFO 11364 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:35:48.357+03:00  INFO 11364 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:35:48.381+03:00  INFO 11364 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:35:48.574+03:00  INFO 11364 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:35:48.595+03:00  INFO 11364 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:35:48.803+03:00  INFO 11364 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e20f4e3
+2025-07-22T15:35:48.805+03:00  INFO 11364 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:35:48.840+03:00  WARN 11364 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:35:48.841+03:00  WARN 11364 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:35:48.854+03:00  INFO 11364 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:35:49.696+03:00  INFO 11364 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:35:49.786+03:00  INFO 11364 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:35:50.105+03:00 DEBUG 11364 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:35:50.169+03:00  INFO 11364 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:35:50.169+03:00  WARN 11364 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:35:50.235+03:00  INFO 11364 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:35:50.461+03:00  WARN 11364 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:35:50.785+03:00 DEBUG 11364 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:35:51.136+03:00  INFO 11364 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:35:51.141+03:00  INFO 11364 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.588 seconds (process running for 5.022)
+2025-07-22T15:35:58.819+03:00  INFO 11364 --- [demo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:35:58.819+03:00  INFO 11364 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:35:58.820+03:00  INFO 11364 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-22T15:35:58.833+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:35:58.838+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:35:58.839+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:35:59.174+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:36:07.130+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:36:07.177+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:36:07.183+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:36:07.202+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:38:44.923+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20%2000:00:00&to=2025-07-22T00:00:00&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:38:44.939+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20%2000:00:00&to=2025-07-22T00:00:00&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:38:44.941+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:38:44.941+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:38:50.299+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:38:50.307+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:38:50.308+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:38:50.308+03:00 DEBUG 11364 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:40:32.732+03:00  INFO 11364 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:40:32.747+03:00  INFO 11364 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:40:32.747+03:00  INFO 11364 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:40:32.747+03:00  INFO 11364 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:40:32.747+03:00  INFO 11364 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:40:35.530+03:00  INFO 22292 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 22292 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:40:35.530+03:00 DEBUG 22292 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:40:35.530+03:00  INFO 22292 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:40:36.140+03:00  INFO 22292 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:40:36.200+03:00  INFO 22292 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:40:36.771+03:00  INFO 22292 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:40:36.782+03:00  INFO 22292 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:40:36.783+03:00  INFO 22292 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:40:36.817+03:00  INFO 22292 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:40:36.817+03:00  INFO 22292 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1244 ms
+2025-07-22T15:40:36.977+03:00  INFO 22292 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:40:37.012+03:00  INFO 22292 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:40:37.034+03:00  INFO 22292 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:40:37.214+03:00  INFO 22292 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:40:37.235+03:00  INFO 22292 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:40:37.464+03:00  INFO 22292 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@540212be
+2025-07-22T15:40:37.465+03:00  INFO 22292 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:40:37.508+03:00  WARN 22292 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:40:37.509+03:00  WARN 22292 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:40:37.521+03:00  INFO 22292 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:40:38.415+03:00  INFO 22292 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:40:38.511+03:00  INFO 22292 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:40:38.850+03:00 DEBUG 22292 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:40:38.930+03:00  INFO 22292 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:40:38.930+03:00  WARN 22292 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:40:38.996+03:00  INFO 22292 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:40:39.222+03:00  WARN 22292 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:40:39.586+03:00 DEBUG 22292 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:40:39.962+03:00  INFO 22292 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:40:39.967+03:00  INFO 22292 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.828 seconds (process running for 5.282)
+2025-07-22T15:40:42.094+03:00  INFO 22292 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:40:42.094+03:00  INFO 22292 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:40:42.095+03:00  INFO 22292 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-22T15:40:42.108+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:40:42.113+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:40:42.114+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:40:42.452+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:40:55.415+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:40:55.459+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:40:55.466+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:40:55.485+03:00 DEBUG 22292 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:44:46.297+03:00  INFO 22292 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:44:46.311+03:00  INFO 22292 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:44:46.314+03:00  INFO 22292 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:44:46.314+03:00  INFO 22292 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:44:46.314+03:00  INFO 22292 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:44:49.241+03:00  INFO 21632 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 21632 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:44:49.241+03:00 DEBUG 21632 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:44:49.241+03:00  INFO 21632 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:44:49.981+03:00  INFO 21632 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:44:50.050+03:00  INFO 21632 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:44:50.672+03:00  INFO 21632 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:44:50.684+03:00  INFO 21632 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:44:50.684+03:00  INFO 21632 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:44:50.726+03:00  INFO 21632 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:44:50.726+03:00  INFO 21632 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1435 ms
+2025-07-22T15:44:50.915+03:00  INFO 21632 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:44:50.953+03:00  INFO 21632 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:44:50.975+03:00  INFO 21632 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:44:51.176+03:00  INFO 21632 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:44:51.196+03:00  INFO 21632 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:44:51.414+03:00  INFO 21632 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4805069b
+2025-07-22T15:44:51.415+03:00  INFO 21632 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:44:51.445+03:00  WARN 21632 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:44:51.446+03:00  WARN 21632 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:44:51.460+03:00  INFO 21632 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:44:52.286+03:00  INFO 21632 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:44:52.375+03:00  INFO 21632 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:44:52.704+03:00 DEBUG 21632 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:44:52.788+03:00  INFO 21632 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:44:52.788+03:00  WARN 21632 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:44:52.860+03:00  INFO 21632 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:44:53.109+03:00  WARN 21632 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:44:53.459+03:00 DEBUG 21632 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:44:53.835+03:00  INFO 21632 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:44:53.841+03:00  INFO 21632 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 5.011 seconds (process running for 5.46)
+2025-07-22T15:45:00.122+03:00  INFO 21632 --- [demo] [http-nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:45:00.122+03:00  INFO 21632 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:45:00.122+03:00  INFO 21632 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-07-22T15:45:00.138+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:45:00.138+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:45:00.138+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:45:00.468+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:45:10.840+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:45:10.883+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:45:10.888+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:45:10.906+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:45:18.147+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:45:18.156+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:45:18.157+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:45:18.157+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:12.207+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:47:12.216+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-20T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:47:12.217+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-6] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:12.217+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-6] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:22.959+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:47:22.969+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:47:22.970+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:22.970+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:36.190+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=1&fireThreshold=0
+2025-07-22T15:47:36.199+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=1&fireThreshold=0
+2025-07-22T15:47:36.201+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:36.201+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:46.733+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:47:46.743+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:47:46.744+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-9] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:47:46.744+03:00 DEBUG 21632 --- [demo] [http-nio-8080-exec-9] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:50:40.339+03:00  INFO 21632 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:50:40.343+03:00  INFO 21632 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:50:40.349+03:00  INFO 21632 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:50:40.352+03:00  INFO 21632 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:50:40.357+03:00  INFO 21632 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T15:50:43.111+03:00  INFO 22180 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 22180 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-22T15:50:43.111+03:00 DEBUG 22180 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-22T15:50:43.112+03:00  INFO 22180 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T15:50:43.723+03:00  INFO 22180 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T15:50:43.782+03:00  INFO 22180 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 9 JPA repository interfaces.
+2025-07-22T15:50:44.392+03:00  INFO 22180 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T15:50:44.403+03:00  INFO 22180 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T15:50:44.403+03:00  INFO 22180 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-22T15:50:44.435+03:00  INFO 22180 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T15:50:44.436+03:00  INFO 22180 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2025-07-22T15:50:44.602+03:00  INFO 22180 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T15:50:44.638+03:00  INFO 22180 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-22T15:50:44.660+03:00  INFO 22180 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T15:50:44.837+03:00  INFO 22180 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T15:50:44.857+03:00  INFO 22180 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T15:50:45.078+03:00  INFO 22180 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4805069b
+2025-07-22T15:50:45.079+03:00  INFO 22180 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T15:50:45.126+03:00  WARN 22180 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T15:50:45.129+03:00  WARN 22180 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-22T15:50:45.141+03:00  INFO 22180 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T15:50:45.988+03:00  INFO 22180 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T15:50:46.072+03:00  INFO 22180 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:50:46.427+03:00 DEBUG 22180 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-22T15:50:46.497+03:00  INFO 22180 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-22T15:50:46.498+03:00  WARN 22180 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-22T15:50:46.556+03:00  INFO 22180 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-22T15:50:46.783+03:00  WARN 22180 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T15:50:47.105+03:00 DEBUG 22180 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-22T15:50:47.502+03:00  INFO 22180 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T15:50:47.507+03:00  INFO 22180 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.797 seconds (process running for 5.219)
+2025-07-22T15:50:53.649+03:00  INFO 22180 --- [demo] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T15:50:53.649+03:00  INFO 22180 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T15:50:53.650+03:00  INFO 22180 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-22T15:50:53.661+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-22T15:50:53.666+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-22T15:50:53.667+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-22T15:50:53.994+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-22T15:51:05.217+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:51:05.260+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:51:05.267+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:51:05.285+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:51:11.585+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:51:11.595+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T00:00:00Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:51:11.596+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:51:11.597+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:53:04.915+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T23:59:59Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:53:04.927+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T23:59:59Z&raiseThreshold=50&fireThreshold=1
+2025-07-22T15:53:04.928+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:53:04.928+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:53:29.832+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T23:59:59Z&raiseThreshold=50&fireThreshold=0
+2025-07-22T15:53:29.843+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T23:59:59Z&raiseThreshold=50&fireThreshold=0
+2025-07-22T15:53:29.844+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-8] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:53:29.845+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-8] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:56:16.089+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T23:59:59Z&raiseThreshold=50&fireThreshold=0
+2025-07-22T15:56:16.099+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/super-admin/performance-review?from=2025-07-21T00:00:00Z&to=2025-07-22T23:59:59Z&raiseThreshold=50&fireThreshold=0
+2025-07-22T15:56:16.100+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-1] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:56:16.100+03:00 DEBUG 22180 --- [demo] [http-nio-8080-exec-1] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.erb.demo.controller.SuperAdminController.performanceReview(java.lang.String,java.lang.String,int,int); target is of class [com.erb.demo.controller.SuperAdminController]
+2025-07-22T15:57:28.099+03:00  INFO 22180 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T15:57:28.103+03:00  INFO 22180 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T15:57:28.106+03:00  INFO 22180 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T15:57:28.108+03:00  INFO 22180 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T15:57:28.112+03:00  INFO 22180 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

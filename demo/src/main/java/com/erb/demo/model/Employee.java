@@ -54,7 +54,9 @@ public class Employee {
     private List<StockReceipt> stockReceipts;
 
     public enum Rank {
-        STAFF,
-        MANAGER
+        SUPER_ADMIN,
+        DELIVERY,
+        STAFF, MANAGER
+
     }
 }
