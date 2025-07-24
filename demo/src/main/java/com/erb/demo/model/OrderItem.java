@@ -29,4 +29,8 @@ public class OrderItem {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
+
+    public double getPrice() {
+        return 0;
+    }
 }

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -39,5 +41,9 @@ public class OrderServiceImpl implements OrderService {
     @CacheEvict(value = "orders", key = "#id")
     public void delete(Long id) {
         repository.deleteById(id);
+    }
+    @Override
+    public Page<Order> getAllOrders(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 }

@@ -37,17 +37,20 @@ public class Employee {
     private int workHours;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "`rank`")
     private Rank rank;
 
     @ManyToOne
-    @JoinColumn(name = "manager_id")
-    private Employee manager;
+    @JoinColumn(name = "admin_id")
+    private Employee admin;
 
     @ManyToOne
     @JoinColumn(name = "warehouse_id")
     private Warehouse warehouse;
 
     private String image;
+
+    private String phone;
 
     @OneToMany(mappedBy = "employee")
     @JsonManagedReference(value = "employee-stock")
@@ -56,7 +59,6 @@ public class Employee {
     public enum Rank {
         SUPER_ADMIN,
         DELIVERY,
-        STAFF, MANAGER
-
+        STAFF
     }
 }

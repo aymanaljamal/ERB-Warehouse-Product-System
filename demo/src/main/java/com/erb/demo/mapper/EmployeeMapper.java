@@ -17,7 +17,7 @@ public class EmployeeMapper {
                 .salary(employee.getSalary())
                 .workHours(employee.getWorkHours())
                 .rank(employee.getRank())
-                .managerId(employee.getManager() != null ? employee.getManager().getId() : null)
+                .managerId(employee.getAdmin() != null ? employee.getAdmin().getId() : null)
                 .build();
     }
 
