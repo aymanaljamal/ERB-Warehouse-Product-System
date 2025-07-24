@@ -10,7 +10,9 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "stock_receipt")
-@Data
+@Getter
+@Setter
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
