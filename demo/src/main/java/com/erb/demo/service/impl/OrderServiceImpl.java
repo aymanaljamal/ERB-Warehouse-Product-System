@@ -1,5 +1,7 @@
 package com.erb.demo.service.impl;
 
+import com.erb.demo.dto.DTO.OrderDto;
+import com.erb.demo.dto.DTO.OrderItemDto;
 import com.erb.demo.model.Order;
 import com.erb.demo.repository.OrderRepository;
 import com.erb.demo.service.OrderService;
@@ -12,6 +14,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -45,5 +48,28 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Page<Order> getAllOrders(Pageable pageable) {
         return repository.findAll(pageable);
+    }
+    @Override
+    public List<OrderDto> getAllOrders() {
+        return repository.findAll().stream()
+                .map(this::mapToDto)
+                .collect(Collectors.toList());
+    }
+    @Override
+    public OrderDto mapToDto(Order order) {
+        return OrderDto.builder()
+                .id(order.getId())
+                .status(order.getStatus())
+                .createdAt(order.getCreatedAt())
+                .deliveredAt(order.getDeliveredAt())
+                .customerId(order.getCustomer().getId())
+                .items(order.getItems().stream()
+                        .map(item -> OrderItemDto.builder()
+                                .id(item.getId())
+                                .productId(item.getProduct().getId())
+                                .quantity(item.getQuantity())
+                                .build())
+                        .toList())
+                .build();
     }
 }

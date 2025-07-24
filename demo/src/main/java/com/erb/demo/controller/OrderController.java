@@ -1,5 +1,6 @@
 package com.erb.demo.controller;
 
+import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.model.Order;
 import com.erb.demo.service.OrderService;
 import jakarta.validation.Valid;
@@ -13,6 +14,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.security.core.Authentication;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -21,7 +23,11 @@ public class OrderController {
     @Autowired
     private OrderService service;
 
-
+    @GetMapping("/all")
+    public ResponseEntity<List<OrderDto>> getAllOrders() {
+        List<OrderDto> orders = service.getAllOrders();
+        return ResponseEntity.ok(orders);
+    }
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public String getAll() {
