@@ -31,4 +31,9 @@ public class Customer {
 
     @NotBlank(message = "Address is required")
     private String address;
+    @Column(nullable = false)
+
+    public String getRole() {
+        return "CUSTOMER";
+    }
 }

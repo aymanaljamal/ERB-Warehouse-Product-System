@@ -137,3 +137,369 @@
 2025-07-24T09:42:08.475+03:00  INFO 7932 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-07-24T09:42:08.476+03:00  INFO 7932 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-07-24T09:42:08.480+03:00  INFO 7932 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-24T09:42:11.371+03:00  INFO 28076 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 28076 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-24T09:42:11.372+03:00 DEBUG 28076 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-24T09:42:11.373+03:00  INFO 28076 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-24T09:42:11.884+03:00  INFO 28076 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-24T09:42:11.939+03:00  INFO 28076 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 9 JPA repository interfaces.
+2025-07-24T09:42:12.450+03:00  INFO 28076 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-24T09:42:12.459+03:00  INFO 28076 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-24T09:42:12.460+03:00  INFO 28076 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-24T09:42:12.489+03:00  INFO 28076 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-24T09:42:12.490+03:00  INFO 28076 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1084 ms
+2025-07-24T09:42:12.635+03:00  INFO 28076 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-24T09:42:12.667+03:00  INFO 28076 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-24T09:42:12.695+03:00  INFO 28076 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-24T09:42:12.893+03:00  INFO 28076 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-24T09:42:12.912+03:00  INFO 28076 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-24T09:42:13.129+03:00  INFO 28076 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e3566e
+2025-07-24T09:42:13.131+03:00  INFO 28076 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-24T09:42:13.168+03:00  WARN 28076 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-24T09:42:13.169+03:00  WARN 28076 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-24T09:42:13.182+03:00  INFO 28076 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-24T09:42:13.987+03:00  INFO 28076 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-24T09:42:14.065+03:00  INFO 28076 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T09:42:14.376+03:00 DEBUG 28076 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-24T09:42:14.441+03:00  INFO 28076 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-24T09:42:14.442+03:00  WARN 28076 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-24T09:42:14.483+03:00  INFO 28076 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-24T09:42:14.710+03:00  WARN 28076 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-24T09:42:14.864+03:00 DEBUG 28076 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 56 mappings in 'requestMappingHandlerMapping'
+2025-07-24T09:42:14.984+03:00 DEBUG 28076 --- [demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-24T09:42:15.022+03:00 DEBUG 28076 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-24T09:42:15.093+03:00 DEBUG 28076 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-24T09:42:15.141+03:00 DEBUG 28076 --- [demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-24T09:42:15.368+03:00  INFO 28076 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-24T09:42:15.373+03:00  INFO 28076 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.31 seconds (process running for 4.703)
+2025-07-24T09:42:17.650+03:00  INFO 28076 --- [demo] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-24T09:42:17.650+03:00  INFO 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-24T09:42:17.650+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-24T09:42:17.650+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-24T09:42:17.650+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-24T09:42:17.651+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2493f9a8
+2025-07-24T09:42:17.651+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@550ce3a9
+2025-07-24T09:42:17.651+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-24T09:42:17.652+03:00  INFO 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-24T09:42:17.670+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /auth/signup/customer
+2025-07-24T09:42:17.674+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-24T09:42:17.675+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /auth/signup/customer
+2025-07-24T09:42:17.677+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/auth/signup/customer", parameters={}
+2025-07-24T09:42:17.678+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#signupCustomer(AuthRequest)
+2025-07-24T09:42:17.737+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=newcustomer@example.com, password=password123, name=null, rank=null, address=null)]
+2025-07-24T09:42:17.973+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T09:42:17.974+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Internal server error"]
+2025-07-24T09:42:17.977+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T09:42:27.194+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /auth/signup/customer
+2025-07-24T09:42:27.195+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-24T09:42:27.195+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /auth/signup/customer
+2025-07-24T09:42:27.195+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/signup/customer", parameters={}
+2025-07-24T09:42:27.195+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#signupCustomer(AuthRequest)
+2025-07-24T09:42:27.197+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=newcustomer@example.com, password=password123, name=John Doe, rank=null, address=1 (truncated)...]
+2025-07-24T09:42:27.470+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-24T09:42:27.471+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXdjdXN0b21lckBleGFtcGxlLmNvbSIsImlhdCI6MTc1MzMz (truncated)...]
+2025-07-24T09:42:27.481+03:00 DEBUG 28076 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-24T09:59:50.871+03:00  INFO 28076 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-24T09:59:50.876+03:00  INFO 28076 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-24T09:59:50.880+03:00  INFO 28076 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T09:59:50.882+03:00  INFO 28076 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-24T09:59:50.886+03:00  INFO 28076 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-24T09:59:54.149+03:00  INFO 4896 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 4896 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-24T09:59:54.151+03:00 DEBUG 4896 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-24T09:59:54.151+03:00  INFO 4896 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-24T09:59:54.672+03:00  INFO 4896 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-24T09:59:54.733+03:00  INFO 4896 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 9 JPA repository interfaces.
+2025-07-24T09:59:55.265+03:00  INFO 4896 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-24T09:59:55.275+03:00  INFO 4896 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-24T09:59:55.275+03:00  INFO 4896 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-24T09:59:55.306+03:00  INFO 4896 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-24T09:59:55.307+03:00  INFO 4896 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1120 ms
+2025-07-24T09:59:55.455+03:00  INFO 4896 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-24T09:59:55.490+03:00  INFO 4896 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-24T09:59:55.521+03:00  INFO 4896 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-24T09:59:55.701+03:00  INFO 4896 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-24T09:59:55.722+03:00  INFO 4896 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-24T09:59:55.929+03:00  INFO 4896 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a34c1f6
+2025-07-24T09:59:55.930+03:00  INFO 4896 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-24T09:59:55.975+03:00  WARN 4896 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-24T09:59:55.976+03:00  WARN 4896 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-24T09:59:55.987+03:00  INFO 4896 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-24T09:59:56.781+03:00  INFO 4896 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-24T09:59:56.863+03:00  INFO 4896 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T09:59:57.170+03:00 DEBUG 4896 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-24T09:59:57.237+03:00  INFO 4896 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-24T09:59:57.237+03:00  WARN 4896 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-24T09:59:57.279+03:00  INFO 4896 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-24T09:59:57.514+03:00  WARN 4896 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-24T09:59:57.661+03:00 DEBUG 4896 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 56 mappings in 'requestMappingHandlerMapping'
+2025-07-24T09:59:57.803+03:00 DEBUG 4896 --- [demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-24T09:59:57.849+03:00 DEBUG 4896 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-24T09:59:57.925+03:00 DEBUG 4896 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-24T09:59:57.966+03:00 DEBUG 4896 --- [demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-24T09:59:58.188+03:00  INFO 4896 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-24T09:59:58.192+03:00  INFO 4896 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.365 seconds (process running for 4.789)
+2025-07-24T10:00:13.944+03:00  INFO 4896 --- [demo] [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-24T10:00:13.944+03:00  INFO 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-24T10:00:13.944+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-24T10:00:13.944+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-24T10:00:13.944+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-24T10:00:13.945+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4d71476c
+2025-07-24T10:00:13.945+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1455d0f5
+2025-07-24T10:00:13.945+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-24T10:00:13.945+03:00  INFO 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-24T10:00:13.956+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-24T10:00:13.960+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-24T10:00:13.962+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-24T10:00:13.964+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2025-07-24T10:00:13.965+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
+2025-07-24T10:00:14.019+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saeed@example.com, password=test123, name=null, rank=null, address=null)]
+2025-07-24T10:00:14.280+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-24T10:00:14.313+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-24T10:00:14.313+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZC5zYWVlZEBleGFtcGxlLmNvbSIsImlhdCI6MTc1MzM0 (truncated)...]
+2025-07-24T10:00:14.318+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-24T10:00:27.253+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/customers
+2025-07-24T10:00:27.305+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/customers
+2025-07-24T10:00:27.306+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/customers", parameters={}
+2025-07-24T10:00:27.306+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getAll()
+2025-07-24T10:00:27.307+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.erb.demo.controller.CustomerController.getAll(); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:00:27.328+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.erb.demo.controller.CustomerController.getAll(); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:00:27.329+03:00  INFO 4896 --- [demo] [http-nio-8080-exec-3] c.e.demo.controller.CustomerController   : Fetching all customers...
+2025-07-24T10:00:27.352+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-24T10:00:27.352+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Customer(id=1, name=ayman aljamal, email=ahmad.saleh@example.com, password=, phone=0599123456, addr (truncated)...]
+2025-07-24T10:00:27.354+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-24T10:00:34.684+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/1
+2025-07-24T10:00:34.693+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/1
+2025-07-24T10:00:34.693+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/1", parameters={}
+2025-07-24T10:00:34.693+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:00:34.695+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:00:34.695+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:00:34.695+03:00  INFO 4896 --- [demo] [http-nio-8080-exec-4] c.e.demo.controller.CustomerController   : Fetching customer with ID: 1
+2025-07-24T10:00:34.705+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-24T10:00:34.705+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Customer(id=1, name=ayman aljamal, email=ahmad.saleh@example.com, password=, phone=0599123456, addre (truncated)...]
+2025-07-24T10:00:34.706+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-24T10:02:28.869+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-24T10:02:28.869+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-24T10:02:28.869+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-24T10:02:28.869+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2025-07-24T10:02:28.869+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
+2025-07-24T10:02:28.869+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saleh@example.com, password=test123, name=null, rank=null, address=null)]
+2025-07-24T10:02:28.869+03:00  WARN 4896 --- [demo] [http-nio-8080-exec-7] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Empty encoded password
+2025-07-24T10:02:28.884+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to authenticate since password does not match stored value
+2025-07-24T10:02:28.884+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.s.authentication.ProviderManager     : Authentication failed with provider DaoAuthenticationProvider since Bad credentials
+2025-07-24T10:02:28.884+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:02:28.884+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Email or password is incorrect"]
+2025-07-24T10:02:28.884+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 401 UNAUTHORIZED
+2025-07-24T10:03:21.048+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-24T10:03:21.048+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-24T10:03:21.048+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-24T10:03:21.048+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2025-07-24T10:03:21.049+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
+2025-07-24T10:03:21.049+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=sara.ali@example.com, password=test123, name=null, rank=null, address=null)]
+2025-07-24T10:03:21.117+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-24T10:03:21.118+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-24T10:03:21.118+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYXJhLmFsaUBleGFtcGxlLmNvbSIsImlhdCI6MTc1MzM0MDYw (truncated)...]
+2025-07-24T10:03:21.119+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-24T10:03:29.277+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/1
+2025-07-24T10:03:29.283+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/1
+2025-07-24T10:03:29.283+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/1", parameters={}
+2025-07-24T10:03:29.284+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:03:29.284+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:03:29.286+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@5ed73eeb and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:03:29.287+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:03:29.288+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:03:29.288+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:03:29.288+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:03:29.288+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:03:31.766+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/customers
+2025-07-24T10:03:31.771+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/customers
+2025-07-24T10:03:31.771+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/customers", parameters={}
+2025-07-24T10:03:31.771+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getAll()
+2025-07-24T10:03:31.771+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.erb.demo.controller.CustomerController.getAll(); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:03:31.772+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public java.util.List com.erb.demo.controller.CustomerController.getAll(); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@5ed73eeb and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF')]
+2025-07-24T10:03:31.772+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:03:31.772+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:03:31.772+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:03:31.773+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:03:31.773+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:03:47.762+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/4
+2025-07-24T10:03:47.766+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/4
+2025-07-24T10:03:47.766+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/4", parameters={}
+2025-07-24T10:03:47.767+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:03:47.767+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:03:47.767+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@5ed73eeb and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:03:47.767+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:03:47.768+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:03:47.768+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:03:47.768+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:03:47.768+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:03:51.297+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/4
+2025-07-24T10:03:51.303+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/4
+2025-07-24T10:03:51.303+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/4", parameters={}
+2025-07-24T10:03:51.303+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:03:51.304+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:03:51.304+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@5ed73eeb and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:03:51.304+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:03:51.304+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:03:51.305+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:03:51.305+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:03:51.305+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:04:02.807+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/4
+2025-07-24T10:04:02.812+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/4
+2025-07-24T10:04:02.812+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/4", parameters={}
+2025-07-24T10:04:02.813+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:04:02.813+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:04:02.813+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@5ed73eeb and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:04:02.813+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:04:02.814+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:04:02.814+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:04:02.814+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:04:02.814+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:04:06.118+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/4
+2025-07-24T10:04:06.123+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/4
+2025-07-24T10:04:06.123+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/4", parameters={}
+2025-07-24T10:04:06.124+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:04:06.124+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:04:06.124+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@5ed73eeb and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:04:06.124+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:04:06.124+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:04:06.124+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:04:06.125+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:04:06.125+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:05:47.359+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/4
+2025-07-24T10:05:47.366+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/4
+2025-07-24T10:05:47.366+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/4", parameters={}
+2025-07-24T10:05:47.367+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:05:47.367+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:05:47.367+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@5ed73eeb and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:05:47.367+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:05:47.368+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:05:47.368+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:05:47.368+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:05:47.368+03:00 DEBUG 4896 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:06:45.371+03:00  INFO 4896 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-24T10:06:45.375+03:00  INFO 4896 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-24T10:06:45.379+03:00  INFO 4896 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T10:06:45.381+03:00  INFO 4896 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-24T10:06:45.385+03:00  INFO 4896 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-24T10:06:48.137+03:00  INFO 18944 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 18944 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-24T10:06:48.138+03:00 DEBUG 18944 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-24T10:06:48.138+03:00  INFO 18944 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-24T10:06:48.679+03:00  INFO 18944 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-24T10:06:48.738+03:00  INFO 18944 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 9 JPA repository interfaces.
+2025-07-24T10:06:49.265+03:00  INFO 18944 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-24T10:06:49.274+03:00  INFO 18944 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-24T10:06:49.274+03:00  INFO 18944 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-24T10:06:49.305+03:00  INFO 18944 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-24T10:06:49.307+03:00  INFO 18944 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1131 ms
+2025-07-24T10:06:49.465+03:00  INFO 18944 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-24T10:06:49.499+03:00  INFO 18944 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-24T10:06:49.521+03:00  INFO 18944 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-24T10:06:49.713+03:00  INFO 18944 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-24T10:06:49.733+03:00  INFO 18944 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-24T10:06:49.954+03:00  INFO 18944 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a34c1f6
+2025-07-24T10:06:49.955+03:00  INFO 18944 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-24T10:06:49.990+03:00  WARN 18944 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-24T10:06:49.993+03:00  WARN 18944 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-24T10:06:50.009+03:00  INFO 18944 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-24T10:06:50.824+03:00  INFO 18944 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-24T10:06:50.914+03:00  INFO 18944 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T10:06:51.222+03:00 DEBUG 18944 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-24T10:06:51.288+03:00  INFO 18944 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-24T10:06:51.288+03:00  WARN 18944 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-24T10:06:51.330+03:00  INFO 18944 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-24T10:06:51.547+03:00  WARN 18944 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-24T10:06:51.686+03:00 DEBUG 18944 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 56 mappings in 'requestMappingHandlerMapping'
+2025-07-24T10:06:51.823+03:00 DEBUG 18944 --- [demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-24T10:06:51.864+03:00 DEBUG 18944 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-24T10:06:51.948+03:00 DEBUG 18944 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-24T10:06:51.992+03:00 DEBUG 18944 --- [demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-24T10:06:52.205+03:00  INFO 18944 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-24T10:06:52.211+03:00  INFO 18944 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 4.391 seconds (process running for 4.784)
+2025-07-24T10:07:01.636+03:00  INFO 18944 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-24T10:07:01.636+03:00  INFO 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-24T10:07:01.636+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-24T10:07:01.636+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-24T10:07:01.636+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-24T10:07:01.637+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6aefb242
+2025-07-24T10:07:01.637+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1b7c1c6f
+2025-07-24T10:07:01.637+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-24T10:07:01.638+03:00  INFO 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-24T10:07:01.649+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-24T10:07:01.653+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-24T10:07:01.655+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-24T10:07:01.656+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2025-07-24T10:07:01.657+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
+2025-07-24T10:07:01.712+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=sara.ali@example.com, password=test123, name=null, rank=null, address=null)]
+2025-07-24T10:07:01.956+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-24T10:07:01.992+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-24T10:07:01.992+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYXJhLmFsaUBleGFtcGxlLmNvbSIsImlhdCI6MTc1MzM0MDgy (truncated)...]
+2025-07-24T10:07:01.997+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-24T10:07:11.387+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/4
+2025-07-24T10:07:11.426+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/4
+2025-07-24T10:07:11.427+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/4", parameters={}
+2025-07-24T10:07:11.427+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:07:11.430+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:07:11.450+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@37e0cda7 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:07:11.451+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:07:11.451+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:07:11.452+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:07:11.452+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:07:11.453+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:07:16.422+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/1
+2025-07-24T10:07:16.427+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/1
+2025-07-24T10:07:16.427+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/1", parameters={}
+2025-07-24T10:07:16.427+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:07:16.428+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:07:16.428+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@37e0cda7 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:07:16.428+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:07:16.428+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:07:16.429+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:07:16.429+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:07:16.429+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:07:31.462+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/44
+2025-07-24T10:07:31.469+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/44
+2025-07-24T10:07:31.469+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/44", parameters={}
+2025-07-24T10:07:31.469+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:07:31.470+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:07:31.470+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@37e0cda7 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:07:31.470+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:07:31.470+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:07:31.470+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:07:31.471+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:07:31.471+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:07:32.705+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/4
+2025-07-24T10:07:32.710+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/4
+2025-07-24T10:07:32.710+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/4", parameters={}
+2025-07-24T10:07:32.711+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
+2025-07-24T10:07:32.711+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController]
+2025-07-24T10:07:32.711+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication); target is of class [com.erb.demo.controller.CustomerController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@37e0cda7 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')]
+2025-07-24T10:07:32.711+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
+2025-07-24T10:07:32.711+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-24T10:07:32.712+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Access Denied"]
+2025-07-24T10:07:32.714+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2025-07-24T10:07:32.714+03:00 DEBUG 18944 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-07-24T10:08:58.444+03:00  INFO 18944 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-24T10:08:58.460+03:00  INFO 18944 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-24T10:08:58.460+03:00  INFO 18944 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T10:08:58.460+03:00  INFO 18944 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-24T10:08:58.460+03:00  INFO 18944 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

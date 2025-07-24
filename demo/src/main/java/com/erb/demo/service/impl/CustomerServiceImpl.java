@@ -40,4 +40,9 @@ public class CustomerServiceImpl implements CustomerService {
     public void delete(Long id) {
         repository.deleteById(id);
     }
+
+    @Override
+    public Customer getByEmail(String email) {
+        return repository.findByEmail(email);
+    }
 }
