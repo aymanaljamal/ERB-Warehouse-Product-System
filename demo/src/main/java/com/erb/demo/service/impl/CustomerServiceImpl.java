@@ -1,5 +1,6 @@
 package com.erb.demo.service.impl;
 
+import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
 import com.erb.demo.repository.CustomerRepository;
 import com.erb.demo.service.CustomerService;
@@ -10,6 +11,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
@@ -44,5 +46,17 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer getByEmail(String email) {
         return repository.findByEmail(email);
+    }
+    @Override
+    public List<CustomerDTO> getAllCustomers() {
+        return repository.findAll()
+                .stream()
+                .map(c -> new CustomerDTO(
+                        c.getId(),
+                        c.getName(),
+                        c.getEmail(),
+                        c.getPhone()
+                ))
+                .collect(Collectors.toList());
     }
 }

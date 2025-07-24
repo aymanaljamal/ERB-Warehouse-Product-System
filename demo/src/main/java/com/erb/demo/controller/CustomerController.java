@@ -1,4 +1,5 @@
 package com.erb.demo.controller;
+import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
 import com.erb.demo.service.CustomerService;
 import jakarta.validation.Valid;
@@ -19,7 +20,11 @@ public class CustomerController {
     private CustomerService service;
 
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
-
+    @GetMapping("all")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
+    public List<CustomerDTO> getAllCustomers() {
+        return service.getAllCustomers();
+    }
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public List<Customer> getAll() {
