@@ -1,14 +1,15 @@
 package com.erb.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
-
 @Entity
 @Table(name = "delivery")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -22,13 +23,22 @@ public class Delivery {
     @PastOrPresent(message = "Delivery date cannot be in the future")
     private LocalDateTime deliveredAt;
 
-    @NotNull(message = "Order must be provided")
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "order_id", unique = true)
     private Order order;
 
-    @NotNull(message = "DeliveredBy (employee) is required")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "employee_id")
     private Employee deliveredBy;
+
+
+    @Override
+    public String toString() {
+        return "Delivery{" +
+                "id=" + id +
+                ", deliveredAt=" + deliveredAt +
+                ", orderId=" + (order != null ? order.getId() : null) +
+                ", deliveredById=" + (deliveredBy != null ? deliveredBy.getId() : null) +
+                '}';
+    }
 }

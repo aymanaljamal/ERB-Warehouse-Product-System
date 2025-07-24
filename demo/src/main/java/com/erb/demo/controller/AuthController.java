@@ -86,6 +86,7 @@ public class AuthController {
                 userDetailsService.loadUserByUsername(request.getEmail());
                 return ResponseEntity.status(409).body("Email already in use");
             } catch (UsernameNotFoundException e) {
+
             }
             Employee newEmployee = new Employee();
             newEmployee.setEmail(request.getEmail());

@@ -16,7 +16,7 @@ public class EmployeeMapper {
                 .email(employee.getEmail())
                 .salary(employee.getSalary())
                 .workHours(employee.getWorkHours())
-                .rank(employee.getRank())
+
                 .managerId(employee.getAdmin() != null ? employee.getAdmin().getId() : null)
                 .build();
     }
@@ -30,7 +30,7 @@ public class EmployeeMapper {
         employee.setEmail(dto.getEmail());
         employee.setSalary(dto.getSalary());
         employee.setWorkHours(dto.getWorkHours());
-        employee.setRank(dto.getRank());
+
 
 
         return employee;

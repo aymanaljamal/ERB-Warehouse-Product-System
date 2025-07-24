@@ -1,5 +1,6 @@
 package com.erb.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
@@ -9,10 +10,12 @@ import java.util.List;
 
 @Entity
 @Table(name = "employee")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@ToString(exclude = {"admin", "warehouse", "stockReceipts", "deliveries"}) // 👈 لحماية toString
 public class Employee {
 
     @Id
@@ -37,28 +40,39 @@ public class Employee {
     private int workHours;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "`rank`")
+    @Column(name = "rank")
     private Rank rank;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "admin_id")
+    @JsonBackReference(value = "employee-admin")
     private Employee admin;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "warehouse_id")
+    @JsonBackReference(value = "warehouse-employees")
     private Warehouse warehouse;
 
     private String image;
 
     private String phone;
 
-    @OneToMany(mappedBy = "employee")
+    @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY)
     @JsonManagedReference(value = "employee-stock")
     private List<StockReceipt> stockReceipts;
+
+    @OneToMany(mappedBy = "deliveredBy", fetch = FetchType.LAZY)
+    @JsonManagedReference(value = "employee-deliveries")
+    private List<Delivery> deliveries;
 
     public enum Rank {
         SUPER_ADMIN,
         DELIVERY,
         STAFF
     }
+    public Rank getRank() {
+        return rank;
+    }
 }
+
+

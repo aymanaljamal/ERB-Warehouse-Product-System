@@ -11,6 +11,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
@@ -25,21 +26,25 @@ public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
     @GetMapping
+    @PreAuthorize("hasRole('SUPER_ADMIN') or hasRole('STAFF')")
     public List<Employee> getAll() {
         return service.getAll();
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('SUPER_ADMIN') or #id == principal.id")
     public Employee getById(@PathVariable Long id) {
         return service.getById(id);
     }
 
     @PostMapping
+    @PreAuthorize("hasRole('SUPER_ADMIN')")
     public Employee create(@RequestBody @Valid Employee employee) {
         return service.save(employee);
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('SUPER_ADMIN') or #id == principal.id")
     public Employee update(@PathVariable Long id, @RequestBody @Valid Employee updated) {
         Employee e = service.getById(id);
         if (e != null) {
@@ -53,12 +58,13 @@ public class EmployeeController {
         }
         return null;
     }
-
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('SUPER_ADMIN')")
     public void delete(@PathVariable Long id) {
         service.delete(id);
     }
     @GetMapping("/summary")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public Page<EmployeeSummaryProjection> getSummary(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size
@@ -67,6 +73,7 @@ public class EmployeeController {
         return service.getEmployeeSummary(pageable);
     }
     @GetMapping("/{id}/image")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'DELIVERY', 'STAFF')")
     public ResponseEntity<Object> redirectToImage(@PathVariable Long id) {
         return employeeRepository.findById(id)
                 .map(employee -> {
