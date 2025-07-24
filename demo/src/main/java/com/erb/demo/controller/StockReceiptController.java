@@ -1,8 +1,10 @@
 package com.erb.demo.controller;
+import com.erb.demo.dto.StockReceiptDto;
 import com.erb.demo.model.StockReceipt;
 import com.erb.demo.service.StockReceiptService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
@@ -13,6 +15,13 @@ public class StockReceiptController {
 
     @Autowired
     private StockReceiptService service;
+
+    @GetMapping("/all")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
+    public ResponseEntity<List<StockReceiptDto>> All() {
+        List<StockReceipt> receipts = service.getAll();
+        return ResponseEntity.ok(service.mapToDtoList(receipts));
+    }
 
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")

@@ -22,7 +22,9 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getAll() {
         return repository.findAll();
     }
-
+    public List<Product> getAllOrderedProducts() {
+        return repository.findAllOrderedProducts();
+    }
     @Override
     @Cacheable(value = "products", key = "#id")
     public Product getById(Long id) {
