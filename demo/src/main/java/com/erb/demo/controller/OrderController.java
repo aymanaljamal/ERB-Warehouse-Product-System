@@ -8,11 +8,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.security.core.Authentication;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -21,23 +21,40 @@ public class OrderController {
     @Autowired
     private OrderService service;
 
+
     @GetMapping
-    public List<Order> getAll() {
-        return service.getAll();
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
+    public String getAll() {
+        return service.getAll().toString();
     }
 
+
     @GetMapping("/{id}")
-    public Order getById(@PathVariable Long id) {
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')")
+    public Order getById(@PathVariable Long id, Authentication authentication) {
+        if (authentication.getAuthorities().stream()
+                .anyMatch(a -> a.getAuthority().equals("ROLE_CUSTOMER"))) {
+            Order order = service.getById(id);
+            String email = authentication.getName();
+            if (order == null || !order.getCustomer().getEmail().equals(email)) {
+                throw new AccessDeniedException("You can only access your own orders.");
+            }
+            return order;
+        }
         return service.getById(id);
     }
 
+
     @PostMapping
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')")
     public Order create(@RequestBody @Valid Order order) {
         order.setCreatedAt(LocalDateTime.now());
         return service.save(order);
     }
 
+
     @PutMapping("/{id}")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public Order update(@PathVariable Long id, @RequestBody @Valid Order updated) {
         Order existing = service.getById(id);
         if (existing != null) {
@@ -48,10 +65,13 @@ public class OrderController {
         return null;
     }
 
+
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('SUPER_ADMIN')")
     public void delete(@PathVariable Long id) {
         service.delete(id);
     }
+
 
     @GetMapping("/all-orders")
     @PreAuthorize("hasRole('DELIVERY')")

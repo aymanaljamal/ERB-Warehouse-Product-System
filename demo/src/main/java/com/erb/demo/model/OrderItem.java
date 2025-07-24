@@ -1,13 +1,14 @@
 package com.erb.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
-import lombok.*;
 
+import lombok.*;
 @Entity
 @Table(name = "order_item")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -17,20 +18,14 @@ public class OrderItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Min(value = 1, message = "Quantity must be at least 1")
-    private int quantity;
-
-    @NotNull(message = "Order is required")
     @ManyToOne
-    @JoinColumn(name = "order_id")
+    @JoinColumn(name = "order_id", nullable = false)
+    @JsonBackReference
     private Order order;
-
-    @NotNull(message = "Product is required")
     @ManyToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "product_id", nullable = false)
     private Product product;
 
-    public double getPrice() {
-        return 0;
-    }
+    @Min(1)
+    private int quantity;
 }
