@@ -22,7 +22,7 @@ public class WarehouseController {
     @Autowired
     private WarehouseService service;
 
-    // يجب استخدام hasAnyRole للسماح لأكثر من رول
+
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public List<Warehouse> getAll() {
@@ -63,7 +63,7 @@ public class WarehouseController {
     }
 
     @GetMapping("/summary")
-    @PreAuthorize("hasAnyAuthority('SUPER_ADMIN', 'STAFF')")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public Page<WarehouseBasicView> getWarehouseSummary(Pageable pageable) {
         return service.getSummaryRaw(pageable);
     }
@@ -79,13 +79,13 @@ public class WarehouseController {
     }
 
     @GetMapping("/analytics")
-    @PreAuthorize("hasAnyAuthority('SUPER_ADMIN', 'STAFF')")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public WarehouseAnalyticsView getAnalytics() {
         return service.getWarehouseAnalytics(null);
     }
 
     @GetMapping("/export")
-    @PreAuthorize("hasAnyAuthority('SUPER_ADMIN', 'STAFF')")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public ResponseEntity<byte[]> exportToCsv() {
         byte[] csvBytes = service.exportWarehousesToCsv();
         return ResponseEntity.ok()
@@ -95,7 +95,7 @@ public class WarehouseController {
     }
 
     @GetMapping("/filter-by-date")
-    @PreAuthorize("hasAnyAuthority('SUPER_ADMIN', 'STAFF')")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public List<Warehouse> filterByDate(
             @RequestParam LocalDate start,
             @RequestParam LocalDate end

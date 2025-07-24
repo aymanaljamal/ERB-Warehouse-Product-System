@@ -1,5 +1,6 @@
 package com.erb.demo.service;
 
+import com.erb.demo.dto.DTO.ProductOrderItemsDto;
 import com.erb.demo.dto.StockReceiptDto;
 import com.erb.demo.model.StockReceipt;
 
@@ -12,6 +13,8 @@ public interface StockReceiptService {
     void delete(Long id);
 
     StockReceiptDto mapToDto(StockReceipt receipt);
+
+    List<ProductOrderItemsDto> getAllProductOrderItems();
 
     List<StockReceiptDto> mapToDtoList(List<StockReceipt> receipts);
 }

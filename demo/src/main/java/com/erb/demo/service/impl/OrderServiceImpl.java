@@ -62,14 +62,15 @@ public class OrderServiceImpl implements OrderService {
                 .status(order.getStatus())
                 .createdAt(order.getCreatedAt())
                 .deliveredAt(order.getDeliveredAt())
-                .customerId(order.getCustomer().getId())
-                .items(order.getItems().stream()
+                .customerId(order.getCustomer() != null ? order.getCustomer().getId() : null)
+                .items(order.getItems() != null ? order.getItems().stream()
                         .map(item -> OrderItemDto.builder()
                                 .id(item.getId())
-                                .productId(item.getProduct().getId())
+                                .productId(item.getProduct() != null ? item.getProduct().getId() : null)
                                 .quantity(item.getQuantity())
                                 .build())
-                        .toList())
+                        .toList() : List.of())
                 .build();
     }
+
 }

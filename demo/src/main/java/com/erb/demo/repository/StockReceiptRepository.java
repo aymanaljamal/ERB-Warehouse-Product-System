@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface StockReceiptRepository extends JpaRepository<StockReceipt, Long> {
-    @Query("SELECT DISTINCT sr.product FROM StockReceipt sr")
-    List<Product> findAllDeliveredProducts();
+    @Query("SELECT sr FROM StockReceipt sr WHERE sr.orderItem IS NOT NULL AND sr.orderItem.order IS NOT NULL")
+    List<StockReceipt> findAllWhereOrderExists();
 }

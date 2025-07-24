@@ -1,4 +1,5 @@
 package com.erb.demo.controller;
+import com.erb.demo.dto.DTO.ProductOrderItemsDto;
 import com.erb.demo.dto.StockReceiptDto;
 import com.erb.demo.model.StockReceipt;
 import com.erb.demo.service.StockReceiptService;
@@ -16,13 +17,11 @@ public class StockReceiptController {
     @Autowired
     private StockReceiptService service;
 
-    @GetMapping("/all")
+    @GetMapping("/grouped-order-items")
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
-    public ResponseEntity<List<StockReceiptDto>> All() {
-        List<StockReceipt> receipts = service.getAll();
-        return ResponseEntity.ok(service.mapToDtoList(receipts));
+    public ResponseEntity<List<ProductOrderItemsDto>> getGroupedOrderItemsByProduct() {
+        return ResponseEntity.ok(service.getAllProductOrderItems());
     }
-
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public List<StockReceipt> getAll() {
@@ -48,7 +47,7 @@ public class StockReceiptController {
         StockReceipt existing = service.getById(id);
         if (existing != null) {
             existing.setQuantity(updated.getQuantity());
-            existing.setProduct(updated.getProduct());
+            existing.setOrderItem(updated.getOrderItem());
             existing.setWarehouse(updated.getWarehouse());
             existing.setEmployee(updated.getEmployee());
             existing.setReceivedAt(updated.getReceivedAt());
