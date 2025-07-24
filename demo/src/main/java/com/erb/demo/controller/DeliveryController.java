@@ -1,5 +1,6 @@
 package com.erb.demo.controller;
 
+import com.erb.demo.dto.DTO.DeliveryDTO;
 import com.erb.demo.model.Delivery;
 import com.erb.demo.service.DeliveryService;
 import jakarta.validation.Valid;
@@ -17,7 +18,11 @@ public class DeliveryController {
     private DeliveryService service;
 
 
-
+    @GetMapping("/all")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'DELIVERY')")
+    public List<DeliveryDTO> getAllDeliveries() {
+        return service.getAllDeliveries();
+    }
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'DELIVERY')")
     public List<Delivery> getAll() {

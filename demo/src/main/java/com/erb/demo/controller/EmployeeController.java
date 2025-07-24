@@ -1,5 +1,6 @@
 package com.erb.demo.controller;
 import com.erb.demo.Projection.EmployeeSummaryProjection;
+import com.erb.demo.dto.DTO.EmployeeDto;
 import com.erb.demo.model.Employee;
 import com.erb.demo.repository.EmployeeRepository;
 import com.erb.demo.service.EmployeeService;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/employees")
@@ -29,6 +31,10 @@ public class EmployeeController {
     @PreAuthorize("hasRole('SUPER_ADMIN') or hasRole('STAFF')")
     public List<Employee> getAll() {
         return service.getAll();
+    }
+    @GetMapping("/employees")
+    public ResponseEntity<List<EmployeeDto>> getAllEmployees() {
+        return ResponseEntity.ok(service.getAllEmployees());
     }
 
     @GetMapping("/{id}")
