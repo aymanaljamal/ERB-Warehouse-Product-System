@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ToString(exclude = {"admin", "warehouse", "stockReceipts", "deliveries"}) // 👈 لحماية toString
+@ToString(exclude = {"admin", "warehouse", "stockReceipts", "deliveries"})
 public class Employee {
 
     @Id
@@ -42,11 +42,6 @@ public class Employee {
     @Enumerated(EnumType.STRING)
     @Column(name = "rank")
     private Rank rank;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "admin_id")
-    @JsonBackReference(value = "employee-admin")
-    private Employee admin;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "warehouse_id")

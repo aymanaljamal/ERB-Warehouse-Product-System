@@ -20,7 +20,7 @@ public class CustomerController {
     private CustomerService service;
 
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
-    @GetMapping("all")
+    @GetMapping("/all")
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public List<CustomerDTO> getAllCustomers() {
         return service.getAllCustomers();

@@ -16,8 +16,6 @@ public class EmployeeMapper {
                 .email(employee.getEmail())
                 .salary(employee.getSalary())
                 .workHours(employee.getWorkHours())
-
-                .managerId(employee.getAdmin() != null ? employee.getAdmin().getId() : null)
                 .build();
     }
 

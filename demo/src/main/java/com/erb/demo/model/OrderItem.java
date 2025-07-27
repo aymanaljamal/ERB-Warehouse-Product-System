@@ -22,9 +22,6 @@ public class OrderItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name is mandatory")
-    private String name;
-
     @Min(value = 1, message = "Quantity must be at least 1")
     private int quantity;
 

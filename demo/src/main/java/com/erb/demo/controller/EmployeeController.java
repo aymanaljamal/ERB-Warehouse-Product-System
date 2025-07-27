@@ -59,7 +59,6 @@ public class EmployeeController {
             e.setSalary(updated.getSalary());
             e.setWorkHours(updated.getWorkHours());
             e.setRank(updated.getRank());
-            e.setAdmin(updated.getAdmin());
             return service.save(e);
         }
         return null;

@@ -48,7 +48,6 @@ public class ProductController {
             existing.setName(updated.getName());
             existing.setDescription(updated.getDescription());
             existing.setPrice(updated.getPrice());
-            existing.setQuantity(updated.getQuantity());
             return service.save(existing);
         }
         return null;

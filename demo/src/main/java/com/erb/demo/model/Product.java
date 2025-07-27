@@ -32,8 +32,4 @@ public class Product {
     @Min(value = 0, message = "Price cannot be negative")
     private double price;
 
-    @Column(nullable = false)
-    @Min(value = 0, message = "Quantity cannot be negative")
-    private int quantity;
-
 }
