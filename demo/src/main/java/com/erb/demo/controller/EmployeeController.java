@@ -1,21 +1,25 @@
 package com.erb.demo.controller;
 import com.erb.demo.Projection.EmployeeSummaryProjection;
 import com.erb.demo.dto.DTO.EmployeeDto;
+import com.erb.demo.dto.DTO.OrderDto;
+import com.erb.demo.dto.DeliveryEmployeeSummary;
+import com.erb.demo.dto.DeliveryEmployeeWithOrdersDto;
+import com.erb.demo.dto.OrderProductDto;
 import com.erb.demo.model.Employee;
+import com.erb.demo.model.Order;
 import com.erb.demo.repository.EmployeeRepository;
+import com.erb.demo.repository.OrderRepository;
 import com.erb.demo.service.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,6 +31,8 @@ public class EmployeeController {
     private EmployeeService service;
     @Autowired
     private EmployeeRepository employeeRepository;
+    @Autowired
+    private OrderRepository orderRepository;
     @GetMapping
     @PreAuthorize("hasRole('SUPER_ADMIN') or hasRole('STAFF')")
     public List<Employee> getAll() {
@@ -99,5 +105,50 @@ public class EmployeeController {
                 })
                 .orElse(ResponseEntity.notFound().build());
     }
+    @GetMapping("/delivery-employees")
+    public ResponseEntity<Page<DeliveryEmployeeWithOrdersDto>> getDeliveryEmployees(
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) String statusStr,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+
+        Pageable pageable = PageRequest.of(page, size);
+
+        Order.OrderStatus status = null;
+        if (statusStr != null) {
+            try {
+                status = Order.OrderStatus.valueOf(statusStr.toUpperCase());
+            } catch (IllegalArgumentException e) {
+                status = null;
+            }
+        }
+
+
+        Page<Long> employeeIdsPage = employeeRepository.findDeliveryEmployeeIds(name, status, pageable);
+
+        List<Long> uniqueEmployeeIds = employeeIdsPage.getContent().stream().distinct().toList();
+
+        final Order.OrderStatus finalStatus = status;
+        List<DeliveryEmployeeWithOrdersDto> dtos = uniqueEmployeeIds.stream().map(id -> {
+            Employee emp = employeeRepository.findById(id)
+                    .orElseThrow(() -> new RuntimeException("Employee not found with id: " + id));
+            List<OrderDto> orders = orderRepository.findOrderDtosByDeliveredByIdAndOptionalStatus(id, finalStatus);
+            return new DeliveryEmployeeWithOrdersDto(emp.getId(), emp.getName(), orders);
+        }).toList();
+
+        Page<DeliveryEmployeeWithOrdersDto> dtoPage = new PageImpl<>(dtos, pageable, employeeIdsPage.getTotalElements());
+
+        return ResponseEntity.ok(dtoPage);
+
+    }
+
+    @GetMapping("/orders/{orderId}/products")
+    public ResponseEntity<List<OrderProductDto>> getOrderProducts(@PathVariable Long orderId) {
+        List<OrderProductDto> products = orderRepository.findProductsByOrderId(orderId);
+        return ResponseEntity.ok(products);
+    }
 
 }
+
+
+
