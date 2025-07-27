@@ -1,13 +1,18 @@
 package com.erb.demo.controller;
 
+import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
+import com.erb.demo.dto.DTO.ProductStockDto;
+import com.erb.demo.dto.DTO.UpdateOrderStatusRequest;
 import com.erb.demo.model.Order;
 import com.erb.demo.service.OrderService;
+import com.erb.demo.service.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -22,6 +27,8 @@ public class OrderController {
 
     @Autowired
     private OrderService service;
+    @Autowired
+    private  ProductService productService;
 
     @GetMapping("/all")
     public ResponseEntity<List<OrderDto>> getAllOrders() {
@@ -50,14 +57,14 @@ public class OrderController {
         return service.getById(id);
     }
 
-
+/*
     @PostMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF', 'CUSTOMER')")
     public Order create(@RequestBody @Valid Order order) {
         order.setCreatedAt(LocalDateTime.now());
         return service.save(order);
     }
-
+*/
 
     @PutMapping("/{id}")
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
@@ -85,4 +92,23 @@ public class OrderController {
         Page<Order> ordersPage = service.getAllOrders(pageable);
         return ResponseEntity.ok(ordersPage);
     }
+
+    //========================================================================
+
+    @GetMapping("/products")
+    public ResponseEntity<List<ProductStockDto>> listAvailableProducts() {
+        List<ProductStockDto> products = productService.getAvailableProductsWithStock();
+        return ResponseEntity.ok(products);
+    }
+    @PostMapping
+    public ResponseEntity<OrderDto> createOrder(@RequestBody CreateOrderRequest request) {
+        OrderDto createdOrder = service.createOrder(request);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdOrder);
+    }
+    @PostMapping("/{orderId}/status")
+    public ResponseEntity<?> updateOrderStatus(@PathVariable Long orderId, @RequestBody UpdateOrderStatusRequest statusRequest) {
+        service.updateOrderStatus(orderId, statusRequest.getStatus());
+        return ResponseEntity.ok("Order status updated");
+    }
+
 }

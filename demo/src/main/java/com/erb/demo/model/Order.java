@@ -22,8 +22,9 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Status must not be blank")
-    private String status;
+    @Enumerated(EnumType.STRING)
+    @NotNull(message = "Status must not be null")
+    private OrderStatus status;
 
     @NotNull(message = "Creation date is required")
     @PastOrPresent(message = "Created date cannot be in the future")
@@ -40,6 +41,14 @@ public class Order {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private List<OrderItem> items;
+
+    public enum OrderStatus {
+        CREATED,
+        PROCESSING,
+        SHIPPED,
+        DELIVERED,
+        CANCELLED
+    }
     @Override
     public String toString() {
         return "Order{" +

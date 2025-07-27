@@ -1,9 +1,14 @@
 package com.erb.demo.service.impl;
 
+import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.OrderItemDto;
-import com.erb.demo.model.Order;
+import com.erb.demo.dto.DTO.OrderItemRequest;
+import com.erb.demo.model.*;
+import com.erb.demo.repository.CustomerRepository;
 import com.erb.demo.repository.OrderRepository;
+import com.erb.demo.repository.ProductRepository;
+import com.erb.demo.repository.WarehouseProductRepository;
 import com.erb.demo.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -13,6 +18,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,7 +28,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private OrderRepository repository;
-
+    @Autowired
+    private  CustomerRepository customerRepository;
+    @Autowired
+    private  ProductRepository productRepository;
+    @Autowired
+    private  WarehouseProductRepository warehouseProductRepository;
     @Override
     @Cacheable(value = "orders")
     public List<Order> getAll() {
@@ -59,7 +71,7 @@ public class OrderServiceImpl implements OrderService {
     public OrderDto mapToDto(Order order) {
         return OrderDto.builder()
                 .id(order.getId())
-                .status(order.getStatus())
+                .status(String.valueOf(order.getStatus()))
                 .createdAt(order.getCreatedAt())
                 .deliveredAt(order.getDeliveredAt())
                 .customerId(order.getCustomer() != null ? order.getCustomer().getId() : null)
@@ -72,5 +84,95 @@ public class OrderServiceImpl implements OrderService {
                         .toList() : List.of())
                 .build();
     }
+    //==================================================
+
+
+    @Override
+    public OrderDto createOrder(CreateOrderRequest request) {
+        Customer customer = customerRepository.findById(request.getCustomerId())
+                .orElseThrow(() -> new RuntimeException("Customer not found"));
+        for (OrderItemRequest itemReq : request.getItems()) {
+            int totalAvailable = warehouseProductRepository.getTotalQuantityByProductId(itemReq.getProductId());
+            if (totalAvailable < itemReq.getQuantity()) {
+                throw new RuntimeException("Not enough stock for product ID " + itemReq.getProductId());
+            }
+        }
+        Order order = new Order();
+        order.setCustomer(customer);
+        order.setStatus(Order.OrderStatus.CREATED);
+        order.setCreatedAt(LocalDateTime.now());
+        List<OrderItem> orderItems = new ArrayList<>();
+        for (OrderItemRequest itemReq : request.getItems()) {
+            Product product = productRepository.findById(itemReq.getProductId())
+                    .orElseThrow(() -> new RuntimeException("Product not found"));
+            OrderItem orderItem = OrderItem.builder()
+                    .product(product)
+                    .quantity(itemReq.getQuantity())
+                    .order(order)
+                    .build();
+
+            orderItems.add(orderItem);
+            deductStock(product.getId(), itemReq.getQuantity());
+        }
+        order.setItems(orderItems);
+        repository.save(order);
+        return convertToDto(order);
+    }
+
+    private void deductStock(Long productId, int quantity) {
+        List<WarehouseProduct> stocks = warehouseProductRepository.findByProductIdAndQuantityGreaterThan(productId, 0);
+        int totalAvailable = stocks.stream().mapToInt(WarehouseProduct::getQuantity).sum();
+
+        if (totalAvailable < quantity) {
+            throw new RuntimeException("Insufficient stock: required = " + quantity + ", available = " + totalAvailable + " for product " + productId);
+        }
+
+        int remaining = quantity;
+        for (WarehouseProduct stock : stocks) {
+            if (stock.getQuantity() >= remaining) {
+                stock.setQuantity(stock.getQuantity() - remaining);
+                warehouseProductRepository.save(stock);
+                break;
+            } else {
+                remaining -= stock.getQuantity();
+                stock.setQuantity(0);
+                warehouseProductRepository.save(stock);
+            }
+        }
+    }
+
+
+    public void updateOrderStatus(Long orderId, Order.OrderStatus newStatus) {
+        Order order = repository.findById(orderId)
+                .orElseThrow(() -> new RuntimeException("Order not found"));
+
+        order.setStatus(newStatus);
+
+        if (newStatus == Order.OrderStatus.DELIVERED) {
+            order.setDeliveredAt(LocalDateTime.now());
+        }
+
+       repository.save(order);
+    }
+
+    public OrderDto convertToDto(Order order) {
+        List<OrderItemDto> itemsDto = order.getItems().stream()
+                .map(item -> OrderItemDto.builder()
+                        .id(item.getId())
+                        .productId(item.getProduct().getId())
+                        .quantity(item.getQuantity())
+                        .build())
+                .collect(Collectors.toList());
+
+        return OrderDto.builder()
+                .id(order.getId())
+                .status(order.getStatus().toString())
+                .createdAt(order.getCreatedAt())
+                .deliveredAt(order.getDeliveredAt())
+                .customerId(order.getCustomer().getId())
+                .items(itemsDto)
+                .build();
+    }
+
 
 }

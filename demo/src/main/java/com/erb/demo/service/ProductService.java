@@ -1,5 +1,6 @@
 package com.erb.demo.service;
 
+import com.erb.demo.dto.DTO.ProductStockDto;
 import com.erb.demo.model.Product;
 
 import java.util.List;
@@ -9,4 +10,5 @@ public interface ProductService {
     Product getById(Long id);
     Product save(Product product);
     void delete(Long id);
+    List<ProductStockDto> getAvailableProductsWithStock();
 }
