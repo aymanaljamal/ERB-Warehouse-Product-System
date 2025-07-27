@@ -107,8 +107,15 @@ public class OrderController {
     }
     @PostMapping("/{orderId}/status")
     public ResponseEntity<?> updateOrderStatus(@PathVariable Long orderId, @RequestBody UpdateOrderStatusRequest statusRequest) {
-        service.updateOrderStatus(orderId, statusRequest.getStatus());
-        return ResponseEntity.ok("Order status updated");
+        try {
+            service.updateOrderStatus(orderId, statusRequest.getStatus());
+            return ResponseEntity.ok("Order status updated to " + statusRequest.getStatus());
+        } catch (IllegalStateException | IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.internalServerError().body("An error occurred: " + e.getMessage());
+        }
     }
+
 
 }

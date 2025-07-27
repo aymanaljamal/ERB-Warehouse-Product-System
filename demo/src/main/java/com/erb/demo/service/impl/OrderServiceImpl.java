@@ -10,6 +10,7 @@ import com.erb.demo.repository.OrderRepository;
 import com.erb.demo.repository.ProductRepository;
 import com.erb.demo.repository.WarehouseProductRepository;
 import com.erb.demo.service.OrderService;
+import com.erb.demo.state.OrderContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
@@ -141,18 +142,35 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
-
     public void updateOrderStatus(Long orderId, Order.OrderStatus newStatus) {
         Order order = repository.findById(orderId)
                 .orElseThrow(() -> new RuntimeException("Order not found"));
 
-        order.setStatus(newStatus);
+        OrderContext context = new OrderContext(order);
+        Order.OrderStatus currentStatus = order.getStatus();
 
-        if (newStatus == Order.OrderStatus.DELIVERED) {
-            order.setDeliveredAt(LocalDateTime.now());
+        switch (newStatus) {
+            case PROCESSING -> {
+                if (currentStatus != Order.OrderStatus.CREATED)
+                    throw new IllegalStateException("Only CREATED orders can move to PROCESSING");
+                context.next();
+            }
+            case SHIPPED -> {
+                if (currentStatus != Order.OrderStatus.PROCESSING)
+                    throw new IllegalStateException("Only PROCESSING orders can move to SHIPPED");
+                context.next();
+            }
+            case DELIVERED -> {
+                if (currentStatus != Order.OrderStatus.SHIPPED)
+                    throw new IllegalStateException("Only SHIPPED orders can move to DELIVERED");
+                context.next();
+                order.setDeliveredAt(LocalDateTime.now());
+            }
+            case CANCELLED -> context.cancel();
+            default -> throw new IllegalArgumentException("Invalid transition");
         }
 
-       repository.save(order);
+        repository.save(order);
     }
 
     public OrderDto convertToDto(Order order) {
