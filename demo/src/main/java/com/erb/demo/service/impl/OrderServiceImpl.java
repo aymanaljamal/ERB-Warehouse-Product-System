@@ -1,5 +1,6 @@
 package com.erb.demo.service.impl;
 
+import com.erb.demo.EmailService.EmailService;
 import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.OrderItemDto;
@@ -35,6 +36,8 @@ public class OrderServiceImpl implements OrderService {
     private  ProductRepository productRepository;
     @Autowired
     private  WarehouseProductRepository warehouseProductRepository;
+    @Autowired
+    private EmailService emailService;
     @Override
     @Cacheable(value = "orders")
     public List<Order> getAll() {
@@ -146,7 +149,7 @@ public class OrderServiceImpl implements OrderService {
         Order order = repository.findById(orderId)
                 .orElseThrow(() -> new RuntimeException("Order not found"));
 
-        OrderContext context = new OrderContext(order);
+        OrderContext context = new OrderContext(order,emailService);
         Order.OrderStatus currentStatus = order.getStatus();
 
         switch (newStatus) {

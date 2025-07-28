@@ -6,4 +6,6 @@ public interface OrderState {
     void next(OrderContext context);
     void cancel(OrderContext context);
     Order.OrderStatus getStatus();
+    default void onEnter() {
+    }
 }

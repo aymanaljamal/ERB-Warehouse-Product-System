@@ -2,24 +2,29 @@ package com.erb.demo.state;
 
 import com.erb.demo.model.Order;
 
-import java.time.LocalDateTime;
-
 public class ShippedState implements OrderState {
+    private final OrderContext context;
+    public ShippedState(OrderContext context) {
+        this.context = context;
+    }
 
     @Override
     public void next(OrderContext context) {
-        Order order = context.getOrder();
-        order.setDeliveredAt(LocalDateTime.now());
-        order.setStatus(Order.OrderStatus.DELIVERED);
-        context.setState(new DeliveredState());
+        context.setState(new DeliveredState(context));
     }
 
     @Override
     public void cancel(OrderContext context) {
-        throw new IllegalStateException("Cannot cancel an order that has already been shipped");
+        throw new IllegalStateException("Cannot cancel order after it has been shipped");
     }
+
     @Override
     public Order.OrderStatus getStatus() {
         return Order.OrderStatus.SHIPPED;
+    }
+    @Override
+    public void onEnter() {
+        Order order = context.getOrder();
+        context.getEmailService().sendOrderStatusEmail(order);
     }
 }
