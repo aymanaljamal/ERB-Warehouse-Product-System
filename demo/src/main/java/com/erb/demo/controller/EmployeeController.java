@@ -105,42 +105,18 @@ public class EmployeeController {
                 })
                 .orElse(ResponseEntity.notFound().build());
     }
+
     @GetMapping("/delivery-employees")
+
     public ResponseEntity<Page<DeliveryEmployeeWithOrdersDto>> getDeliveryEmployees(
             @RequestParam(required = false) String name,
             @RequestParam(required = false) String statusStr,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
-
-        Pageable pageable = PageRequest.of(page, size);
-
-        Order.OrderStatus status = null;
-        if (statusStr != null) {
-            try {
-                status = Order.OrderStatus.valueOf(statusStr.toUpperCase());
-            } catch (IllegalArgumentException e) {
-                status = null;
-            }
-        }
-
-
-        Page<Long> employeeIdsPage = employeeRepository.findDeliveryEmployeeIds(name, status, pageable);
-
-        List<Long> uniqueEmployeeIds = employeeIdsPage.getContent().stream().distinct().toList();
-
-        final Order.OrderStatus finalStatus = status;
-        List<DeliveryEmployeeWithOrdersDto> dtos = uniqueEmployeeIds.stream().map(id -> {
-            Employee emp = employeeRepository.findById(id)
-                    .orElseThrow(() -> new RuntimeException("Employee not found with id: " + id));
-            List<OrderDto> orders = orderRepository.findOrderDtosByDeliveredByIdAndOptionalStatus(id, finalStatus);
-            return new DeliveryEmployeeWithOrdersDto(emp.getId(), emp.getName(), orders);
-        }).toList();
-
-        Page<DeliveryEmployeeWithOrdersDto> dtoPage = new PageImpl<>(dtos, pageable, employeeIdsPage.getTotalElements());
-
-        return ResponseEntity.ok(dtoPage);
-
+        Page<DeliveryEmployeeWithOrdersDto> result = service.getDeliveryEmployees(name, statusStr, page, size);
+        return ResponseEntity.ok(result);
     }
+
 
     @GetMapping("/orders/{orderId}/products")
     public ResponseEntity<List<OrderProductDto>> getOrderProducts(@PathVariable Long orderId) {
