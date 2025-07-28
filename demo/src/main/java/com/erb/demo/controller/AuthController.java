@@ -5,9 +5,11 @@ import com.erb.demo.dto.AuthResponse;
 import com.erb.demo.model.Customer;
 import com.erb.demo.model.Employee;
 import com.erb.demo.security.GeneralUserDetailsService;
+import com.erb.demo.security.PasswordResetService;
 import com.erb.demo.service.CustomerService;
 import com.erb.demo.service.EmployeeService;
 import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.Authentication;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/auth")
 public class AuthController {
 
+    private final PasswordResetService passwordResetService;
     private final GeneralUserDetailsService userDetailsService;
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider tokenProvider;
@@ -30,13 +33,15 @@ public class AuthController {
                           JwtTokenProvider tokenProvider,
                           CustomerService customerService,
                           EmployeeService employeeService,
-                          PasswordEncoder passwordEncoder) {
+                          PasswordEncoder passwordEncoder,
+                          PasswordResetService passwordResetService) {
         this.userDetailsService = userDetailsService;
         this.authenticationManager = authenticationManager;
         this.tokenProvider = tokenProvider;
         this.customerService = customerService;
         this.employeeService = employeeService;
         this.passwordEncoder = passwordEncoder;
+        this. passwordResetService=passwordResetService;
     }
 
     @PostMapping("/login")
@@ -111,6 +116,25 @@ public class AuthController {
         } catch (Exception ex) {
             ex.printStackTrace();
             return ResponseEntity.status(500).body("Internal server error");
+        }
+    }
+    @PostMapping("/forgot-password")
+    public ResponseEntity<String> forgotPassword(@RequestParam String email) {
+        try {
+            passwordResetService.createResetToken(email);
+            return ResponseEntity.ok("Reset link sent to email (check your inbox).");
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @PostMapping("/reset-password")
+    public ResponseEntity<String> resetPassword(@RequestParam String token, @RequestParam String newPassword) {
+        try {
+            passwordResetService.resetPassword(token, newPassword);
+            return ResponseEntity.ok("Password updated successfully");
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 

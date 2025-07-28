@@ -30,22 +30,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     List<OrderDto> findOrderDtosByDeliveredByIdAndOptionalStatus(
             @Param("employeeId") Long employeeId,
             @Param("status") Order.OrderStatus status);
-
-    @Query("""
-    SELECT DISTINCT e.id
-    FROM Employee e
-    JOIN Delivery d ON d.deliveredBy.id = e.id
-    JOIN Order o ON o.id = d.order.id
-    WHERE e.rank = 'DELIVERY'
-      AND (:name IS NULL OR LOWER(e.name) LIKE LOWER(CONCAT('%', :name, '%')))
-      AND (:status IS NULL OR o.status = :status)
-""")
-
-    Page<Long> findDeliveryEmployeeIds(@Param("name") String name,
-                                       @Param("status") Order.OrderStatus status,
-                                       Pageable pageable);
-
-
+    
     @Query("""
     SELECT DISTINCT e.id
     FROM Employee e

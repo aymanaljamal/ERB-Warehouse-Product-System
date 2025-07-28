@@ -1,11 +1,13 @@
 package com.erb.demo.controller;
 import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
+import com.erb.demo.security.PasswordResetService;
 import com.erb.demo.service.CustomerService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,7 @@ public class CustomerController {
 
     @Autowired
     private CustomerService service;
+
 
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
     @GetMapping("/all")
@@ -95,5 +98,11 @@ public class CustomerController {
     public void delete(@PathVariable Long id) {
         logger.info("Deleting customer with ID: {}", id);
         service.delete(id);
+
+
     }
-}
+
+    }
+
+
+
