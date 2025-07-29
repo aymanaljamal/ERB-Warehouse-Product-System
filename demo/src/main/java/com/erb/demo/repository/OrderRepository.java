@@ -30,7 +30,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     List<OrderDto> findOrderDtosByDeliveredByIdAndOptionalStatus(
             @Param("employeeId") Long employeeId,
             @Param("status") Order.OrderStatus status);
-    
+
     @Query("""
     SELECT DISTINCT e.id
     FROM Employee e
@@ -54,4 +54,9 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
                                                  @Param("status") Order.OrderStatus status,
                                                  Pageable pageable);
 
+    @Query("""
+    SELECT o FROM Order o
+    WHERE o.employee.rank = 'STAFF'
+""")
+    List<Order> findAllOrdersByStaffOnly();
 }

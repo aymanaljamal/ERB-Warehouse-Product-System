@@ -4,6 +4,7 @@ import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.ProductStockDto;
 import com.erb.demo.dto.DTO.UpdateOrderStatusRequest;
+import com.erb.demo.dto.OrderDetailsDto;
 import com.erb.demo.model.Order;
 import com.erb.demo.service.OrderService;
 import com.erb.demo.service.ProductService;
@@ -117,5 +118,13 @@ public class OrderController {
         }
     }
 
+    @GetMapping("/{id}/all")
+    public ResponseEntity<OrderDetailsDto> getOrderWithEmployee(@PathVariable Long id) {
+        return ResponseEntity.ok(service.getOrderWithEmployee(id));
+    }
+    @GetMapping("/staff-orders")
+    public ResponseEntity<List<OrderDetailsDto>> getOrdersByStaff() {
+        return ResponseEntity.ok(service.getOrdersCreatedByStaff());
+    }
 
 }

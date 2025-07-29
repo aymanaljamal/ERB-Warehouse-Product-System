@@ -1,10 +1,10 @@
 package com.erb.demo.service.impl;
-
 import com.erb.demo.EmailService.EmailService;
 import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.OrderItemDto;
 import com.erb.demo.dto.DTO.OrderItemRequest;
+import com.erb.demo.dto.OrderDetailsDto;
 import com.erb.demo.model.*;
 import com.erb.demo.repository.CustomerRepository;
 import com.erb.demo.repository.OrderRepository;
@@ -194,6 +194,19 @@ public class OrderServiceImpl implements OrderService {
                 .items(itemsDto)
                 .build();
     }
+    @Override
+    public OrderDetailsDto getOrderWithEmployee(Long orderId) {
+        Order order = repository.findById(orderId)
+                .orElseThrow(() -> new RuntimeException("Order not found"));
 
+        return new OrderDetailsDto(order);
+    }
+    @Override
+    public List<OrderDetailsDto> getOrdersCreatedByStaff() {
+        return repository.findAllOrdersByStaffOnly()
+                .stream()
+                .map(OrderDetailsDto::new)
+                .toList();
+    }
 
 }

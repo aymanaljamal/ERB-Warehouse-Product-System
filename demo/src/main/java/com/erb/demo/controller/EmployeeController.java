@@ -1,6 +1,7 @@
 package com.erb.demo.controller;
 import com.erb.demo.Projection.EmployeeSummaryProjection;
 import com.erb.demo.dto.DTO.EmployeeDto;
+import com.erb.demo.dto.DTO.EmployeeOrdersDto;
 import com.erb.demo.dto.DeliveryEmployeeWithOrdersDto;
 import com.erb.demo.dto.OrderProductDto;
 import com.erb.demo.model.Employee;
@@ -118,7 +119,13 @@ public class EmployeeController {
         List<OrderProductDto> products = orderRepository.findProductsByOrderId(orderId);
         return ResponseEntity.ok(products);
     }
+    @GetMapping("/{id}/orders")
+    public ResponseEntity<?> getEmployeeWithOrders(@PathVariable Long id) {
+        Employee employee = service.getEmployeeIfStaff(id);
 
+        EmployeeOrdersDto dto = new EmployeeOrdersDto(employee);
+        return ResponseEntity.ok(dto);
+    }
 }
 
 

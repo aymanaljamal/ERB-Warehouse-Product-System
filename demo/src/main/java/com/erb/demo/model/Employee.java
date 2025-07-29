@@ -68,6 +68,9 @@ public class Employee {
     public Rank getRank() {
         return rank;
     }
+
+    @OneToMany(mappedBy = "employee")
+    private List<Order> orders;
 }
 
 

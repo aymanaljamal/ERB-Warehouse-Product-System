@@ -118,4 +118,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
 
+    @Override
+    public Employee getEmployeeIfStaff(Long id) {
+        Employee employee = employeeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Employee not found"));
+        return employee;
+    }
+
+
 }

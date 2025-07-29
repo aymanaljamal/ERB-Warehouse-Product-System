@@ -18,4 +18,5 @@ public interface EmployeeService {
     EmployeeDto mapToDto(Employee employee);
     List<EmployeeDto> getAllEmployees();
     Page<DeliveryEmployeeWithOrdersDto> getDeliveryEmployees(String name, String statusStr, int page, int size);
+    Employee getEmployeeIfStaff(Long id);
 }
