@@ -1,12 +1,13 @@
 package com.erb.demo.controller;
 import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
-import com.erb.demo.security.PasswordResetService;
+import com.erb.demo.security.SecurityUtil;
 import com.erb.demo.service.CustomerService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -20,14 +21,20 @@ public class CustomerController {
 
     @Autowired
     private CustomerService service;
-
+    @Autowired
+    private SecurityUtil securityUtil;
 
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
     @GetMapping("/all")
-    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
-    public List<CustomerDTO> getAllCustomers() {
-        return service.getAllCustomers();
+    public ResponseEntity<?> getAllCustomers(Authentication authentication) {
+        String role = securityUtil.getRoleFromAuthentication(authentication);
+        if (!role.equals("ROLE_SUPER_ADMIN") && !role.equals("ROLE_STAFF")) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Access denied");
+        }
+        List<CustomerDTO> customers = service.getAllCustomers();
+        return ResponseEntity.ok(customers);
     }
+
     @GetMapping
     @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public List<Customer> getAll() {

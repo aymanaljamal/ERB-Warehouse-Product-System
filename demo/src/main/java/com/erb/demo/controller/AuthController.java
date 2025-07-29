@@ -47,11 +47,17 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<?> login(@Valid @RequestBody AuthRequest request) {
         try {
+
             UserDetails userDetails = userDetailsService.loadUserByUsername(request.getEmail());
+
+
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword())
             );
-            String token = tokenProvider.generateToken(userDetails.getUsername());
+
+
+            String token = tokenProvider.generateToken(userDetails);
+
             return ResponseEntity.ok(new AuthResponse(token));
         } catch (BadCredentialsException ex) {
             return ResponseEntity.status(401).body("Email or password is incorrect");
@@ -77,7 +83,13 @@ public class AuthController {
             newCustomer.setName(request.getName());
             newCustomer.setAddress(request.getAddress());
             customerService.save(newCustomer);
-            String token = tokenProvider.generateToken(request.getEmail());
+
+
+            UserDetails userDetails = userDetailsService.loadUserByUsername(newCustomer.getEmail());
+
+
+            String token = tokenProvider.generateToken(userDetails);
+
             return ResponseEntity.ok(new AuthResponse(token));
         } catch (Exception ex) {
             return ResponseEntity.status(500).body("Internal server error");
@@ -97,6 +109,7 @@ public class AuthController {
             newEmployee.setEmail(request.getEmail());
             newEmployee.setPassword(passwordEncoder.encode(request.getPassword()));
             newEmployee.setName(request.getName());
+
             String requestedRank = request.getRank();
             if (requestedRank == null) {
                 return ResponseEntity.badRequest().body("Rank must be provided");
@@ -111,13 +124,20 @@ public class AuthController {
                 return ResponseEntity.badRequest().body("Invalid rank value");
             }
             employeeService.save(newEmployee);
-            String token = tokenProvider.generateToken(request.getEmail());
+
+
+            UserDetails userDetails = userDetailsService.loadUserByUsername(newEmployee.getEmail());
+
+
+            String token = tokenProvider.generateToken(userDetails);
+
             return ResponseEntity.ok(new AuthResponse(token));
         } catch (Exception ex) {
             ex.printStackTrace();
             return ResponseEntity.status(500).body("Internal server error");
         }
     }
+
     @PostMapping("/forgot-password")
     public ResponseEntity<String> forgotPassword(@RequestParam String email) {
         try {

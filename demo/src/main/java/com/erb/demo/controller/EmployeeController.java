@@ -1,12 +1,9 @@
 package com.erb.demo.controller;
 import com.erb.demo.Projection.EmployeeSummaryProjection;
 import com.erb.demo.dto.DTO.EmployeeDto;
-import com.erb.demo.dto.DTO.OrderDto;
-import com.erb.demo.dto.DeliveryEmployeeSummary;
 import com.erb.demo.dto.DeliveryEmployeeWithOrdersDto;
 import com.erb.demo.dto.OrderProductDto;
 import com.erb.demo.model.Employee;
-import com.erb.demo.model.Order;
 import com.erb.demo.repository.EmployeeRepository;
 import com.erb.demo.repository.OrderRepository;
 import com.erb.demo.service.EmployeeService;
@@ -17,11 +14,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-
 import java.net.URI;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @RestController
 @RequestMapping("/api/employees")
