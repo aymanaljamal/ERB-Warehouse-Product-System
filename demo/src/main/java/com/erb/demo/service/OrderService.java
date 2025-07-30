@@ -1,5 +1,6 @@
 package com.erb.demo.service;
 
+import com.erb.demo.Projection.OrderSummaryDto;
 import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.OrderDetailsDto;
@@ -7,6 +8,7 @@ import com.erb.demo.model.Order;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface OrderService {
@@ -21,5 +23,6 @@ public interface OrderService {
     void updateOrderStatus(Long orderId, Order.OrderStatus status);
     OrderDetailsDto getOrderWithEmployee(Long id);
     List<OrderDetailsDto> getOrdersCreatedByStaff();
+    Page<OrderSummaryDto> getOldUndeliveredOrders(LocalDateTime threeDaysAgo, Pageable pageable);
 }
 

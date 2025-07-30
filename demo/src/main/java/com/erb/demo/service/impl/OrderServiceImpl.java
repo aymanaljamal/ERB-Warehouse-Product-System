@@ -1,5 +1,6 @@
 package com.erb.demo.service.impl;
 import com.erb.demo.EmailService.EmailService;
+import com.erb.demo.Projection.OrderSummaryDto;
 import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.OrderItemDto;
@@ -207,6 +208,10 @@ public class OrderServiceImpl implements OrderService {
                 .stream()
                 .map(OrderDetailsDto::new)
                 .toList();
+    }
+    @Override
+    public Page<OrderSummaryDto> getOldUndeliveredOrders(LocalDateTime threeDaysAgo, Pageable pageable) {
+        return repository.findOldUndeliveredOrdersSummary(threeDaysAgo, pageable);
     }
 
 }

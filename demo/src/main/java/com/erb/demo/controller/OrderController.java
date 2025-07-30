@@ -1,5 +1,6 @@
 package com.erb.demo.controller;
 
+import com.erb.demo.Projection.OrderSummaryDto;
 import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.ProductStockDto;
@@ -11,6 +12,7 @@ import com.erb.demo.service.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
@@ -117,14 +119,19 @@ public class OrderController {
             return ResponseEntity.internalServerError().body("An error occurred: " + e.getMessage());
         }
     }
-
     @GetMapping("/{id}/all")
     public ResponseEntity<OrderDetailsDto> getOrderWithEmployee(@PathVariable Long id) {
         return ResponseEntity.ok(service.getOrderWithEmployee(id));
     }
-    @GetMapping("/staff-orders")
-    public ResponseEntity<List<OrderDetailsDto>> getOrdersByStaff() {
-        return ResponseEntity.ok(service.getOrdersCreatedByStaff());
+    @GetMapping("/old-undelivered")
+    public ResponseEntity<Page<OrderSummaryDto>> getOldUndeliveredOrders(
+            @RequestParam int daysAgo,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+        LocalDateTime threeDaysAgo = LocalDateTime.now().minusDays(daysAgo);
+        Pageable pageable = PageRequest.of(page, size);
+        Page<OrderSummaryDto> pageResult = service.getOldUndeliveredOrders(threeDaysAgo, pageable);
+        return ResponseEntity.ok(pageResult);
     }
 
 }

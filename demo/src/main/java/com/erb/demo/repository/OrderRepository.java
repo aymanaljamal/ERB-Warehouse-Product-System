@@ -1,15 +1,14 @@
 package com.erb.demo.repository;
-
+import com.erb.demo.Projection.OrderSummaryDto;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.OrderProductDto;
 import com.erb.demo.model.Order;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
@@ -59,4 +58,24 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     WHERE o.employee.rank = 'STAFF'
 """)
     List<Order> findAllOrdersByStaffOnly();
+
+    @Query("""
+        SELECT new com.erb.demo.Projection.OrderSummaryDto(
+            o.id,
+            o.status,
+            o.createdAt,
+            c.name,
+            deliveryEmp.name,
+            processedEmp.name
+        )
+        FROM Order o
+        JOIN o.customer c
+        LEFT JOIN o.employee processedEmp
+        LEFT JOIN Employee deliveryEmp ON deliveryEmp.id = o.employee.id
+        WHERE o.deliveredAt IS NULL
+          AND o.createdAt < :threeDaysAgo
+    """)
+    Page<OrderSummaryDto> findOldUndeliveredOrdersSummary(
+            @Param("threeDaysAgo") LocalDateTime threeDaysAgo, Pageable pageable);
+
 }
