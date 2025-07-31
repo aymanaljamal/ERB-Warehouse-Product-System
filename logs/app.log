@@ -1,23 +1,29 @@
-2025-07-30T10:25:40.801+03:00  INFO 64040 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 64040 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
-2025-07-30T10:25:40.810+03:00 DEBUG 64040 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-30T10:25:40.811+03:00  INFO 64040 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T10:25:45.257+03:00  INFO 64040 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T10:25:45.403+03:00  INFO 64040 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 10 JPA repository interfaces.
-2025-07-30T10:25:47.174+03:00  INFO 64040 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T10:25:47.228+03:00  INFO 64040 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T10:25:47.229+03:00  INFO 64040 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-30T10:25:47.373+03:00  INFO 64040 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T10:25:47.374+03:00  INFO 64040 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6398 ms
-2025-07-30T10:25:48.647+03:00  INFO 64040 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T10:25:48.868+03:00  INFO 64040 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-30T10:25:49.002+03:00  INFO 64040 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T10:25:49.864+03:00  INFO 64040 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T10:25:49.945+03:00  INFO 64040 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T10:25:50.713+03:00  INFO 64040 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a4dcede
-2025-07-30T10:25:50.718+03:00  INFO 64040 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T10:25:50.879+03:00  WARN 64040 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T10:25:50.882+03:00  WARN 64040 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T10:25:50.962+03:00  INFO 64040 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-07-31T08:38:38.644+03:00  WARN 8784 --- [demo] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h19m29s381ms493µs400ns).
+2025-07-31T09:05:48.527+03:00  INFO 8784 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-31T09:05:48.543+03:00  INFO 8784 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-31T09:05:48.591+03:00  INFO 8784 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-31T09:05:48.623+03:00  INFO 8784 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-31T09:05:48.639+03:00  INFO 8784 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-31T13:33:33.263+03:00  INFO 18896 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 18896 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
+2025-07-31T13:33:33.266+03:00 DEBUG 18896 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-31T13:33:33.267+03:00  INFO 18896 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-31T13:33:34.447+03:00  INFO 18896 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-31T13:33:34.516+03:00  INFO 18896 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 10 JPA repository interfaces.
+2025-07-31T13:33:35.188+03:00  INFO 18896 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-31T13:33:35.202+03:00  INFO 18896 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-31T13:33:35.202+03:00  INFO 18896 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-31T13:33:35.249+03:00  INFO 18896 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-31T13:33:35.249+03:00  INFO 18896 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1927 ms
+2025-07-31T13:33:35.545+03:00  INFO 18896 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-31T13:33:35.600+03:00  INFO 18896 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-31T13:33:35.632+03:00  INFO 18896 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-31T13:33:35.884+03:00  INFO 18896 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-31T13:33:35.920+03:00  INFO 18896 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-31T13:33:36.223+03:00  INFO 18896 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f792530
+2025-07-31T13:33:36.225+03:00  INFO 18896 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-31T13:33:36.308+03:00  WARN 18896 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-31T13:33:36.310+03:00  WARN 18896 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-07-31T13:33:36.324+03:00  INFO 18896 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -25,374 +31,113 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-30T10:25:53.583+03:00  INFO 64040 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T10:25:53.845+03:00  INFO 64040 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T10:25:56.050+03:00 DEBUG 64040 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-07-30T10:25:56.058+03:00 DEBUG 64040 --- [demo] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-07-30T10:25:56.498+03:00  INFO 64040 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-07-30T10:25:56.498+03:00  WARN 64040 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-07-30T10:25:56.748+03:00  INFO 64040 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-30T10:26:06.670+03:00  WARN 64040 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T10:26:08.208+03:00 DEBUG 64040 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 70 mappings in 'requestMappingHandlerMapping'
-2025-07-30T10:26:09.039+03:00 DEBUG 64040 --- [demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-07-30T10:26:10.025+03:00  INFO 64040 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-07-30T10:26:10.518+03:00 DEBUG 64040 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-07-30T10:26:10.968+03:00 DEBUG 64040 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-07-30T10:26:11.334+03:00 DEBUG 64040 --- [demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-07-30T10:26:13.413+03:00  INFO 64040 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T10:26:13.461+03:00  INFO 64040 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 33.721 seconds (process running for 35.232)
-2025-07-30T10:26:14.222+03:00  INFO 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-30T10:26:14.222+03:00  INFO 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-30T10:26:14.222+03:00 DEBUG 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-07-30T10:26:14.222+03:00 DEBUG 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-07-30T10:26:14.222+03:00 DEBUG 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-07-30T10:26:14.222+03:00 DEBUG 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@15a833c6
-2025-07-30T10:26:14.230+03:00 DEBUG 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@16b6e5e
-2025-07-30T10:26:14.234+03:00 DEBUG 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-07-30T10:26:14.234+03:00  INFO 64040 --- [demo] [RMI TCP Connection(6)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2025-07-30T10:27:22.194+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
-2025-07-30T10:27:22.218+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:27:22.218+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
-2025-07-30T10:27:22.218+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
-2025-07-30T10:27:22.226+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
-2025-07-30T10:27:22.299+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saeed@example.com, password=test123, name=null, rank=null, address=null)]
-2025-07-30T10:27:22.741+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
-2025-07-30T10:27:22.789+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:27:22.789+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZC5zYWVlZEBleGFtcGxlLmNvbSIsInJvbGUiOiJTVVBF (truncated)...]
-2025-07-30T10:27:22.805+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:27:54.737+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:27:54.922+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:27:54.922+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:27:54.931+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int)
-2025-07-30T10:27:55.037+03:00  WARN 64040 --- [demo] [http-nio-8080-exec-3] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
-	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
-	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
-
-2025-07-30T10:27:55.046+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:27:55.046+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.model.Order instances]
-2025-07-30T10:27:55.095+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-07-30T10:27:55.095+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2025-07-30T10:27:55.095+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]"]
-2025-07-30T10:27:55.103+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]]
-2025-07-30T10:27:55.105+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-07-30T10:28:37.581+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:28:37.597+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:28:37.597+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:28:37.597+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int)
-2025-07-30T10:28:37.605+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:28:37.605+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.model.Order instances]
-2025-07-30T10:28:37.605+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-07-30T10:28:37.605+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2025-07-30T10:28:37.605+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]"]
-2025-07-30T10:28:37.605+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]]
-2025-07-30T10:28:37.605+03:00 DEBUG 64040 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-07-30T10:32:51.333+03:00  INFO 64040 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-30T10:32:51.341+03:00  INFO 64040 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-30T10:32:51.357+03:00  INFO 64040 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T10:32:51.357+03:00  INFO 64040 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-30T10:32:51.368+03:00  INFO 64040 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-30T10:32:58.426+03:00  INFO 23564 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 23564 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
-2025-07-30T10:32:58.428+03:00 DEBUG 23564 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-30T10:32:58.429+03:00  INFO 23564 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T10:32:59.830+03:00  INFO 23564 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T10:32:59.935+03:00  INFO 23564 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 10 JPA repository interfaces.
-2025-07-30T10:33:01.075+03:00  INFO 23564 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T10:33:01.100+03:00  INFO 23564 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T10:33:01.102+03:00  INFO 23564 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-30T10:33:01.170+03:00  INFO 23564 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T10:33:01.171+03:00  INFO 23564 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2682 ms
-2025-07-30T10:33:01.697+03:00  INFO 23564 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T10:33:01.789+03:00  INFO 23564 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-30T10:33:01.832+03:00  INFO 23564 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T10:33:02.241+03:00  INFO 23564 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T10:33:02.281+03:00  INFO 23564 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T10:33:02.894+03:00  INFO 23564 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c737fdb
-2025-07-30T10:33:02.897+03:00  INFO 23564 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T10:33:02.975+03:00  WARN 23564 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T10:33:02.977+03:00  WARN 23564 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T10:33:02.995+03:00  INFO 23564 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-30T10:33:04.481+03:00  INFO 23564 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T10:33:04.673+03:00  INFO 23564 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T10:33:05.326+03:00 DEBUG 23564 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-07-30T10:33:05.328+03:00 DEBUG 23564 --- [demo] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-07-30T10:33:05.463+03:00  INFO 23564 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-07-30T10:33:05.464+03:00  WARN 23564 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-07-30T10:33:05.563+03:00  INFO 23564 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-30T10:33:07.903+03:00  WARN 23564 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T10:33:08.242+03:00 DEBUG 23564 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 70 mappings in 'requestMappingHandlerMapping'
-2025-07-30T10:33:08.440+03:00 DEBUG 23564 --- [demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-07-30T10:33:08.719+03:00  INFO 23564 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-07-30T10:33:08.841+03:00 DEBUG 23564 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-07-30T10:33:08.978+03:00 DEBUG 23564 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-07-30T10:33:09.057+03:00 DEBUG 23564 --- [demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-07-30T10:33:09.777+03:00  INFO 23564 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T10:33:09.795+03:00  INFO 23564 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 12.026 seconds (process running for 13.256)
-2025-07-30T10:33:10.136+03:00  INFO 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-30T10:33:10.137+03:00  INFO 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-30T10:33:10.137+03:00 DEBUG 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-07-30T10:33:10.137+03:00 DEBUG 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-07-30T10:33:10.137+03:00 DEBUG 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-07-30T10:33:10.139+03:00 DEBUG 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d3e4c3a
-2025-07-30T10:33:10.139+03:00 DEBUG 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@42046dbf
-2025-07-30T10:33:10.140+03:00 DEBUG 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-07-30T10:33:10.141+03:00  INFO 23564 --- [demo] [RMI TCP Connection(3)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-07-30T10:34:50.053+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:34:50.328+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:34:50.328+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:34:50.336+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int)
-2025-07-30T10:34:50.369+03:00  WARN 23564 --- [demo] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
-2025-07-30T10:34:50.419+03:00  WARN 23564 --- [demo] [http-nio-8080-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
-	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
-	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
-
-2025-07-30T10:34:50.419+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:34:50.426+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.model.Order instances]
-2025-07-30T10:34:50.524+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-07-30T10:34:50.524+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2025-07-30T10:34:50.524+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamW (truncated)..."]
-2025-07-30T10:34:50.524+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
-2025-07-30T10:34:50.532+03:00 DEBUG 23564 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:35:38.429+03:00  INFO 23564 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-30T10:35:38.438+03:00  INFO 23564 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-30T10:35:38.454+03:00  INFO 23564 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T10:35:38.454+03:00  INFO 23564 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-30T10:35:38.462+03:00  INFO 23564 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-30T10:46:55.298+03:00  INFO 41472 --- [demo] [main] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 41472 (C:\Users\ayman\OneDrive\Desktop\erb\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\erb)
-2025-07-30T10:46:55.300+03:00 DEBUG 41472 --- [demo] [main] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-07-30T10:46:55.301+03:00  INFO 41472 --- [demo] [main] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T10:46:56.590+03:00  INFO 41472 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T10:46:56.696+03:00  INFO 41472 --- [demo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 10 JPA repository interfaces.
-2025-07-30T10:46:57.710+03:00  INFO 41472 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T10:46:57.728+03:00  INFO 41472 --- [demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T10:46:57.729+03:00  INFO 41472 --- [demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-30T10:46:57.802+03:00  INFO 41472 --- [demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T10:46:57.803+03:00  INFO 41472 --- [demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2443 ms
-2025-07-30T10:46:58.274+03:00  INFO 41472 --- [demo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T10:46:58.335+03:00  INFO 41472 --- [demo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-30T10:46:58.380+03:00  INFO 41472 --- [demo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T10:46:58.741+03:00  INFO 41472 --- [demo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T10:46:58.781+03:00  INFO 41472 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T10:46:59.168+03:00  INFO 41472 --- [demo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77226121
-2025-07-30T10:46:59.170+03:00  INFO 41472 --- [demo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T10:46:59.228+03:00  WARN 41472 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T10:46:59.229+03:00  WARN 41472 --- [demo] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T10:46:59.247+03:00  INFO 41472 --- [demo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-30T10:47:00.728+03:00  INFO 41472 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T10:47:00.916+03:00  INFO 41472 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T10:47:01.592+03:00 DEBUG 41472 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-07-30T10:47:01.594+03:00 DEBUG 41472 --- [demo] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-07-30T10:47:01.705+03:00  INFO 41472 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-07-30T10:47:01.706+03:00  WARN 41472 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-07-30T10:47:01.778+03:00  INFO 41472 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-30T10:47:04.068+03:00  WARN 41472 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T10:47:04.349+03:00 DEBUG 41472 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 70 mappings in 'requestMappingHandlerMapping'
-2025-07-30T10:47:04.576+03:00 DEBUG 41472 --- [demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-07-30T10:47:04.857+03:00  INFO 41472 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-07-30T10:47:04.980+03:00 DEBUG 41472 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-07-30T10:47:05.133+03:00 DEBUG 41472 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-07-30T10:47:05.229+03:00 DEBUG 41472 --- [demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-07-30T10:47:05.871+03:00  INFO 41472 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T10:47:05.892+03:00  INFO 41472 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 11.271 seconds (process running for 12.312)
-2025-07-30T10:47:06.578+03:00  INFO 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-30T10:47:06.578+03:00  INFO 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-30T10:47:06.579+03:00 DEBUG 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-07-30T10:47:06.579+03:00 DEBUG 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-07-30T10:47:06.579+03:00 DEBUG 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-07-30T10:47:06.580+03:00 DEBUG 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1fd42c99
-2025-07-30T10:47:06.581+03:00 DEBUG 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@448dcc13
-2025-07-30T10:47:06.582+03:00 DEBUG 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-07-30T10:47:06.582+03:00  INFO 41472 --- [demo] [RMI TCP Connection(1)-192.168.1.123] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-07-30T10:47:18.033+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:47:18.399+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:47:18.404+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:47:18.410+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:47:18.432+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Required request parameter 'daysAgo' for method parameter type int is not present
-2025-07-30T10:47:18.439+03:00  WARN 41472 --- [demo] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'daysAgo' for method parameter type int is not present]
-2025-07-30T10:47:18.440+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-07-30T10:47:18.455+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-07-30T10:47:18.456+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:47:36.075+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undeliveredold-undelivered
-2025-07-30T10:47:36.108+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undeliveredold-undelivered
-2025-07-30T10:47:36.108+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undeliveredold-undelivered", parameters={}
-2025-07-30T10:47:36.108+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getById(Long, Authentication)
-2025-07-30T10:47:36.132+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.erb.demo.model.Order com.erb.demo.controller.OrderController.getById(java.lang.Long,org.springframework.security.core.Authentication): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "old-undeliveredold-undelivered"
-2025-07-30T10:47:36.140+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-07-30T10:47:36.165+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-07-30T10:47:36.165+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lan (truncated)..."]
-2025-07-30T10:47:36.181+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "old-undeliveredold-undelivered"]
-2025-07-30T10:47:36.181+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-07-30T10:48:41.258+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:48:41.290+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:48:41.290+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:48:41.298+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:48:41.299+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Required request parameter 'daysAgo' for method parameter type int is not present
-2025-07-30T10:48:41.299+03:00  WARN 41472 --- [demo] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'daysAgo' for method parameter type int is not present]
-2025-07-30T10:48:41.299+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-07-30T10:48:41.307+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-07-30T10:48:41.307+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:48:49.866+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:48:49.896+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:48:49.896+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:48:49.898+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:48:49.899+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Required request parameter 'daysAgo' for method parameter type int is not present
-2025-07-30T10:48:49.899+03:00  WARN 41472 --- [demo] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'daysAgo' for method parameter type int is not present]
-2025-07-30T10:48:49.900+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-07-30T10:48:49.902+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-07-30T10:48:49.909+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:48:54.880+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:48:54.900+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:48:54.901+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:48:54.902+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:48:54.903+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Required request parameter 'daysAgo' for method parameter type int is not present
-2025-07-30T10:48:54.904+03:00  WARN 41472 --- [demo] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'daysAgo' for method parameter type int is not present]
-2025-07-30T10:48:54.904+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-07-30T10:48:54.906+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-07-30T10:48:54.907+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:49:16.183+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
-2025-07-30T10:49:16.183+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:49:16.183+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
-2025-07-30T10:49:16.183+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
-2025-07-30T10:49:16.183+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
-2025-07-30T10:49:16.224+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saeed@example.com, password=test123, name=null, rank=null, address=null)]
-2025-07-30T10:49:16.487+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
-2025-07-30T10:49:16.499+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:49:16.499+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZC5zYWVlZEBleGFtcGxlLmNvbSIsInJvbGUiOiJTVVBF (truncated)...]
-2025-07-30T10:49:16.514+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:49:24.355+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:49:24.404+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:49:24.404+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:49:24.404+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:49:24.404+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Required request parameter 'daysAgo' for method parameter type int is not present
-2025-07-30T10:49:24.404+03:00  WARN 41472 --- [demo] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'daysAgo' for method parameter type int is not present]
-2025-07-30T10:49:24.404+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-07-30T10:49:24.412+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-07-30T10:49:24.412+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:50:19.990+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered
-2025-07-30T10:50:20.022+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered
-2025-07-30T10:50:20.022+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered", parameters={}
-2025-07-30T10:50:20.022+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:50:20.022+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Required request parameter 'daysAgo' for method parameter type int is not present
-2025-07-30T10:50:20.022+03:00  WARN 41472 --- [demo] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'daysAgo' for method parameter type int is not present]
-2025-07-30T10:50:20.022+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-07-30T10:50:20.030+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-07-30T10:50:20.030+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-30T10:51:19.926+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=3
-2025-07-30T10:51:19.945+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=3
-2025-07-30T10:51:19.949+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=3", parameters={masked}
-2025-07-30T10:51:19.949+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:51:19.997+03:00  WARN 41472 --- [demo] [http-nio-8080-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
-	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
-	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
-
-2025-07-30T10:51:19.997+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:51:19.997+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:51:20.013+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:51:32.242+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=
-2025-07-30T10:51:32.274+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=
-2025-07-30T10:51:32.274+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=", parameters={masked}
-2025-07-30T10:51:32.274+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:51:32.274+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Method parameter 'daysAgo': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: ""
-2025-07-30T10:51:32.274+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-07-30T10:51:32.274+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-07-30T10:51:32.282+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Method parameter 'daysAgo': Failed to convert value of type 'java.lang.String' to required type 'int (truncated)..."]
-2025-07-30T10:51:32.282+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'daysAgo': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: ""]
-2025-07-30T10:51:32.290+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-07-30T10:51:36.474+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=2
-2025-07-30T10:51:36.504+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=2
-2025-07-30T10:51:36.512+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=2", parameters={masked}
-2025-07-30T10:51:36.512+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:51:36.528+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:51:36.528+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:51:36.528+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:51:44.236+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=1
-2025-07-30T10:51:44.262+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=1
-2025-07-30T10:51:44.262+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=1", parameters={masked}
-2025-07-30T10:51:44.262+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:51:44.269+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:51:44.269+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:51:44.269+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:51:56.409+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=20
-2025-07-30T10:51:56.442+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=20
-2025-07-30T10:51:56.442+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=20", parameters={masked}
-2025-07-30T10:51:56.442+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:51:56.449+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:51:56.449+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
-2025-07-30T10:51:56.457+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:52:00.636+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=5
-2025-07-30T10:52:00.677+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=5
-2025-07-30T10:52:00.685+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=5", parameters={masked}
-2025-07-30T10:52:00.685+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:52:00.702+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:52:00.702+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:52:00.702+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:52:47.190+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=3
-2025-07-30T10:52:47.219+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=3
-2025-07-30T10:52:47.219+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=3", parameters={masked}
-2025-07-30T10:52:47.219+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:52:47.243+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:52:47.243+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:52:47.248+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:52:52.979+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=5
-2025-07-30T10:52:53.011+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=5
-2025-07-30T10:52:53.012+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=5", parameters={masked}
-2025-07-30T10:52:53.013+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:52:53.023+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:52:53.023+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:52:53.029+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:52:54.703+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=6
-2025-07-30T10:52:54.736+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=6
-2025-07-30T10:52:54.736+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=6", parameters={masked}
-2025-07-30T10:52:54.744+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:52:54.753+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:52:54.755+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:52:54.756+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:52:56.333+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=
-2025-07-30T10:52:56.363+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=
-2025-07-30T10:52:56.363+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=", parameters={masked}
-2025-07-30T10:52:56.363+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:52:56.368+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<org.springframework.data.domain.Page<com.erb.demo.Projection.OrderSummaryDto>> com.erb.demo.controller.OrderController.getOldUndeliveredOrders(int,int,int): Method parameter 'daysAgo': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: ""
-2025-07-30T10:52:56.368+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-07-30T10:52:56.368+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-07-30T10:52:56.368+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Method parameter 'daysAgo': Failed to convert value of type 'java.lang.String' to required type 'int (truncated)..."]
-2025-07-30T10:52:56.373+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'daysAgo': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: ""]
-2025-07-30T10:52:56.377+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-07-30T10:52:58.678+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=7
-2025-07-30T10:52:58.724+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=7
-2025-07-30T10:52:58.766+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=7", parameters={masked}
-2025-07-30T10:52:58.766+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:52:58.793+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:52:58.793+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:52:58.798+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:53:07.046+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=16
-2025-07-30T10:53:07.073+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=16
-2025-07-30T10:53:07.073+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=16", parameters={masked}
-2025-07-30T10:53:07.073+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:53:07.088+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:53:07.088+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 0 containing UNKNOWN instances]
-2025-07-30T10:53:07.089+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T10:56:55.894+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/old-undelivered?daysAgo=1
-2025-07-30T10:56:55.936+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/old-undelivered?daysAgo=1
-2025-07-30T10:56:55.942+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/old-undelivered?daysAgo=1", parameters={masked}
-2025-07-30T10:56:55.942+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getOldUndeliveredOrders(int, int, int)
-2025-07-30T10:56:55.954+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-07-30T10:56:55.954+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing com.erb.demo.Projection.OrderSummaryDto instances]
-2025-07-30T10:56:55.954+03:00 DEBUG 41472 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-07-30T11:01:05.521+03:00  INFO 41472 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-30T11:01:05.534+03:00  INFO 41472 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-30T11:01:05.544+03:00  INFO 41472 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T11:01:05.551+03:00  INFO 41472 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-30T11:01:05.561+03:00  INFO 41472 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-31T13:33:37.314+03:00  INFO 18896 --- [demo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-31T13:33:37.607+03:00  INFO 18896 --- [demo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-31T13:33:37.993+03:00 DEBUG 18896 --- [demo] [main] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-07-31T13:33:37.994+03:00 DEBUG 18896 --- [demo] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-07-31T13:33:38.059+03:00  INFO 18896 --- [demo] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-31T13:33:38.060+03:00  WARN 18896 --- [demo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-31T13:33:38.111+03:00  INFO 18896 --- [demo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-31T13:33:39.551+03:00  WARN 18896 --- [demo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-31T13:33:39.738+03:00 DEBUG 18896 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 70 mappings in 'requestMappingHandlerMapping'
+2025-07-31T13:33:39.869+03:00 DEBUG 18896 --- [demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-31T13:33:40.031+03:00  INFO 18896 --- [demo] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-07-31T13:33:40.121+03:00 DEBUG 18896 --- [demo] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-31T13:33:40.227+03:00 DEBUG 18896 --- [demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-31T13:33:40.287+03:00 DEBUG 18896 --- [demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-31T13:33:40.640+03:00  INFO 18896 --- [demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-31T13:33:40.650+03:00  INFO 18896 --- [demo] [main] com.erb.demo.DemoApplication             : Started DemoApplication in 8.093 seconds (process running for 8.886)
+2025-07-31T13:33:40.978+03:00  INFO 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-31T13:33:40.979+03:00  INFO 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-31T13:33:40.979+03:00 DEBUG 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-07-31T13:33:40.979+03:00 DEBUG 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-07-31T13:33:40.979+03:00 DEBUG 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-07-31T13:33:40.980+03:00 DEBUG 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4d186c57
+2025-07-31T13:33:40.980+03:00 DEBUG 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@620ed48c
+2025-07-31T13:33:40.980+03:00 DEBUG 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-31T13:33:40.981+03:00  INFO 18896 --- [demo] [RMI TCP Connection(2)-192.168.1.8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-31T13:35:18.388+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-31T13:35:18.399+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-31T13:35:18.402+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-31T13:35:18.403+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2025-07-31T13:35:18.406+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
+2025-07-31T13:35:18.456+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saeed@example.com, password=test123, name=null, rank=null, address=null)]
+2025-07-31T13:35:18.710+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-31T13:35:18.734+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-31T13:35:18.735+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZC5zYWVlZEBleGFtcGxlLmNvbSIsInJvbGUiOiJTVVBF (truncated)...]
+2025-07-31T13:35:18.742+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-31T13:36:41.698+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /orders/3/status
+2025-07-31T13:36:41.743+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /orders/3/status
+2025-07-31T13:36:41.743+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/orders/3/status", parameters={}
+2025-07-31T13:36:41.744+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-31T13:36:41.746+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-07-31T13:36:41.748+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource orders/3/status.]
+2025-07-31T13:36:41.749+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-07-31T13:36:41.753+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-07-31T13:36:41.754+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-31T13:37:17.447+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /orders/3/status
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /orders/3/status
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/orders/3/status", parameters={}
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource orders/3/status.]
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-07-31T13:37:17.457+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-31T13:37:28.422+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-07-31T13:37:28.422+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-31T13:37:28.423+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-07-31T13:37:28.423+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2025-07-31T13:37:28.423+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
+2025-07-31T13:37:28.424+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saeed@example.com, password=test123, name=null, rank=null, address=null)]
+2025-07-31T13:37:28.496+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-07-31T13:37:28.498+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-07-31T13:37:28.498+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZC5zYWVlZEBleGFtcGxlLmNvbSIsInJvbGUiOiJTVVBF (truncated)...]
+2025-07-31T13:37:28.499+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-31T13:37:36.065+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /orders/3/status
+2025-07-31T13:37:36.074+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /orders/3/status
+2025-07-31T13:37:36.074+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/orders/3/status", parameters={}
+2025-07-31T13:37:36.074+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-31T13:37:36.075+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-07-31T13:37:36.076+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource orders/3/status.]
+2025-07-31T13:37:36.076+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-07-31T13:37:36.076+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-07-31T13:37:36.077+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-31T13:37:42.685+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /orders/3/status
+2025-07-31T13:37:42.708+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /orders/3/status
+2025-07-31T13:37:42.708+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/orders/3/status", parameters={}
+2025-07-31T13:37:42.708+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-07-31T13:37:42.709+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-07-31T13:37:42.710+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource orders/3/status.]
+2025-07-31T13:37:42.710+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-07-31T13:37:42.711+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /error
+2025-07-31T13:37:42.711+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-07-31T13:38:19.052+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/3/status
+2025-07-31T13:38:19.071+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/3/status
+2025-07-31T13:38:19.071+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/3/status", parameters={}
+2025-07-31T13:38:19.072+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#updateOrderStatus(Long, UpdateOrderStatusRequest)
+2025-07-31T13:38:19.082+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [UpdateOrderStatusRequest(status=DELIVERED)]
+2025-07-31T13:38:19.143+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-31T13:38:19.144+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Only SHIPPED orders can move to DELIVERED"]
+2025-07-31T13:38:19.146+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-07-31T13:38:23.940+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/3/status
+2025-07-31T13:38:23.956+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/3/status
+2025-07-31T13:38:23.956+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/3/status", parameters={}
+2025-07-31T13:38:23.957+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#updateOrderStatus(Long, UpdateOrderStatusRequest)
+2025-07-31T13:38:23.959+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [UpdateOrderStatusRequest(status=SHIPPED)]
+2025-07-31T13:38:25.705+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-31T13:38:25.705+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Order status updated to SHIPPED"]
+2025-07-31T13:38:25.706+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-31T13:38:34.285+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/3/status
+2025-07-31T13:38:34.306+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/3/status
+2025-07-31T13:38:34.307+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/3/status", parameters={}
+2025-07-31T13:38:34.307+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#updateOrderStatus(Long, UpdateOrderStatusRequest)
+2025-07-31T13:38:34.310+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [UpdateOrderStatusRequest(status=DELIVERED)]
+2025-07-31T13:38:35.913+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-07-31T13:38:35.913+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Order status updated to DELIVERED"]
+2025-07-31T13:38:35.915+03:00 DEBUG 18896 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-07-31T13:39:11.854+03:00  INFO 18896 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-31T13:39:11.863+03:00  INFO 18896 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-31T13:39:11.869+03:00  INFO 18896 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-31T13:39:11.871+03:00  INFO 18896 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-31T13:39:11.876+03:00  INFO 18896 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

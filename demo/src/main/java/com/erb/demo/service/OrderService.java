@@ -24,5 +24,7 @@ public interface OrderService {
     OrderDetailsDto getOrderWithEmployee(Long id);
     List<OrderDetailsDto> getOrdersCreatedByStaff();
     Page<OrderSummaryDto> getOldUndeliveredOrders(LocalDateTime threeDaysAgo, Pageable pageable);
+
+    Order processOrder(Long orderId);
 }
 

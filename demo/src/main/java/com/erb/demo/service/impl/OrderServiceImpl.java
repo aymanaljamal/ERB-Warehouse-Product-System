@@ -1,5 +1,8 @@
 package com.erb.demo.service.impl;
 import com.erb.demo.EmailService.EmailService;
+
+import com.erb.demo.Plugin.CustomerPlugin.CustomerPluginExecutor;
+import com.erb.demo.Plugin.OrdersPlugins.OrderPluginExecutor;
 import com.erb.demo.Projection.OrderSummaryDto;
 import com.erb.demo.dto.DTO.CreateOrderRequest;
 import com.erb.demo.dto.DTO.OrderDto;
@@ -39,6 +42,12 @@ public class OrderServiceImpl implements OrderService {
     private  WarehouseProductRepository warehouseProductRepository;
     @Autowired
     private EmailService emailService;
+    @Autowired
+    private OrderPluginExecutor pluginExecutor;
+    @Autowired
+    private CustomerPluginExecutor customerPluginExecutor;
+
+
     @Override
     @Cacheable(value = "orders")
     public List<Order> getAll() {
@@ -150,7 +159,7 @@ public class OrderServiceImpl implements OrderService {
         Order order = repository.findById(orderId)
                 .orElseThrow(() -> new RuntimeException("Order not found"));
 
-        OrderContext context = new OrderContext(order,emailService);
+        OrderContext context = new OrderContext(order, emailService);
         Order.OrderStatus currentStatus = order.getStatus();
 
         switch (newStatus) {
@@ -167,12 +176,17 @@ public class OrderServiceImpl implements OrderService {
             case DELIVERED -> {
                 if (currentStatus != Order.OrderStatus.SHIPPED)
                     throw new IllegalStateException("Only SHIPPED orders can move to DELIVERED");
+
                 context.next();
                 order.setDeliveredAt(LocalDateTime.now());
+                pluginExecutor.execute(order);
             }
-            case CANCELLED -> context.cancel();
+            case CANCELLED -> {
+                context.cancel();
+            }
             default -> throw new IllegalArgumentException("Invalid transition");
         }
+        pluginExecutor.execute(order);
 
         repository.save(order);
     }
@@ -212,6 +226,12 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Page<OrderSummaryDto> getOldUndeliveredOrders(LocalDateTime threeDaysAgo, Pageable pageable) {
         return repository.findOldUndeliveredOrdersSummary(threeDaysAgo, pageable);
+    }
+    @Override
+    public Order processOrder(Long orderId) {
+        Order order = repository.findById(orderId).orElseThrow();
+        pluginExecutor.execute(order);
+        return repository.save(order);
     }
 
 }

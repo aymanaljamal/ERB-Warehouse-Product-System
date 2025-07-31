@@ -1,5 +1,4 @@
 package com.erb.demo.state;
-
 import com.erb.demo.EmailService.EmailService;
 import com.erb.demo.model.Order;
 import jakarta.validation.constraints.NotNull;
@@ -8,7 +7,6 @@ public class OrderContext {
     private OrderState state;
     private Order order;
     private EmailService emailService;
-
     public OrderContext(Order order, EmailService emailService) {
         this.order = order;
         this.emailService = emailService;
@@ -51,4 +49,6 @@ public class OrderContext {
     public Order getOrder() {
         return order;
     }
+
+
 }

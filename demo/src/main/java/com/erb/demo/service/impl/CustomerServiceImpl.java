@@ -1,5 +1,6 @@
 package com.erb.demo.service.impl;
 
+import com.erb.demo.Plugin.CustomerPlugin.CustomerPluginExecutor;
 import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
 import com.erb.demo.repository.CustomerRepository;
@@ -18,13 +19,13 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     private CustomerRepository repository;
-
+    @Autowired
+    private CustomerPluginExecutor pluginExecutor;
     @Override
     @Cacheable(value = "customers")
     public List<Customer> getAll() {
         return repository.findAll();
     }
-
     @Override
     @Cacheable(value = "customers", key = "#id")
     public Customer getById(Long id) {
@@ -34,9 +35,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     @CachePut(value = "customers", key = "#customer.id")
     public Customer save(Customer customer) {
-        return repository.save(customer);
+        Customer savedCustomer = repository.save(customer);
+        pluginExecutor.execute(savedCustomer);
+        return savedCustomer;
     }
-
     @Override
     @CacheEvict(value = "customers", key = "#id")
     public void delete(Long id) {
