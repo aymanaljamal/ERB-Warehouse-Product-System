@@ -1,15 +1,16 @@
 package com.erb.demo.state;
 import com.erb.demo.EmailService.EmailService;
+import com.erb.demo.EmailService.EmailServiceClient;
 import com.erb.demo.model.Order;
 import jakarta.validation.constraints.NotNull;
 
 public class OrderContext {
     private OrderState state;
     private Order order;
-    private EmailService emailService;
-    public OrderContext(Order order, EmailService emailService) {
+    private EmailServiceClient emailServiceClient;;
+    public OrderContext(Order order,EmailServiceClient emailServiceClient) {
         this.order = order;
-        this.emailService = emailService;
+        this.emailServiceClient =emailServiceClient;
         this.state = resolveState(order.getStatus());
     }
 
@@ -24,8 +25,8 @@ public class OrderContext {
         };
     }
 
-    public EmailService getEmailService() {
-        return emailService;
+    public  EmailServiceClient  getEmailService() {
+        return emailServiceClient;
     }
 
     public void setState(OrderState state) {

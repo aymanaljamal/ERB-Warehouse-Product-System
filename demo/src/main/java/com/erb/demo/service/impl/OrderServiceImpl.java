@@ -1,13 +1,11 @@
 package com.erb.demo.service.impl;
 import com.erb.demo.EmailService.EmailService;
 
+import com.erb.demo.EmailService.EmailServiceClient;
 import com.erb.demo.Plugin.CustomerPlugin.CustomerPluginExecutor;
 import com.erb.demo.Plugin.OrdersPlugins.OrderPluginExecutor;
 import com.erb.demo.Projection.OrderSummaryDto;
-import com.erb.demo.dto.DTO.CreateOrderRequest;
-import com.erb.demo.dto.DTO.OrderDto;
-import com.erb.demo.dto.DTO.OrderItemDto;
-import com.erb.demo.dto.DTO.OrderItemRequest;
+import com.erb.demo.dto.DTO.*;
 import com.erb.demo.dto.OrderDetailsDto;
 import com.erb.demo.dto.OrderItemDTO;
 import com.erb.demo.dto.OrderResponseDTO;
@@ -25,6 +23,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -43,14 +42,15 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private  WarehouseProductRepository warehouseProductRepository;
     @Autowired
-    private EmailService emailService;
+    private EmailServiceClient emailServiceClient;
     @Autowired
     private OrderPluginExecutor pluginExecutor;
     @Autowired
     private CustomerPluginExecutor customerPluginExecutor;
     @Autowired
     private  CurrencyConversionService currencyService;
-
+    @Autowired
+    private RestTemplate restTemplate;
     @Override
     @Cacheable(value = "orders")
     public List<Order> getAll() {
@@ -162,7 +162,7 @@ public class OrderServiceImpl implements OrderService {
         Order order = repository.findById(orderId)
                 .orElseThrow(() -> new RuntimeException("Order not found"));
 
-        OrderContext context = new OrderContext(order, emailService);
+        OrderContext context = new OrderContext(order, emailServiceClient);
         Order.OrderStatus currentStatus = order.getStatus();
 
         switch (newStatus) {
@@ -266,4 +266,5 @@ public class OrderServiceImpl implements OrderService {
             );
         });
     }
+
 }

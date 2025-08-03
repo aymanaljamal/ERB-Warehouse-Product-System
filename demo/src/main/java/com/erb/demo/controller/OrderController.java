@@ -114,6 +114,7 @@ public class OrderController {
         OrderDto createdOrder = service.createOrder(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdOrder);
     }
+
     @PostMapping("/{orderId}/status")
     public ResponseEntity<?> updateOrderStatus(@PathVariable Long orderId, @RequestBody UpdateOrderStatusRequest statusRequest) {
         try {
@@ -125,6 +126,9 @@ public class OrderController {
             return ResponseEntity.internalServerError().body("An error occurred: " + e.getMessage());
         }
     }
+
+
+
     @GetMapping("/{id}/all")
     public ResponseEntity<OrderDetailsDto> getOrderWithEmployee(@PathVariable Long id) {
         return ResponseEntity.ok(service.getOrderWithEmployee(id));
