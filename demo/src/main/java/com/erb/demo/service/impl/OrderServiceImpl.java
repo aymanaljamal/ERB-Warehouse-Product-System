@@ -9,6 +9,8 @@ import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.OrderItemDto;
 import com.erb.demo.dto.DTO.OrderItemRequest;
 import com.erb.demo.dto.OrderDetailsDto;
+import com.erb.demo.dto.OrderItemDTO;
+import com.erb.demo.dto.OrderResponseDTO;
 import com.erb.demo.model.*;
 import com.erb.demo.repository.CustomerRepository;
 import com.erb.demo.repository.OrderRepository;
@@ -46,7 +48,8 @@ public class OrderServiceImpl implements OrderService {
     private OrderPluginExecutor pluginExecutor;
     @Autowired
     private CustomerPluginExecutor customerPluginExecutor;
-
+    @Autowired
+    private  CurrencyConversionService currencyService;
 
     @Override
     @Cacheable(value = "orders")
@@ -234,4 +237,33 @@ public class OrderServiceImpl implements OrderService {
         return repository.save(order);
     }
 
+    @Override
+    public Page<OrderResponseDTO> getCustomerOrders(Customer customer, Pageable pageable, String baseUrl) {
+        Page<Order> orders = repository.findByCustomer(customer, pageable);
+
+        return orders.map(order -> {
+            double totalUsd = order.getItems().stream()
+                    .mapToDouble(i -> i.getProduct().getPrice() * i.getQuantity())
+                    .sum();
+
+            double totalIls = currencyService.convertToILS(totalUsd, "USD").block();
+
+            List<OrderItemDTO> itemDTOs = order.getItems().stream()
+                    .map(i -> new OrderItemDTO(
+                            i.getProduct().getName(),
+                            i.getQuantity(),
+                            i.getProduct().getPrice()
+                    )).toList();
+
+            return new OrderResponseDTO(
+                    order.getId(),
+                    order.getStatus().name(),
+                    order.getCreatedAt(),
+                    order.getDeliveredAt(),
+                    totalIls,
+                    baseUrl + "/api/orders/" + order.getId(),
+                    itemDTOs
+            );
+        });
+    }
 }

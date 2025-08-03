@@ -6,9 +6,13 @@ import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.DTO.ProductStockDto;
 import com.erb.demo.dto.DTO.UpdateOrderStatusRequest;
 import com.erb.demo.dto.OrderDetailsDto;
+import com.erb.demo.dto.OrderResponseDTO;
+import com.erb.demo.model.Customer;
 import com.erb.demo.model.Order;
+import com.erb.demo.service.CustomerService;
 import com.erb.demo.service.OrderService;
 import com.erb.demo.service.ProductService;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -32,6 +36,8 @@ public class OrderController {
     private OrderService service;
     @Autowired
     private  ProductService productService;
+    @Autowired
+    private CustomerService customerService;
 
     @GetMapping("/all")
     public ResponseEntity<List<OrderDto>> getAllOrders() {
@@ -133,5 +139,11 @@ public class OrderController {
         Page<OrderSummaryDto> pageResult = service.getOldUndeliveredOrders(threeDaysAgo, pageable);
         return ResponseEntity.ok(pageResult);
     }
-
+    @GetMapping("/all-Order")
+    public ResponseEntity<Page<OrderResponseDTO>> getMyOrders(Pageable pageable, HttpServletRequest request) {
+        Customer currentCustomer = customerService.getCurrentCustomer();
+        String baseUrl = request.getRequestURL().toString().replace(request.getRequestURI(), "");
+        Page<OrderResponseDTO> orders = service.getCustomerOrders(currentCustomer, pageable, baseUrl);
+        return ResponseEntity.ok(orders);
+    }
 }

@@ -12,4 +12,5 @@ public interface CustomerService {
     void delete(Long id);
     Customer getByEmail(String email);
     List<CustomerDTO> getAllCustomers();
+    Customer getCurrentCustomer();
 }

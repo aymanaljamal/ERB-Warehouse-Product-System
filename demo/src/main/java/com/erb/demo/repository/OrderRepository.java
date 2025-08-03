@@ -2,6 +2,7 @@ package com.erb.demo.repository;
 import com.erb.demo.Projection.OrderSummaryDto;
 import com.erb.demo.dto.DTO.OrderDto;
 import com.erb.demo.dto.OrderProductDto;
+import com.erb.demo.model.Customer;
 import com.erb.demo.model.Order;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -78,5 +79,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 """)
     Page<OrderSummaryDto> findOldUndeliveredOrdersSummary(
             @Param("threeDaysAgo") LocalDateTime threeDaysAgo, Pageable pageable);
+
+    Page<Order> findByCustomer(Customer customer, Pageable pageable);
 
 }

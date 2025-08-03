@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -60,5 +62,14 @@ public class CustomerServiceImpl implements CustomerService {
                         c.getPhone()
                 ))
                 .collect(Collectors.toList());
+    }
+    @Override
+    public Customer getCurrentCustomer() {
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+        Customer customer = repository.findByEmail(email);
+        if (customer == null) {
+            throw new UsernameNotFoundException("Customer not found");
+        }
+        return customer;
     }
 }
