@@ -10,7 +10,8 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "stock_receipt")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -26,19 +27,19 @@ public class StockReceipt {
     @NotNull(message = "Received date and time is required")
     private LocalDateTime receivedAt;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id")
     @JsonBackReference(value = "employee-stock")
     @NotNull(message = "Employee is required")
     private Employee employee;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    @JsonBackReference(value = "product-stock")
-    @NotNull(message = "Product is required")
-    private Product product;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "order_item_id")
+    @JsonBackReference(value = "orderItem-stock")
+    @NotNull(message = "Order Item is required")
+    private OrderItem orderItem;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "warehouse_id")
     @JsonBackReference(value = "warehouse-stock")
     @NotNull(message = "Warehouse is required")

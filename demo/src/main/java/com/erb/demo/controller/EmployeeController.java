@@ -1,16 +1,23 @@
 package com.erb.demo.controller;
 import com.erb.demo.Projection.EmployeeSummaryProjection;
-import com.erb.demo.dto.EmployeeSummaryDTO;
+import com.erb.demo.dto.DTO.EmployeeDto;
+import com.erb.demo.dto.DTO.EmployeeOrdersDto;
+import com.erb.demo.dto.DeliveryEmployeeWithOrdersDto;
+import com.erb.demo.dto.OrderProductDto;
 import com.erb.demo.model.Employee;
+import com.erb.demo.repository.EmployeeRepository;
+import com.erb.demo.repository.OrderRepository;
 import com.erb.demo.service.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import java.net.URI;
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/employees")
@@ -18,23 +25,34 @@ public class EmployeeController {
 
     @Autowired
     private EmployeeService service;
-
+    @Autowired
+    private EmployeeRepository employeeRepository;
+    @Autowired
+    private OrderRepository orderRepository;
     @GetMapping
+    @PreAuthorize("hasRole('SUPER_ADMIN') or hasRole('STAFF')")
     public List<Employee> getAll() {
         return service.getAll();
     }
+    @GetMapping("/employees")
+    public ResponseEntity<List<EmployeeDto>> getAllEmployees() {
+        return ResponseEntity.ok(service.getAllEmployees());
+    }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('SUPER_ADMIN') or #id == principal.id")
     public Employee getById(@PathVariable Long id) {
         return service.getById(id);
     }
 
     @PostMapping
+    @PreAuthorize("hasRole('SUPER_ADMIN')")
     public Employee create(@RequestBody @Valid Employee employee) {
         return service.save(employee);
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('SUPER_ADMIN') or #id == principal.id")
     public Employee update(@PathVariable Long id, @RequestBody @Valid Employee updated) {
         Employee e = service.getById(id);
         if (e != null) {
@@ -43,17 +61,17 @@ public class EmployeeController {
             e.setSalary(updated.getSalary());
             e.setWorkHours(updated.getWorkHours());
             e.setRank(updated.getRank());
-            e.setManager(updated.getManager());
             return service.save(e);
         }
         return null;
     }
-
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('SUPER_ADMIN')")
     public void delete(@PathVariable Long id) {
         service.delete(id);
     }
     @GetMapping("/summary")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'STAFF')")
     public Page<EmployeeSummaryProjection> getSummary(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size
@@ -61,5 +79,54 @@ public class EmployeeController {
         Pageable pageable = PageRequest.of(page, size, Sort.by("totalDelivered").descending());
         return service.getEmployeeSummary(pageable);
     }
+    @GetMapping("/{id}/image")
+    @PreAuthorize("hasAnyRole('SUPER_ADMIN', 'DELIVERY', 'STAFF')")
+    public ResponseEntity<Object> redirectToImage(@PathVariable Long id) {
+        return employeeRepository.findById(id)
+                .map(employee -> {
+                    try {
+                        String imageUrl = employee.getImage();
+                        if (imageUrl == null || imageUrl.isBlank()) {
+                            return ResponseEntity.badRequest().build();
+                        }
 
+                        URI imageUri = URI.create(imageUrl);
+
+                        return ResponseEntity.status(HttpStatus.FOUND)
+                                .location(imageUri)
+                                .build();
+                    } catch (Exception e) {
+                        return ResponseEntity.internalServerError().build();
+                    }
+                })
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/delivery-employees")
+
+    public ResponseEntity<Page<DeliveryEmployeeWithOrdersDto>> getDeliveryEmployees(
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) String statusStr,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+        Page<DeliveryEmployeeWithOrdersDto> result = service.getDeliveryEmployees(name, statusStr, page, size);
+        return ResponseEntity.ok(result);
+    }
+
+
+    @GetMapping("/orders/{orderId}/products")
+    public ResponseEntity<List<OrderProductDto>> getOrderProducts(@PathVariable Long orderId) {
+        List<OrderProductDto> products = orderRepository.findProductsByOrderId(orderId);
+        return ResponseEntity.ok(products);
+    }
+    @GetMapping("/{id}/orders")
+    public ResponseEntity<?> getEmployeeWithOrders(@PathVariable Long id) {
+        Employee employee = service.getEmployeeIfStaff(id);
+
+        EmployeeOrdersDto dto = new EmployeeOrdersDto(employee);
+        return ResponseEntity.ok(dto);
+    }
 }
+
+
+

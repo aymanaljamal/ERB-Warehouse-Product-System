@@ -1,15 +1,17 @@
 package com.erb.demo.service.impl;
 
-import com.erb.demo.dto.EmployeeSummaryDTO;
+import com.erb.demo.dto.DTO.DeliveryDTO;
 import com.erb.demo.model.Delivery;
-import com.erb.demo.model.Employee;
 import com.erb.demo.repository.DeliveryRepository;
 import com.erb.demo.service.DeliveryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class DeliveryServiceImpl implements DeliveryService {
@@ -18,23 +20,37 @@ public class DeliveryServiceImpl implements DeliveryService {
     private DeliveryRepository repository;
 
     @Override
+    @Cacheable(value = "deliveries")
     public List<Delivery> getAll() {
         return repository.findAll();
     }
 
     @Override
+    @Cacheable(value = "deliveries", key = "#id")
     public Delivery getById(Long id) {
         return repository.findById(id).orElse(null);
     }
 
     @Override
+    @CachePut(value = "deliveries", key = "#delivery.id")
     public Delivery save(Delivery delivery) {
         return repository.save(delivery);
     }
 
     @Override
+    @CacheEvict(value = "deliveries", key = "#id")
     public void delete(Long id) {
         repository.deleteById(id);
     }
-
+    @Override
+    public List<DeliveryDTO> getAllDeliveries() {
+        return repository.findAll().stream()
+                .map(delivery -> new DeliveryDTO(
+                        delivery.getId(),
+                        delivery.getDeliveredAt(),
+                        delivery.getOrder() != null ? delivery.getOrder().getId() : null,
+                        delivery.getDeliveredBy() != null ? delivery.getDeliveredBy().getId() : null
+                ))
+                .collect(Collectors.toList());
+    }
 }

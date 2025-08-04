@@ -1,15 +1,18 @@
 package com.erb.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "orders")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -19,8 +22,9 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Status must not be blank")
-    private String status;
+    @Enumerated(EnumType.STRING)
+    @NotNull(message = "Status must not be null")
+    private OrderStatus status;
 
     @NotNull(message = "Creation date is required")
     @PastOrPresent(message = "Created date cannot be in the future")
@@ -34,7 +38,30 @@ public class Order {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    @NotEmpty(message = "Order must have at least one item")
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private Employee employee;
+
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<OrderItem> items;
+
+    public enum OrderStatus {
+        CREATED,
+        PROCESSING,
+        SHIPPED,
+        DELIVERED,
+        CANCELLED
+    }
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", status='" + status + '\'' +
+                ", createdAt=" + createdAt +
+                ", deliveredAt=" + deliveredAt +
+                ", customerId=" + (customer != null ? customer.getId() : null) +
+                ", itemsCount=" + (items != null ? items.size() : 0) +
+                '}';
+    }
 }

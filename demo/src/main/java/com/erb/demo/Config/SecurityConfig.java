@@ -1,7 +1,8 @@
 package com.erb.demo.Config;
+
 import com.erb.demo.jwt.JwtAuthenticationEntryPoint;
 import com.erb.demo.jwt.JwtAuthenticationFilter;
-import com.erb.demo.security.CustomUserDetailsService;
+import com.erb.demo.security.GeneralUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +23,7 @@ public class SecurityConfig {
 
     private final JwtAuthenticationEntryPoint entryPoint;
     private final JwtAuthenticationFilter jwtFilter;
-    private final CustomUserDetailsService userDetailsService;
+    private final GeneralUserDetailsService userDetailsService;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -30,7 +31,9 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/actuator/**").permitAll()
                         .requestMatchers("/auth/**").permitAll()
+                        .requestMatchers("/actuator/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling(ex -> ex.authenticationEntryPoint(entryPoint))

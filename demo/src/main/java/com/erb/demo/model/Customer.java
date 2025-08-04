@@ -31,4 +31,14 @@ public class Customer {
 
     @NotBlank(message = "Address is required")
     private String address;
+
+    private int loyaltyPoints;
+
+    public String getRole() {
+        return "CUSTOMER";
+    }
+
+    public void addPoints(int points) {
+        this.loyaltyPoints += points;
+    }
 }
