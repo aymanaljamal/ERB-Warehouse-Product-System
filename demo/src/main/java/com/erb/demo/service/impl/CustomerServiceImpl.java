@@ -1,5 +1,6 @@
 package com.erb.demo.service.impl;
 
+import com.erb.demo.Annotation.LogExecutionTime;
 import com.erb.demo.Plugin.CustomerPlugin.CustomerPluginExecutor;
 import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
@@ -30,6 +31,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
     @Override
     @Cacheable(value = "customers", key = "#id")
+    @LogExecutionTime
     public Customer getById(Long id) {
         return repository.findById(id).orElse(null);
     }
@@ -64,6 +66,7 @@ public class CustomerServiceImpl implements CustomerService {
                 .collect(Collectors.toList());
     }
     @Override
+    @LogExecutionTime
     public Customer getCurrentCustomer() {
         String email = SecurityContextHolder.getContext().getAuthentication().getName();
         Customer customer = repository.findByEmail(email);
