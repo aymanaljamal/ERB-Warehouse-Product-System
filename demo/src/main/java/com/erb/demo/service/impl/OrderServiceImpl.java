@@ -1,5 +1,4 @@
 package com.erb.demo.service.impl;
-import com.erb.demo.EmailService.EmailService;
 
 import com.erb.demo.EmailService.EmailServiceClient;
 import com.erb.demo.Plugin.CustomerPlugin.CustomerPluginExecutor;
@@ -8,11 +7,13 @@ import com.erb.demo.Projection.OrderSummaryDto;
 import com.erb.demo.dto.DTO.*;
 import com.erb.demo.dto.OrderDetailsDto;
 import com.erb.demo.dto.OrderItemDTO;
+import com.erb.demo.dto.OrderResponse;
 import com.erb.demo.dto.OrderResponseDTO;
 import com.erb.demo.model.*;
 import com.erb.demo.repository.CustomerRepository;
 import com.erb.demo.repository.OrderRepository;
 import com.erb.demo.repository.ProductRepository;
+import com.erb.demo.repository.Specification.OrderSpecifications;
 import com.erb.demo.repository.WarehouseProductRepository;
 import com.erb.demo.service.OrderService;
 import com.erb.demo.state.OrderContext;
@@ -266,5 +267,18 @@ public class OrderServiceImpl implements OrderService {
             );
         });
     }
-
+    @Override
+    public List<OrderResponse> searchOrders(OrderSearchCriteria criteria) {
+        List<Order> orders = repository.findAll(OrderSpecifications.build(criteria));
+        return orders.stream()
+                .map(order -> OrderResponse.builder()
+                        .id(order.getId())
+                        .status(order.getStatus())
+                        .createdAt(order.getCreatedAt())
+                        .deliveredAt(order.getDeliveredAt())
+                        .customerName(order.getCustomer() != null ? order.getCustomer().getName() : null)
+                        .employeeName(order.getEmployee() != null ? order.getEmployee().getName() : null)
+                        .build())
+                .collect(Collectors.toList());
+    }
 }
