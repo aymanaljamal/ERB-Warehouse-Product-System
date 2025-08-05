@@ -34,6 +34,9 @@ public class Customer {
 
     private int loyaltyPoints;
 
+    public Customer(long l, String ali, String mail, String password123, String number, String ramallah) {
+    }
+
     public String getRole() {
         return "CUSTOMER";
     }

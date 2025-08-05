@@ -1,4 +1,6 @@
 package com.erb.demo.controller;
+import com.erb.demo.dto.CustomerResponseDTO;
+import com.erb.demo.dto.CustomerSearchCriteria;
 import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
 import com.erb.demo.security.SecurityUtil;
@@ -108,7 +110,10 @@ public class CustomerController {
 
 
     }
-
+    @PostMapping("/search")
+    public List<CustomerResponseDTO> search(@RequestBody CustomerSearchCriteria criteria) {
+        return service.searchCustomers(criteria);
+    }
     }
 
 
