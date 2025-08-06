@@ -1,5 +1,6 @@
 package com.erb.demo;
 
+import com.erb.demo.Annotation.LogExecutionTime;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
@@ -17,6 +18,7 @@ public class DemoApplication {
 
 
 		String rawPassword = "test123";
+
 		String encoded = new BCryptPasswordEncoder().encode(rawPassword);
 		System.out.println("Encoded password: " + encoded);
 	}
