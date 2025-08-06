@@ -1,25 +1,25 @@
-2025-08-05T10:14:38.631+03:00  INFO 21772 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 21772 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T10:14:38.638+03:00 DEBUG 21772 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T10:14:38.639+03:00  INFO 21772 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T10:14:38.719+03:00  INFO 21772 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-05T10:14:38.721+03:00  INFO 21772 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-05T10:14:40.180+03:00  INFO 21772 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T10:14:40.382+03:00  INFO 21772 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190 ms. Found 10 JPA repository interfaces.
-2025-08-05T10:14:41.400+03:00  INFO 21772 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T10:14:41.417+03:00  INFO 21772 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T10:14:41.417+03:00  INFO 21772 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T10:14:41.467+03:00  INFO 21772 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-05T10:14:41.467+03:00  INFO 21772 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2745 ms
-2025-08-05T10:14:41.878+03:00  INFO 21772 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T10:14:41.953+03:00  INFO 21772 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-08-05T10:14:41.992+03:00  INFO 21772 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T10:14:42.319+03:00  INFO 21772 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T10:14:42.349+03:00  INFO 21772 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-05T10:14:42.725+03:00  INFO 21772 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fd548d6
-2025-08-05T10:14:42.726+03:00  INFO 21772 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-05T10:14:42.782+03:00  WARN 21772 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T10:14:42.783+03:00  WARN 21772 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T10:14:42.798+03:00  INFO 21772 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-06T10:33:20.429+03:00  INFO 9028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 9028 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
+2025-08-06T10:33:20.436+03:00 DEBUG 9028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T10:33:20.437+03:00  INFO 9028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T10:33:20.561+03:00  INFO 9028 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-06T10:33:20.563+03:00  INFO 9028 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-06T10:33:22.563+03:00  INFO 9028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T10:33:22.956+03:00  INFO 9028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 376 ms. Found 10 JPA repository interfaces.
+2025-08-06T10:33:24.472+03:00  INFO 9028 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-06T10:33:24.499+03:00  INFO 9028 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T10:33:24.500+03:00  INFO 9028 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T10:33:24.587+03:00  INFO 9028 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T10:33:24.588+03:00  INFO 9028 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4023 ms
+2025-08-06T10:33:25.249+03:00  INFO 9028 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T10:33:25.360+03:00  INFO 9028 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-06T10:33:25.419+03:00  INFO 9028 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T10:33:25.908+03:00  INFO 9028 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T10:33:25.965+03:00  INFO 9028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T10:33:26.549+03:00  INFO 9028 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@433ff602
+2025-08-06T10:33:26.552+03:00  INFO 9028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-06T10:33:26.707+03:00  WARN 9028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T10:33:26.709+03:00  WARN 9028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T10:33:26.752+03:00  INFO 9028 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -27,229 +27,76 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-05T10:14:44.110+03:00  INFO 21772 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T10:14:44.318+03:00  INFO 21772 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T10:14:44.801+03:00 DEBUG 21772 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T10:14:44.802+03:00 DEBUG 21772 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T10:14:44.918+03:00  INFO 21772 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T10:14:44.919+03:00  WARN 21772 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T10:14:45.007+03:00  INFO 21772 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-05T10:14:47.553+03:00  WARN 21772 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-05T10:14:47.857+03:00 DEBUG 21772 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 73 mappings in 'requestMappingHandlerMapping'
-2025-08-05T10:14:47.965+03:00 DEBUG 21772 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-05T10:14:48.254+03:00  INFO 21772 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-08-05T10:14:48.357+03:00 DEBUG 21772 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-08-05T10:14:48.479+03:00 DEBUG 21772 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-05T10:14:48.562+03:00 DEBUG 21772 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-05T10:14:49.988+03:00  INFO 21772 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-05T10:14:50.203+03:00  INFO 21772 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-05T10:14:50.227+03:00  INFO 21772 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 12.359 seconds (process running for 13.662)
-2025-08-05T10:14:50.990+03:00  INFO 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-05T10:14:50.991+03:00  INFO 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-05T10:14:50.991+03:00 DEBUG 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-05T10:14:50.992+03:00 DEBUG 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-05T10:14:50.992+03:00 DEBUG 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-05T10:14:50.996+03:00 DEBUG 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@67f748d8
-2025-08-05T10:14:50.998+03:00 DEBUG 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4e23c17c
-2025-08-05T10:14:50.999+03:00 DEBUG 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-05T10:14:51.000+03:00  INFO 21772 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2025-08-05T10:14:58.367+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
-2025-08-05T10:14:58.379+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-08-05T10:14:58.386+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
-2025-08-05T10:14:58.389+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
-2025-08-05T10:14:58.390+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
-2025-08-05T10:14:58.446+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=sara.ali@example.com, password=test123, name=null, rank=null, address=null)]
-2025-08-05T10:14:58.765+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
-2025-08-05T10:14:58.802+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:14:58.803+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYXJhLmFsaUBleGFtcGxlLmNvbSIsInJvbGUiOiJDVVNUT01F (truncated)...]
-2025-08-05T10:14:58.811+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:15:33.395+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/search
-2025-08-05T10:15:33.406+03:00 ERROR 21772 --- [demo] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 4
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at com.erb.demo.jwt.JwtTokenProvider.getUsernameFromJWT(JwtTokenProvider.java:39) ~[main/:na]
-	at com.erb.demo.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:36) ~[main/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.1.jar:6.5.1]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.1.jar:6.5.1]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.1.jar:6.5.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2025-08-05T10:15:33.419+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-08-05T10:15:33.419+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-08-05T10:15:48.225+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/customers/search
-2025-08-05T10:15:48.260+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/customers/search
-2025-08-05T10:15:48.261+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/customers/search", parameters={}
-2025-08-05T10:15:48.261+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#getById(Long, Authentication)
-2025-08-05T10:15:48.266+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.erb.demo.model.Customer com.erb.demo.controller.CustomerController.getById(java.lang.Long,org.springframework.security.core.Authentication): Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "search"
-2025-08-05T10:15:48.268+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T10:15:48.269+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T10:15:48.269+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lan (truncated)..."]
-2025-08-05T10:15:48.270+03:00  WARN 21772 --- [demo] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "search"]
-2025-08-05T10:15:48.271+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T10:16:35.998+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:16:36.007+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:16:36.008+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:16:36.008+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:16:36.010+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.util.List<com.erb.demo.dto.CustomerResponseDTO> com.erb.demo.controller.CustomerController.search(com.erb.demo.dto.CustomerSearchCriteria): JSON parse error: Unexpected character ('}' (code 125)): expected a value
-2025-08-05T10:16:36.011+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T10:16:36.011+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T10:16:36.011+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["JSON parse error: Unexpected character ('}' (code 125)): expected a value"]
-2025-08-05T10:16:36.011+03:00  WARN 21772 --- [demo] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value]
-2025-08-05T10:16:36.012+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T10:17:20.062+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:17:20.070+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:17:20.070+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:17:20.071+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:17:20.072+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=Ayman, email=null, phone=null, address=null, minPoints=null, maxPoints=n (truncated)...]
-2025-08-05T10:17:20.109+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:17:20.109+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=1, name=ayman aljamal, email=ayman.aljamal2017@gmail.com, phone=0599123456,  (truncated)...]
-2025-08-05T10:17:20.110+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:17:36.725+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:17:36.733+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:17:36.733+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:17:36.733+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:17:36.734+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=null, email=ayman.aljamal2017@gmail.com, phone=null, address=null, minPo (truncated)...]
-2025-08-05T10:17:36.740+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:17:36.741+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=1, name=ayman aljamal, email=ayman.aljamal2017@gmail.com, phone=0599123456,  (truncated)...]
-2025-08-05T10:17:36.741+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:17:49.715+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:17:49.721+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:17:49.722+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:17:49.722+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:17:49.722+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=null, email=null, phone=null, address=Ramallah, minPoints=null, maxPoint (truncated)...]
-2025-08-05T10:17:49.729+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:17:49.729+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=1, name=ayman aljamal, email=ayman.aljamal2017@gmail.com, phone=0599123456,  (truncated)...]
-2025-08-05T10:17:49.729+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:18:06.259+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:18:06.267+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:18:06.267+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:18:06.267+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:18:06.268+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=null, email=null, phone=null, address=null, minPoints=null, maxPoints=nu (truncated)...]
-2025-08-05T10:18:06.280+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:18:06.280+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=1, name=ayman aljamal, email=ayman.aljamal2017@gmail.com, phone=0599123456,  (truncated)...]
-2025-08-05T10:18:06.281+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:18:12.848+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:18:12.857+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:18:12.858+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:18:12.858+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:18:12.858+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=null, email=null, phone=null, address=null, minPoints=null, maxPoints=nu (truncated)...]
-2025-08-05T10:18:12.863+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:18:12.863+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=1, name=ayman aljamal, email=ayman.aljamal2017@gmail.com, phone=0599123456,  (truncated)...]
-2025-08-05T10:18:12.865+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:18:25.376+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:18:25.382+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:18:25.383+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:18:25.383+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:18:25.383+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=null, email=null, phone=null, address=Nablus, minPoints=null, maxPoints= (truncated)...]
-2025-08-05T10:18:25.390+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:18:25.390+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=2, name=baha jaghoob, email=bahajaghoob10@gmail.com, phone=0599988776, addre (truncated)...]
-2025-08-05T10:18:25.391+03:00 DEBUG 21772 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:30:42.803+03:00  INFO 21772 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-05T10:30:42.820+03:00  INFO 21772 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-05T10:30:42.883+03:00  INFO 21772 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T10:30:42.891+03:00  INFO 21772 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-05T10:30:42.904+03:00  INFO 21772 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-08-05T10:43:46.302+03:00  INFO 4400 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 4400 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T10:43:46.306+03:00 DEBUG 4400 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T10:43:46.308+03:00  INFO 4400 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T10:43:46.483+03:00  INFO 4400 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-05T10:43:46.483+03:00  INFO 4400 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-05T10:43:49.320+03:00  INFO 4400 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T10:43:49.606+03:00  INFO 4400 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 273 ms. Found 10 JPA repository interfaces.
-2025-08-05T10:43:51.059+03:00  INFO 4400 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T10:43:51.085+03:00  INFO 4400 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T10:43:51.086+03:00  INFO 4400 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T10:43:51.176+03:00  INFO 4400 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-05T10:43:51.178+03:00  INFO 4400 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4692 ms
-2025-08-05T10:43:51.855+03:00  INFO 4400 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T10:43:52.000+03:00  INFO 4400 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-08-05T10:43:52.072+03:00  INFO 4400 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T10:43:52.599+03:00  INFO 4400 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T10:43:52.661+03:00  INFO 4400 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-05T10:43:53.542+03:00  INFO 4400 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d6830af
-2025-08-05T10:43:53.550+03:00  INFO 4400 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-05T10:43:53.712+03:00  WARN 4400 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T10:43:53.714+03:00  WARN 4400 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T10:43:53.739+03:00  INFO 4400 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-06T10:33:28.627+03:00  INFO 9028 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T10:33:28.989+03:00  INFO 9028 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T10:33:29.755+03:00 DEBUG 9028 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-08-06T10:33:29.757+03:00 DEBUG 9028 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-06T10:33:29.922+03:00  INFO 9028 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-06T10:33:29.923+03:00  WARN 9028 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-06T10:33:30.033+03:00  INFO 9028 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-06T10:33:33.230+03:00  WARN 9028 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T10:33:33.642+03:00 DEBUG 9028 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 74 mappings in 'requestMappingHandlerMapping'
+2025-08-06T10:33:33.772+03:00 DEBUG 9028 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-06T10:33:34.124+03:00  INFO 9028 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-06T10:33:34.277+03:00 DEBUG 9028 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-06T10:33:34.460+03:00 DEBUG 9028 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-06T10:33:34.575+03:00 DEBUG 9028 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-06T10:33:35.272+03:00  INFO 9028 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T10:33:35.400+03:00  INFO 9028 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-06T10:33:35.417+03:00  INFO 9028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 15.783 seconds (process running for 17.475)
+2025-08-06T10:33:35.766+03:00  INFO 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T10:33:35.766+03:00  INFO 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T10:33:35.766+03:00 DEBUG 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-08-06T10:33:35.767+03:00 DEBUG 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-08-06T10:33:35.767+03:00 DEBUG 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-08-06T10:33:35.769+03:00 DEBUG 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@786d4e50
+2025-08-06T10:33:35.770+03:00 DEBUG 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@34198694
+2025-08-06T10:33:35.771+03:00 DEBUG 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-08-06T10:33:35.771+03:00  INFO 9028 --- [demo] [RMI TCP Connection(2)-192.168.1.119] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-06T10:33:43.496+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-06T10:33:43.583+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-06T10:33:43.597+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+2025-08-06T10:33:43.603+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
+2025-08-06T10:33:43.608+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
+2025-08-06T10:33:43.804+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saeed@example.com, password=test123, name=null, rank=null, address=null)]
+2025-08-06T10:33:44.826+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-08-06T10:33:44.931+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-06T10:33:44.931+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZC5zYWVlZEBleGFtcGxlLmNvbSIsInJvbGUiOiJTVVBF (truncated)...]
+2025-08-06T10:33:44.957+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-06T10:33:54.685+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/orders/all
+2025-08-06T10:33:54.832+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/orders/all
+2025-08-06T10:33:54.832+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/orders/all", parameters={}
+2025-08-06T10:33:54.839+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#getAllOrders()
+2025-08-06T10:33:55.025+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-06T10:33:55.025+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[OrderDto(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerId=1, it (truncated)...]
+2025-08-06T10:33:55.032+03:00 DEBUG 9028 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-06T10:35:19.232+03:00  INFO 9028 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T10:35:19.250+03:00  INFO 9028 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T10:35:19.290+03:00  INFO 9028 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T10:35:19.300+03:00  INFO 9028 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-06T10:35:19.314+03:00  INFO 9028 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-06T10:35:24.875+03:00  INFO 27716 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 27716 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
+2025-08-06T10:35:24.884+03:00 DEBUG 27716 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T10:35:24.887+03:00  INFO 27716 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T10:35:25.045+03:00  INFO 27716 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-06T10:35:25.048+03:00  INFO 27716 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-06T10:35:28.170+03:00  INFO 27716 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T10:35:28.553+03:00  INFO 27716 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 355 ms. Found 10 JPA repository interfaces.
+2025-08-06T10:35:30.959+03:00  INFO 27716 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-06T10:35:31.022+03:00  INFO 27716 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T10:35:31.025+03:00  INFO 27716 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T10:35:31.293+03:00  INFO 27716 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T10:35:31.301+03:00  INFO 27716 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6248 ms
+2025-08-06T10:35:33.491+03:00  INFO 27716 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T10:35:33.879+03:00  INFO 27716 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-06T10:35:34.103+03:00  INFO 27716 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T10:35:35.809+03:00  INFO 27716 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T10:35:35.989+03:00  INFO 27716 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T10:35:37.922+03:00  INFO 27716 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57393dae
+2025-08-06T10:35:37.930+03:00  INFO 27716 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-06T10:35:38.234+03:00  WARN 27716 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T10:35:38.239+03:00  WARN 27716 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T10:35:38.335+03:00  INFO 27716 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -257,569 +104,27 @@ io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-05T10:43:55.787+03:00  INFO 4400 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T10:43:56.040+03:00  INFO 4400 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T10:43:56.864+03:00 DEBUG 4400 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T10:43:56.865+03:00 DEBUG 4400 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T10:43:57.040+03:00  INFO 4400 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T10:43:57.041+03:00  WARN 4400 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T10:43:57.157+03:00  INFO 4400 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-05T10:44:00.647+03:00  WARN 4400 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-05T10:44:01.169+03:00 DEBUG 4400 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 73 mappings in 'requestMappingHandlerMapping'
-2025-08-05T10:44:01.378+03:00 DEBUG 4400 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-05T10:44:01.947+03:00  INFO 4400 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-08-05T10:44:02.147+03:00 DEBUG 4400 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-08-05T10:44:02.346+03:00 DEBUG 4400 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-05T10:44:02.473+03:00 DEBUG 4400 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-05T10:44:03.260+03:00  INFO 4400 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-05T10:44:03.405+03:00  INFO 4400 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-05T10:44:03.424+03:00  INFO 4400 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 18.019 seconds (process running for 19.853)
-2025-08-05T10:44:04.097+03:00  INFO 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-05T10:44:04.097+03:00  INFO 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-05T10:44:04.097+03:00 DEBUG 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-05T10:44:04.099+03:00 DEBUG 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-05T10:44:04.099+03:00 DEBUG 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-05T10:44:04.101+03:00 DEBUG 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@9c08a4d
-2025-08-05T10:44:04.102+03:00 DEBUG 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@c805e5
-2025-08-05T10:44:04.102+03:00 DEBUG 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-05T10:44:04.102+03:00  INFO 4400 --- [demo] [RMI TCP Connection(2)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2025-08-05T10:44:11.007+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:44:11.352+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:44:11.356+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:44:11.362+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:44:11.503+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=null, email=null, phone=null, address=Nablus, minPoints=null, maxPoints= (truncated)...]
-2025-08-05T10:44:11.706+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:44:11.708+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=2, name=baha jaghoob, email=bahajaghoob10@gmail.com, phone=0599988776, addre (truncated)...]
-2025-08-05T10:44:11.765+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:44:21.136+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/customers/search
-2025-08-05T10:44:21.172+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/customers/search
-2025-08-05T10:44:21.172+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/customers/search", parameters={}
-2025-08-05T10:44:21.172+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.CustomerController#search(CustomerSearchCriteria)
-2025-08-05T10:44:21.178+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CustomerSearchCriteria(name=jaghoob, email=null, phone=null, address=null, minPoints=null, maxPoints (truncated)...]
-2025-08-05T10:44:21.195+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T10:44:21.195+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[CustomerResponseDTO(id=2, name=baha jaghoob, email=bahajaghoob10@gmail.com, phone=0599988776, addre (truncated)...]
-2025-08-05T10:44:21.202+03:00 DEBUG 4400 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T10:50:16.865+03:00  INFO 4400 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-05T10:50:16.889+03:00  INFO 4400 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-05T10:50:16.925+03:00  INFO 4400 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T10:50:16.930+03:00  INFO 4400 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-05T10:50:16.936+03:00  INFO 4400 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-08-05T11:05:36.719+03:00  INFO 25624 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 25624 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T11:05:36.723+03:00 DEBUG 25624 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T11:05:36.725+03:00  INFO 25624 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T11:05:36.826+03:00  INFO 25624 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-05T11:05:36.827+03:00  INFO 25624 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-05T11:05:38.993+03:00  INFO 25624 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T11:05:39.324+03:00  INFO 25624 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 314 ms. Found 10 JPA repository interfaces.
-2025-08-05T11:05:41.088+03:00  INFO 25624 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T11:05:41.123+03:00  INFO 25624 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T11:05:41.124+03:00  INFO 25624 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T11:05:41.209+03:00  INFO 25624 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-05T11:05:41.210+03:00  INFO 25624 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4381 ms
-2025-08-05T11:05:41.963+03:00  INFO 25624 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T11:05:42.063+03:00  INFO 25624 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-08-05T11:05:42.126+03:00  INFO 25624 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T11:05:42.656+03:00  INFO 25624 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T11:05:42.727+03:00  INFO 25624 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-05T11:05:43.271+03:00  INFO 25624 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5740ffc9
-2025-08-05T11:05:43.274+03:00  INFO 25624 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-05T11:05:43.373+03:00  WARN 25624 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T11:05:43.375+03:00  WARN 25624 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T11:05:43.429+03:00  INFO 25624 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-05T11:05:45.537+03:00  INFO 25624 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T11:05:45.843+03:00  INFO 25624 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:05:46.782+03:00 DEBUG 25624 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T11:05:46.784+03:00 DEBUG 25624 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T11:05:46.985+03:00  INFO 25624 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T11:05:46.986+03:00  WARN 25624 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T11:05:47.110+03:00  INFO 25624 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-05T11:05:51.255+03:00  WARN 25624 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-05T11:05:51.753+03:00 DEBUG 25624 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 74 mappings in 'requestMappingHandlerMapping'
-2025-08-05T11:05:51.927+03:00 DEBUG 25624 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-05T11:05:52.457+03:00  INFO 25624 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-08-05T11:05:52.666+03:00 DEBUG 25624 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-08-05T11:05:52.914+03:00 DEBUG 25624 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-05T11:05:53.047+03:00 DEBUG 25624 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-05T11:05:54.008+03:00  INFO 25624 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-05T11:05:54.240+03:00  INFO 25624 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-05T11:05:54.260+03:00  INFO 25624 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 18.463 seconds (process running for 19.56)
-2025-08-05T11:05:54.689+03:00  INFO 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-05T11:05:54.689+03:00  INFO 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-05T11:05:54.690+03:00 DEBUG 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-05T11:05:54.690+03:00 DEBUG 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-05T11:05:54.691+03:00 DEBUG 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-05T11:05:54.695+03:00 DEBUG 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@597d629
-2025-08-05T11:05:54.697+03:00 DEBUG 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4675864d
-2025-08-05T11:05:54.698+03:00 DEBUG 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-05T11:05:54.699+03:00  INFO 25624 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2025-08-05T11:05:59.068+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
-2025-08-05T11:05:59.087+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-08-05T11:05:59.091+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
-2025-08-05T11:05:59.098+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/auth/login", parameters={}
-2025-08-05T11:05:59.100+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.AuthController#login(AuthRequest)
-2025-08-05T11:05:59.172+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AuthRequest(email=ahmad.saeed@example.com, password=test123, name=null, rank=null, address=null)]
-2025-08-05T11:05:59.628+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
-2025-08-05T11:05:59.678+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:05:59.683+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AuthResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZC5zYWVlZEBleGFtcGxlLmNvbSIsInJvbGUiOiJTVVBF (truncated)...]
-2025-08-05T11:05:59.696+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:06:13.111+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:06:13.255+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:06:13.258+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:06:13.258+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:06:13.263+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/octet-stream" to []
-2025-08-05T11:06:13.270+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T11:06:13.271+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T11:06:13.272+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Required request body is missing: public java.util.List<com.erb.demo.dto.OrderResponse> com.erb.demo (truncated)..."]
-2025-08-05T11:06:13.272+03:00  WARN 25624 --- [demo] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.List<com.erb.demo.dto.OrderResponse> com.erb.demo.controller.OrderController.searchOrders(com.erb.demo.dto.DTO.OrderSearchCriteria)]
-2025-08-05T11:06:13.272+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T11:06:28.847+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:06:28.869+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:06:28.869+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:06:28.869+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:06:28.886+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Ayman, employeeName=Ali, orderStatus=DELIVERED, deliveredAfter=2025 (truncated)...]
-2025-08-05T11:06:28.920+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T11:06:28.920+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T11:06:28.920+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Could not resolve attribute 'delivery' of 'com.erb.demo.model.Order'"]
-2025-08-05T11:06:28.920+03:00  WARN 25624 --- [demo] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Could not resolve attribute 'delivery' of 'com.erb.demo.model.Order']
-2025-08-05T11:06:28.920+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T11:06:40.957+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:06:40.973+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:06:40.973+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:06:40.973+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:06:40.974+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.util.List<com.erb.demo.dto.OrderResponse> com.erb.demo.controller.OrderController.searchOrders(com.erb.demo.dto.DTO.OrderSearchCriteria): JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
-2025-08-05T11:06:40.974+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T11:06:40.974+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T11:06:40.974+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field n (truncated)..."]
-2025-08-05T11:06:40.974+03:00  WARN 25624 --- [demo] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name]
-2025-08-05T11:06:40.978+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T11:06:51.922+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:06:51.942+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:06:51.942+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:06:51.942+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:06:51.942+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Ayman, employeeName=null, orderStatus=null, deliveredAfter=null, de (truncated)...]
-2025-08-05T11:06:51.948+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T11:06:51.948+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T11:06:51.948+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Could not resolve attribute 'delivery' of 'com.erb.demo.model.Order'"]
-2025-08-05T11:06:51.948+03:00  WARN 25624 --- [demo] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Could not resolve attribute 'delivery' of 'com.erb.demo.model.Order']
-2025-08-05T11:06:51.948+03:00 DEBUG 25624 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T11:08:42.213+03:00  INFO 25624 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-05T11:08:42.239+03:00  INFO 25624 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-05T11:08:42.277+03:00  INFO 25624 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:08:42.282+03:00  INFO 25624 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-05T11:08:42.295+03:00  INFO 25624 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-08-05T11:08:47.768+03:00  INFO 13396 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 13396 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T11:08:47.772+03:00 DEBUG 13396 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T11:08:47.773+03:00  INFO 13396 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T11:08:47.851+03:00  INFO 13396 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-05T11:08:47.852+03:00  INFO 13396 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-05T11:08:49.517+03:00  INFO 13396 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T11:08:49.779+03:00  INFO 13396 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 248 ms. Found 10 JPA repository interfaces.
-2025-08-05T11:08:51.269+03:00  INFO 13396 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T11:08:51.300+03:00  INFO 13396 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T11:08:51.301+03:00  INFO 13396 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T11:08:51.382+03:00  INFO 13396 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-05T11:08:51.382+03:00  INFO 13396 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3530 ms
-2025-08-05T11:08:52.017+03:00  INFO 13396 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T11:08:52.091+03:00  INFO 13396 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-08-05T11:08:52.143+03:00  INFO 13396 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T11:08:52.540+03:00  INFO 13396 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T11:08:52.583+03:00  INFO 13396 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-05T11:08:53.018+03:00  INFO 13396 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a52a0ea
-2025-08-05T11:08:53.021+03:00  INFO 13396 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-05T11:08:53.093+03:00  WARN 13396 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T11:08:53.095+03:00  WARN 13396 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T11:08:53.124+03:00  INFO 13396 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-05T11:08:54.838+03:00  INFO 13396 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T11:08:55.116+03:00  INFO 13396 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:08:55.867+03:00 DEBUG 13396 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T11:08:55.867+03:00 DEBUG 13396 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T11:08:56.011+03:00  INFO 13396 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T11:08:56.012+03:00  WARN 13396 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T11:08:56.115+03:00  INFO 13396 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-05T11:09:00.055+03:00  WARN 13396 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-05T11:09:00.502+03:00 DEBUG 13396 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 74 mappings in 'requestMappingHandlerMapping'
-2025-08-05T11:09:00.671+03:00 DEBUG 13396 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-05T11:09:01.158+03:00  INFO 13396 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-08-05T11:09:01.318+03:00 DEBUG 13396 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-08-05T11:09:01.524+03:00 DEBUG 13396 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-05T11:09:01.679+03:00 DEBUG 13396 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-05T11:09:04.452+03:00  INFO 13396 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-05T11:09:04.915+03:00  INFO 13396 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-05T11:09:04.967+03:00  INFO 13396 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 17.873 seconds (process running for 18.991)
-2025-08-05T11:09:05.767+03:00  INFO 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-05T11:09:05.767+03:00  INFO 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-05T11:09:05.771+03:00 DEBUG 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-05T11:09:05.774+03:00 DEBUG 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-05T11:09:05.775+03:00 DEBUG 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-05T11:09:05.779+03:00 DEBUG 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1545bd3b
-2025-08-05T11:09:05.782+03:00 DEBUG 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2c47d4ac
-2025-08-05T11:09:05.782+03:00 DEBUG 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-05T11:09:05.785+03:00  INFO 13396 --- [demo] [RMI TCP Connection(3)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
-2025-08-05T11:09:18.081+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:09:18.448+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:09:18.452+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:09:18.454+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:09:18.531+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Ayman, employeeName=null, orderStatus=null, deliveredAfter=null, de (truncated)...]
-2025-08-05T11:09:18.597+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T11:09:18.607+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T11:09:18.607+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Could not resolve attribute 'deliveredBy' of 'com.erb.demo.model.Order'"]
-2025-08-05T11:09:18.618+03:00  WARN 13396 --- [demo] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Could not resolve attribute 'deliveredBy' of 'com.erb.demo.model.Order']
-2025-08-05T11:09:18.618+03:00 DEBUG 13396 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T11:10:46.436+03:00  INFO 13396 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-05T11:10:46.464+03:00  INFO 13396 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-05T11:10:46.502+03:00  INFO 13396 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:10:46.506+03:00  INFO 13396 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-05T11:10:46.514+03:00  INFO 13396 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-08-05T11:10:52.002+03:00  INFO 18812 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 18812 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T11:10:52.009+03:00 DEBUG 18812 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T11:10:52.009+03:00  INFO 18812 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T11:10:52.087+03:00  INFO 18812 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-05T11:10:52.088+03:00  INFO 18812 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-05T11:10:53.740+03:00  INFO 18812 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T11:10:53.989+03:00  INFO 18812 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 238 ms. Found 10 JPA repository interfaces.
-2025-08-05T11:10:55.226+03:00  INFO 18812 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T11:10:55.247+03:00  INFO 18812 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T11:10:55.248+03:00  INFO 18812 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T11:10:55.312+03:00  INFO 18812 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-05T11:10:55.313+03:00  INFO 18812 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3224 ms
-2025-08-05T11:10:55.887+03:00  INFO 18812 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T11:10:55.952+03:00  INFO 18812 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-08-05T11:10:56.004+03:00  INFO 18812 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T11:10:56.384+03:00  INFO 18812 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T11:10:56.433+03:00  INFO 18812 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-05T11:10:56.849+03:00  INFO 18812 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26ab5508
-2025-08-05T11:10:56.852+03:00  INFO 18812 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-05T11:10:56.917+03:00  WARN 18812 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T11:10:56.918+03:00  WARN 18812 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T11:10:56.939+03:00  INFO 18812 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-05T11:10:58.622+03:00  INFO 18812 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T11:10:58.815+03:00  INFO 18812 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:10:59.521+03:00 DEBUG 18812 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T11:10:59.523+03:00 DEBUG 18812 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T11:10:59.673+03:00  INFO 18812 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T11:10:59.674+03:00  WARN 18812 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T11:10:59.774+03:00  INFO 18812 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-05T11:11:02.830+03:00  WARN 18812 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-05T11:11:03.204+03:00 DEBUG 18812 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 74 mappings in 'requestMappingHandlerMapping'
-2025-08-05T11:11:03.375+03:00 DEBUG 18812 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-05T11:11:03.749+03:00  INFO 18812 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-08-05T11:11:03.903+03:00 DEBUG 18812 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-08-05T11:11:04.085+03:00 DEBUG 18812 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-05T11:11:04.183+03:00 DEBUG 18812 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-05T11:11:04.895+03:00  INFO 18812 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-05T11:11:05.031+03:00  INFO 18812 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-05T11:11:05.049+03:00  INFO 18812 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 13.808 seconds (process running for 14.785)
-2025-08-05T11:11:05.447+03:00  INFO 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-05T11:11:05.447+03:00  INFO 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-05T11:11:05.447+03:00 DEBUG 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-05T11:11:05.447+03:00 DEBUG 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-05T11:11:05.448+03:00 DEBUG 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-05T11:11:05.450+03:00 DEBUG 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1764142
-2025-08-05T11:11:05.451+03:00 DEBUG 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@11ccb7b6
-2025-08-05T11:11:05.451+03:00 DEBUG 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-05T11:11:05.451+03:00  INFO 18812 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-08-05T11:11:10.267+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:11:10.562+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:11:10.564+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:11:10.567+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:11:10.631+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Ayman, employeeName=null, orderStatus=null, deliveredAfter=null, de (truncated)...]
-2025-08-05T11:11:10.668+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T11:11:10.675+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T11:11:10.676+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Attribute 'com.erb.demo.model.Order#id(BASIC)' is not joinable"]
-2025-08-05T11:11:10.681+03:00  WARN 18812 --- [demo] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: Attribute 'com.erb.demo.model.Order#id(BASIC)' is not joinable]
-2025-08-05T11:11:10.682+03:00 DEBUG 18812 --- [demo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T11:11:29.479+03:00  INFO 18812 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-05T11:11:29.497+03:00  INFO 18812 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-05T11:11:29.530+03:00  INFO 18812 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:11:29.532+03:00  INFO 18812 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-05T11:11:29.538+03:00  INFO 18812 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-08-05T11:11:34.834+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 26028 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T11:11:34.838+03:00 DEBUG 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T11:11:34.839+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T11:11:34.909+03:00  INFO 26028 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-05T11:11:34.910+03:00  INFO 26028 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-05T11:11:36.651+03:00  INFO 26028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T11:11:37.048+03:00  INFO 26028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 382 ms. Found 10 JPA repository interfaces.
-2025-08-05T11:11:38.732+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T11:11:38.755+03:00  INFO 26028 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T11:11:38.756+03:00  INFO 26028 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T11:11:38.863+03:00  INFO 26028 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-05T11:11:38.867+03:00  INFO 26028 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3957 ms
-2025-08-05T11:11:39.683+03:00  INFO 26028 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T11:11:39.764+03:00  INFO 26028 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-08-05T11:11:39.819+03:00  INFO 26028 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T11:11:40.394+03:00  INFO 26028 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T11:11:40.452+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-05T11:11:40.998+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@517264fd
-2025-08-05T11:11:41.001+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-05T11:11:41.082+03:00  WARN 26028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T11:11:41.084+03:00  WARN 26028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T11:11:41.110+03:00  INFO 26028 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-05T11:11:43.270+03:00  INFO 26028 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T11:11:43.536+03:00  INFO 26028 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:11:44.422+03:00 DEBUG 26028 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T11:11:44.424+03:00 DEBUG 26028 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T11:11:44.603+03:00  INFO 26028 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T11:11:44.605+03:00  WARN 26028 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T11:11:44.736+03:00  INFO 26028 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-05T11:11:48.941+03:00  WARN 26028 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-05T11:11:49.403+03:00 DEBUG 26028 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 74 mappings in 'requestMappingHandlerMapping'
-2025-08-05T11:11:49.537+03:00 DEBUG 26028 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-05T11:11:49.925+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-08-05T11:11:50.088+03:00 DEBUG 26028 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-08-05T11:11:50.257+03:00 DEBUG 26028 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-05T11:11:50.361+03:00 DEBUG 26028 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-05T11:11:51.086+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-05T11:11:51.210+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-05T11:11:51.230+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 17.112 seconds (process running for 18.143)
-2025-08-05T11:11:51.864+03:00  INFO 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-05T11:11:51.865+03:00  INFO 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-05T11:11:51.865+03:00 DEBUG 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-05T11:11:51.865+03:00 DEBUG 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-05T11:11:51.865+03:00 DEBUG 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-05T11:11:51.868+03:00 DEBUG 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@46f5e016
-2025-08-05T11:11:51.869+03:00 DEBUG 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4619a8a5
-2025-08-05T11:11:51.870+03:00 DEBUG 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-05T11:11:51.870+03:00  INFO 26028 --- [demo] [RMI TCP Connection(1)-192.168.1.117] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2025-08-05T11:11:57.117+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:11:57.477+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:11:57.477+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:11:57.484+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:11:57.557+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Ayman, employeeName=null, orderStatus=null, deliveredAfter=null, de (truncated)...]
-2025-08-05T11:11:57.676+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:11:57.676+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:11:57.701+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:12:20.327+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:12:20.346+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:12:20.346+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:12:20.347+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:12:20.347+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=null, employeeName=Ayman, orderStatus=null, deliveredAfter=null, de (truncated)...]
-2025-08-05T11:12:20.357+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:12:20.357+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
-2025-08-05T11:12:20.357+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:12:25.384+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:12:25.407+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:12:25.407+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:12:25.408+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:12:25.410+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Ayman, employeeName=null, orderStatus=null, deliveredAfter=null, de (truncated)...]
-2025-08-05T11:12:25.437+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:12:25.437+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:12:25.437+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:12:29.731+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:12:29.747+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:12:29.749+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:12:29.749+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:12:29.749+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Mona, employeeName=null, orderStatus=null, deliveredAfter=null, del (truncated)...]
-2025-08-05T11:12:29.757+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:12:29.759+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
-2025-08-05T11:12:29.759+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:12:34.457+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:12:34.487+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:12:34.487+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:12:34.491+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:12:34.491+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=Ayman, employeeName=null, orderStatus=null, deliveredAfter=null, de (truncated)...]
-2025-08-05T11:12:34.517+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:12:34.518+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:12:34.518+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:12:40.377+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:12:40.394+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:12:40.394+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:12:40.394+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:12:40.397+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=null, employeeName=Mona, orderStatus=null, deliveredAfter=null, del (truncated)...]
-2025-08-05T11:12:40.411+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:12:40.411+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:12:40.411+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:12:52.682+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:12:52.701+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:12:52.701+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:12:52.701+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:12:52.703+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=null, employeeName=null, orderStatus=null, deliveredAfter=null, del (truncated)...]
-2025-08-05T11:12:52.734+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:12:52.734+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:12:52.736+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:13:04.207+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:13:04.233+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:13:04.233+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:13:04.233+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:13:04.233+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=null, employeeName=null, orderStatus=null, deliveredAfter=null, del (truncated)...]
-2025-08-05T11:13:04.257+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:13:04.257+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:13:04.257+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:13:49.911+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:13:49.930+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:13:49.930+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:13:49.931+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:13:49.931+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.util.List<com.erb.demo.dto.OrderResponse> com.erb.demo.controller.OrderController.searchOrders(com.erb.demo.dto.DTO.OrderSearchCriteria): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-2025-08-05T11:13:49.931+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.erb.demo.Exception.GlobalExceptionHandler#handleGeneric(RuntimeException)
-2025-08-05T11:13:49.937+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-05T11:13:49.937+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entri (truncated)..."]
-2025-08-05T11:13:49.937+03:00  WARN 26028 --- [demo] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries]
-2025-08-05T11:13:49.941+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-08-05T11:14:24.053+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:14:24.067+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:14:24.067+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:14:24.067+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:14:24.067+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=null, employeeName=Mona, orderStatus=null, deliveredAfter=null, del (truncated)...]
-2025-08-05T11:14:24.084+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:14:24.087+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:14:24.088+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:14:34.296+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:14:34.315+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:14:34.317+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:14:34.317+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:14:34.317+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=null, employeeName=null, orderStatus=null, deliveredAfter=null, del (truncated)...]
-2025-08-05T11:14:34.341+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:14:34.341+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=1, status=PROCESSING, createdAt=2025-07-15T12:52:24, deliveredAt=null, customerNam (truncated)...]
-2025-08-05T11:14:34.341+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-05T11:14:56.506+03:00  INFO 26028 --- [demo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
-2025-08-05T11:14:56.518+03:00  INFO 26028 --- [demo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-05T11:14:56.559+03:00  INFO 26028 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-05T11:14:56.604+03:00  INFO 26028 --- [demo] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:14:56.607+03:00  INFO 26028 --- [demo] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-05T11:14:56.624+03:00  INFO 26028 --- [demo] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-08-05T11:14:56.898+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 26028 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T11:14:56.900+03:00 DEBUG 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T11:14:56.900+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T11:14:58.981+03:00  INFO 26028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T11:14:59.137+03:00  INFO 26028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 10 JPA repository interfaces.
-2025-08-05T11:14:59.666+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T11:14:59.669+03:00  INFO 26028 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T11:14:59.669+03:00  INFO 26028 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T11:14:59.702+03:00  INFO 26028 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-05T11:14:59.702+03:00  INFO 26028 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2796 ms
-2025-08-05T11:15:00.229+03:00  INFO 26028 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T11:15:00.235+03:00  INFO 26028 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T11:15:00.270+03:00  INFO 26028 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T11:15:00.274+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-08-05T11:15:00.315+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@433a221c
-2025-08-05T11:15:00.316+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-08-05T11:15:00.316+03:00  WARN 26028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T11:15:00.316+03:00  WARN 26028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T11:15:00.316+03:00  INFO 26028 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-05T11:15:00.934+03:00  INFO 26028 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T11:15:01.100+03:00  INFO 26028 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:15:01.567+03:00 DEBUG 26028 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T11:15:01.569+03:00 DEBUG 26028 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T11:15:01.714+03:00  INFO 26028 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T11:15:01.714+03:00  WARN 26028 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T11:15:02.454+03:00  WARN 26028 --- [demo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'com.erb.demo.service.OrderService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2025-08-05T11:15:02.456+03:00  INFO 26028 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:15:02.456+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-08-05T11:15:02.470+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2025-08-05T11:15:02.471+03:00  INFO 26028 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-08-05T11:15:02.482+03:00  INFO 26028 --- [demo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-08-05T11:15:02.535+03:00 ERROR 26028 --- [demo] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field service in com.erb.demo.controller.OrderController required a bean of type 'com.erb.demo.service.OrderService' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'com.erb.demo.service.OrderService' in your configuration.
-
-2025-08-05T11:15:04.151+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Starting DemoApplication using Java 21.0.2 with PID 26028 (C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System\demo\build\classes\java\main started by ayman in C:\Users\ayman\OneDrive\Desktop\ERB-Warehouse-Product-System)
-2025-08-05T11:15:04.151+03:00 DEBUG 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Running with Spring Boot v3.5.3, Spring v6.2.8
-2025-08-05T11:15:04.151+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-08-05T11:15:05.026+03:00  INFO 26028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-05T11:15:05.156+03:00  INFO 26028 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 10 JPA repository interfaces.
-2025-08-05T11:15:05.753+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-05T11:15:05.756+03:00  INFO 26028 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-05T11:15:05.756+03:00  INFO 26028 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-08-05T11:15:05.813+03:00  INFO 26028 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2025-08-05T11:15:05.813+03:00  INFO 26028 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1656 ms
-2025-08-05T11:15:06.401+03:00  INFO 26028 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-05T11:15:06.418+03:00  INFO 26028 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-05T11:15:06.432+03:00  INFO 26028 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-05T11:15:06.433+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-08-05T11:15:06.461+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70710f66
-2025-08-05T11:15:06.461+03:00  INFO 26028 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-08-05T11:15:06.461+03:00  WARN 26028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-05T11:15:06.461+03:00  WARN 26028 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-05T11:15:06.461+03:00  INFO 26028 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-05T11:15:06.949+03:00  INFO 26028 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-05T11:15:07.099+03:00  INFO 26028 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-05T11:15:07.661+03:00 DEBUG 26028 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
-2025-08-05T11:15:07.661+03:00 DEBUG 26028 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-08-05T11:15:07.835+03:00  INFO 26028 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-08-05T11:15:07.836+03:00  WARN 26028 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-08-05T11:15:09.356+03:00  WARN 26028 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-05T11:15:09.887+03:00 DEBUG 26028 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 74 mappings in 'requestMappingHandlerMapping'
-2025-08-05T11:15:10.002+03:00 DEBUG 26028 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-05T11:15:10.409+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
-2025-08-05T11:15:10.576+03:00 DEBUG 26028 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-08-05T11:15:10.779+03:00 DEBUG 26028 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-05T11:15:10.855+03:00 DEBUG 26028 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-05T11:15:11.949+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-08-05T11:15:12.091+03:00  INFO 26028 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-05T11:15:12.105+03:00  INFO 26028 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 7.988 seconds (process running for 219.018)
-2025-08-05T11:15:12.113+03:00  INFO 26028 --- [demo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-08-05T11:15:24.814+03:00  INFO 26028 --- [demo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-05T11:15:24.816+03:00  INFO 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-05T11:15:24.816+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-05T11:15:24.816+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-05T11:15:24.816+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-05T11:15:24.820+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@778ace76
-2025-08-05T11:15:24.820+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f863abb
-2025-08-05T11:15:24.820+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-05T11:15:24.820+03:00  INFO 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-08-05T11:15:24.823+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/orders/search
-2025-08-05T11:15:24.888+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/orders/search
-2025-08-05T11:15:24.888+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/orders/search", parameters={}
-2025-08-05T11:15:24.888+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.erb.demo.controller.OrderController#searchOrders(OrderSearchCriteria)
-2025-08-05T11:15:24.899+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [OrderSearchCriteria(customerName=null, employeeName=null, orderStatus=null, deliveredAfter=2025-07-2 (truncated)...]
-2025-08-05T11:15:24.936+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-05T11:15:24.936+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[OrderResponse(id=8, status=DELIVERED, createdAt=2025-07-27T12:09:01, deliveredAt=2025-07-27T13:30:4 (truncated)...]
-2025-08-05T11:15:24.943+03:00 DEBUG 26028 --- [demo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-08-06T10:35:44.355+03:00  INFO 27716 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T10:35:44.933+03:00  INFO 27716 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T10:35:48.276+03:00 DEBUG 27716 --- [demo] [restartedMain] c.erb.demo.jwt.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-08-06T10:35:48.516+03:00 DEBUG 27716 --- [demo] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-08-06T10:35:49.168+03:00  INFO 27716 --- [demo] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-06T10:35:49.174+03:00  WARN 27716 --- [demo] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-06T10:35:49.588+03:00  INFO 27716 --- [demo] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-06T10:36:01.245+03:00  WARN 27716 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T10:36:02.592+03:00 DEBUG 27716 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 74 mappings in 'requestMappingHandlerMapping'
+2025-08-06T10:36:03.095+03:00 DEBUG 27716 --- [demo] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-06T10:36:04.463+03:00  INFO 27716 --- [demo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-08-06T10:36:05.012+03:00 DEBUG 27716 --- [demo] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-06T10:36:05.676+03:00 DEBUG 27716 --- [demo] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-06T10:36:06.032+03:00 DEBUG 27716 --- [demo] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-06T10:36:08.786+03:00  INFO 27716 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T10:36:09.188+03:00  INFO 27716 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-06T10:36:09.259+03:00  INFO 27716 --- [demo] [restartedMain] com.erb.demo.DemoApplication             : Started DemoApplication in 45.535 seconds (process running for 46.951)
+2025-08-06T10:47:04.119+03:00  WARN 27716 --- [demo] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m25s994ms989µs700ns).
+2025-08-06T11:07:23.136+03:00  WARN 27716 --- [demo] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m19s18ms815µs600ns).
+2025-08-06T13:39:07.091+03:00  INFO 27716 --- [demo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T13:39:07.172+03:00  INFO 27716 --- [demo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T13:39:07.745+03:00  INFO 27716 --- [demo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T13:39:07.790+03:00  INFO 27716 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-06T13:39:07.809+03:00  INFO 27716 --- [demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

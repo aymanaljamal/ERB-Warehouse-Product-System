@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: erb-mysql
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: erb
+      MYSQL_USER: erbuser
+      MYSQL_PASSWORD: ayman@123
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+    networks:
+      - erb-net
+
+  app:
+    build: .
+    container_name: erb-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/erb
+      SPRING_DATASOURCE_USERNAME: erbuser
+      SPRING_DATASOURCE_PASSWORD: ayman@123
+    depends_on:
+      - db
+    networks:
+      - erb-net
+
+volumes:
+  mysql_data:
+
+networks:
+  erb-net:
+    driver: bridge
