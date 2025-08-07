@@ -21,7 +21,7 @@ public class EmailServiceClient {
         emailRequest.setSubject("Order Status Update #" + order.getId());
         emailRequest.setBody("Hello " + order.getCustomer().getName() + ", your order status is now: " + order.getStatus());
 
-        String emailServiceUrl = "http://localhost:8081/api/email/send";
+        String emailServiceUrl = "http://appremote:8081/api/email/send";
         ResponseEntity<String> response = restTemplate.postForEntity(emailServiceUrl, emailRequest, String.class);
         System.out.println("Email service response: " + response.getBody());
     }
