@@ -1,0 +1,55 @@
+enum OrderStatus {
+    CREATED
+    PROCESSING
+    SHIPPED
+    DELIVERED
+    CANCELLED
+}
+
+type Customer {
+    id: ID!
+    name: String!
+    email: String!
+    phone: String
+    address: String!
+    loyaltyPoints: Int
+    role: String
+}
+
+type Employee {
+    id: ID!
+    name: String!
+    email: String!
+    salary: Float
+    workHours: Int
+    rank: String
+    image: String
+    phone: String
+}
+
+type Order {
+    id: ID!
+    status: OrderStatus!
+    createdAt: String!
+    deliveredAt: String
+    customer: Customer
+    employee: Employee
+    itemsCount: Int!
+}
+
+input OrderInput {
+    status: OrderStatus!
+    createdAt: String!
+    deliveredAt: String
+    customerId: ID!
+    employeeId: ID
+}
+
+type Query {
+    orders: [Order!]!
+    orderById(id: ID!): Order
+}
+
+type Mutation {
+    createOrder(input: OrderInput!): Order!
+}

@@ -1,11 +1,9 @@
 package com.erb.demo.controller;
 
 import com.erb.demo.Projection.OrderSummaryDto;
-import com.erb.demo.dto.DTO.CreateOrderRequest;
-import com.erb.demo.dto.DTO.OrderDto;
-import com.erb.demo.dto.DTO.ProductStockDto;
-import com.erb.demo.dto.DTO.UpdateOrderStatusRequest;
+import com.erb.demo.dto.DTO.*;
 import com.erb.demo.dto.OrderDetailsDto;
+import com.erb.demo.dto.OrderResponse;
 import com.erb.demo.dto.OrderResponseDTO;
 import com.erb.demo.model.Customer;
 import com.erb.demo.model.Order;
@@ -149,5 +147,9 @@ public class OrderController {
         String baseUrl = request.getRequestURL().toString().replace(request.getRequestURI(), "");
         Page<OrderResponseDTO> orders = service.getCustomerOrders(currentCustomer, pageable, baseUrl);
         return ResponseEntity.ok(orders);
+    }
+    @PostMapping("/search")
+    public List<OrderResponse> searchOrders(@RequestBody OrderSearchCriteria criteria) {
+        return service.searchOrders(criteria);
     }
 }

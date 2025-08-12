@@ -1,9 +1,13 @@
 package com.erb.demo.service.impl;
 
+import com.erb.demo.Annotation.LogExecutionTime;
 import com.erb.demo.Plugin.CustomerPlugin.CustomerPluginExecutor;
+import com.erb.demo.dto.CustomerResponseDTO;
+import com.erb.demo.dto.CustomerSearchCriteria;
 import com.erb.demo.dto.DTO.CustomerDTO;
 import com.erb.demo.model.Customer;
 import com.erb.demo.repository.CustomerRepository;
+import com.erb.demo.repository.Specification.CustomerSpecifications;
 import com.erb.demo.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -30,6 +34,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
     @Override
     @Cacheable(value = "customers", key = "#id")
+    @LogExecutionTime
     public Customer getById(Long id) {
         return repository.findById(id).orElse(null);
     }
@@ -64,6 +69,7 @@ public class CustomerServiceImpl implements CustomerService {
                 .collect(Collectors.toList());
     }
     @Override
+    @LogExecutionTime
     public Customer getCurrentCustomer() {
         String email = SecurityContextHolder.getContext().getAuthentication().getName();
         Customer customer = repository.findByEmail(email);
@@ -71,5 +77,23 @@ public class CustomerServiceImpl implements CustomerService {
             throw new UsernameNotFoundException("Customer not found");
         }
         return customer;
+    }
+    @Override
+    public List<CustomerResponseDTO> searchCustomers(CustomerSearchCriteria criteria) {
+        return repository.findAll(CustomerSpecifications.build(criteria))
+                .stream()
+                .map(this::toDTO)
+                .toList();
+    }
+
+    private CustomerResponseDTO toDTO(Customer customer) {
+        return CustomerResponseDTO.builder()
+                .id(customer.getId())
+                .name(customer.getName())
+                .email(customer.getEmail())
+                .phone(customer.getPhone())
+                .address(customer.getAddress())
+                .loyaltyPoints(customer.getLoyaltyPoints())
+                .build();
     }
 }
