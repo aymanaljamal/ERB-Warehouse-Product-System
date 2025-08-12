@@ -15,9 +15,6 @@ A comprehensive ERP system designed to efficiently manage warehouse inventories 
 - **Delivery Management**  
   Organize deliveries, track shipment status, and assign employees effectively.
 
-- **User-friendly Interface**  
-  Designed for warehouse staff and managers to boost productivity.
-
 - **Extensible and Modular**  
   Flexible architecture for future enhancements and integrations.
 
