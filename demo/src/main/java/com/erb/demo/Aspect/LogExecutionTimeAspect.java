@@ -19,7 +19,7 @@ public class LogExecutionTimeAspect {
 
         long duration = System.currentTimeMillis() - start;
         logger.info("Execution time of {}: {} ms", joinPoint.getSignature(), duration);
-        logger.info("مرحبا ايمن ");
+        logger.info("مرحبا ايمن v2 ");
 
         return result;
     }
